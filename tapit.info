@@ -1,0 +1,44 @@
+name = tapit
+description = Installs tap-it maps and stats setup
+version = 7.x-0.1
+core = 7.x
+dependencies[] = block
+dependencies[] = comment
+dependencies[] = contextual
+dependencies[] = help
+dependencies[] = image
+dependencies[] = menu
+dependencies[] = path
+dependencies[] = taxonomy
+dependencies[] = search
+dependencies[] = shortcut
+dependencies[] = toolbar
+dependencies[] = field_ui
+dependencies[] = file
+dependencies[] = rdf
+
+;contrib
+dependencies[] = ctools
+dependencies[] = enterprise_rotator
+dependencies[] = entity
+dependencies[] = features
+dependencies[] = file_entity
+dependencies[] = googleanalytics
+dependencies[] = media
+dependencies[] = media_youtube
+dependencies[] = menu_block
+dependencies[] = pathauto
+dependencies[] = pdf_reader
+dependencies[] = transliteration
+dependencies[] = views
+dependencies[] = views_ui
+dependencies[] = wysiwyg
+
+;custom
+;dependencies[] = tapit_pages
+;dependencies[] = tapit_maps
+;dependencies[] = tapit_stats
+;dependencies[] = tapit_dashboard
+;dependencies[] = tapit_import
+
+files[] = tapit.profile
