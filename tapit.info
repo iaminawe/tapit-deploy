@@ -19,13 +19,9 @@ dependencies[] = rdf
 
 ;contrib
 dependencies[] = ctools
-dependencies[] = enterprise_rotator
 dependencies[] = entity
 dependencies[] = features
-dependencies[] = file_entity
 dependencies[] = googleanalytics
-dependencies[] = media
-dependencies[] = media_youtube
 dependencies[] = menu_block
 dependencies[] = pathauto
 dependencies[] = pdf_reader
