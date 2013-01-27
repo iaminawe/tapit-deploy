@@ -1,4 +1,4 @@
-name = tapit
+name = Ta-it
 description = Installs tap-it maps and stats setup
 version = 7.x-0.1
 core = 7.x
@@ -19,6 +19,8 @@ dependencies[] = rdf
 
 ;contrib
 dependencies[] = ctools
+dependencies[] = context
+dependencies[] = ds
 dependencies[] = entity
 dependencies[] = features
 dependencies[] = googleanalytics
