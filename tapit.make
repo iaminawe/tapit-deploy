@@ -43,34 +43,62 @@ projects[BaseBuildingBlocksModule[download][branch] = "master"
 ;;;;;;;;;
 ; Mapping
 ;;;;;;;;;
-;Google maps options
+
 projects[openlayers][subdir] = contrib
-projects[openlayers][version] = contrib
+projects[openlayers][version] = 2.x-dev
+
+projects[openlayers_plus][subdir] = contrib
+projects[openlayers_plus][version] = 1.x-dev
+
+projects[openlayers_icons_styles][type] = module
+projects[openlayers_icons_styles][subdir] = contrib
+projects[openlayers_icons_styles][download][type] = "git"
+projects[openlayers_icons_styles][download][url] = "http://git.drupal.org/sandbox/Pol/1260668.git"
+projects[openlayers_icons_styles][download][branch] = "master"
 
 projects[geofield][subdir] = contrib
-projects[geofield][version] = 7.x-2.x-dev
+projects[geofield][version] = 2.x-dev
 
 projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
 
 projects[mapbox][subdir] = contrib
-projects[mapbox][version] = 7.x-2.0-alpha2
+projects[mapbox][version] = 2.0-alpha2
 
 projects[olfp][subdir] = contrib
-projects[olfp][version] = 7.x-2.x-dev
+projects[olfp][version] = 2.x-dev
 
-
-
-
-
-
-;;;;;;;;;
+;;;;;;;;;;;;;;;
 ; Data Import
-;;;;;;;;;
+;;;;;;;;;;;;;;;
 
-;;;;;;;;;
+projects[feeds][subdir] = contrib
+projects[feeds][version] = 2.x-dev
+
+projects[feeds_tamper][subdir] = contrib
+projects[feeds_tamper][version] = 1.0-beta4
+
+projects[feeds_imagegrabber][subdir] = contrib
+projects[feeds_imagegrabber][version] = 1.0-alpha2
+
+projects[drush_feeds_import][type] = module
+projects[drush_feeds_import][subdir] = contrib
+projects[drush_feeds_import][download][type] = "git"
+projects[drush_feeds_import][download][url] = "http://git.drupal.org/sandbox/enzo/1865202.git"
+projects[drush_feeds_import][download][branch] = "master"
+
+;;;;;;;;;;;;;;;;
 ; Vizualisation
-;;;;;;;;;
+;;;;;;;;;;;;;;;
+
+projects[d3][type] = module
+projects[d3][subdir] = contrib
+projects[d3][download][type] = "git"
+projects[d3][download][url] = "http://git.drupal.org/sandbox/asherry/1477334.git"
+projects[d3][download][branch] = "master"
+
+projects[views_dataviz][subdir] = contrib
+projects[views_dataviz][version] = 1.0-alpha3
 
 ; Themes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -79,7 +107,6 @@ projects[BaseBuildingBlocks][subdir] = contrib
 projects[BaseBuildingBlocks][download][type] = "git"
 projects[BaseBuildingBlocks][download][url] = "https://github.com/iaminawe/BaseBuildingBlocks.git"
 projects[BaseBuildingBlocks[download][branch] = "master"
-
 
 ; Custom Modules / Features ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
