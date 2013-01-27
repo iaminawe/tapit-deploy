@@ -6,14 +6,14 @@ require dirname(__FILE__) . '/../minimal/minimal.install';
  *
  * Perform actions to set up the site for this profile.
  */
-function dantechdk_install() {
+function tapit_install() {
   minimal_install();
   
   // Setting for date api.
   variable_set('date_first_day', 1);
 
-  $theme = 'slicer';
-  $admin_theme = 'shiny';
+  $theme = 'BaseBuildingBlocks';
+  $admin_theme = 'seven';
 
   // Enable standard theme.
   db_update('system')
@@ -44,6 +44,6 @@ function dantechdk_install() {
 /**
  * Implements hook_update().
  */
-function dantechdk_update_7100() {
+function tapit_update_7100() {
   module_enable(array('entityreference'));
 }
