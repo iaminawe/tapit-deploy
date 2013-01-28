@@ -45,7 +45,7 @@ projects[BaseBuildingBlocksModule[download][branch] = "master"
 ;;;;;;;;;
 
 projects[openlayers][subdir] = contrib
-projects[openlayers][version] = 2.x-dev
+projects[openlayers][version] = 2.0-beta3
 
 projects[openlayers_plus][subdir] = contrib
 projects[openlayers_plus][version] = 1.x-dev
