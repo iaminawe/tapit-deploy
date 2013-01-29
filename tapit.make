@@ -34,11 +34,6 @@ projects[tabsnomore][download][type] = "git"
 projects[tabsnomore][download][url] = "http://git.drupal.org/sandbox/onkeltem/1730244.git"
 projects[tabsnomore[download][branch] = "master"
 
-projects[BaseBuildingBlocksModule][type] = module
-projects[BaseBuildingBlocksModule][subdir] = contrib
-projects[BaseBuildingBlocksModule][download][type] = "git"
-projects[BaseBuildingBlocksModule][download][url] = "git://github.com/patrickocoffeyo/BaseBuildingBlocksModule.git"
-projects[BaseBuildingBlocksModule[download][branch] = "master"
 
 ;;;;;;;;;
 ; Mapping
