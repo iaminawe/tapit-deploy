@@ -105,13 +105,13 @@ projects[d3][download][branch] = "master"
 projects[views_dataviz][subdir] = contrib
 projects[views_dataviz][version] = 1.0-alpha3
 
-; Themes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+; Custom Themes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-projects[BaseBuildingBlocks][type] = theme
-projects[BaseBuildingBlocks][subdir] = contrib
-projects[BaseBuildingBlocks][download][type] = "git"
-projects[BaseBuildingBlocks][download][url] = "https://github.com/iaminawe/BaseBuildingBlocks.git"
-projects[BaseBuildingBlocks[download][branch] = "master"
+projects[tapitbootstrap][type] = theme
+projects[tapitbootstrap][subdir] = contrib
+projects[tapitbootstrap][download][type] = "git"
+projects[tapitbootstrap][download][url] = "git@bitbucket.org:gcoppen/tapitbootstrap.git"
+projects[tapitbootstrap[download][branch] = "master"
 
 ; Custom Modules / Features ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
@@ -120,13 +120,4 @@ projects[BaseBuildingBlocks[download][branch] = "master"
 ;projects[dantech_pages][download][type] = "git"
 ;projects[dantech_pages][download][url] = "git://github.com/tapit/dantech_pages.git"
 ;projects[dantech_pages][download][branch] = "7.x-1.x"
-
-; Custom Themes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
-
-;projects[slicer][type] = theme
-;projects[slicer][download][type] = "git"
-;projects[slicer][download][url] = "git://github.com/tapit/slicer.git"
-;projects[slicer][download][branch] = "7.x-1.x"
-
-; Libraries ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
