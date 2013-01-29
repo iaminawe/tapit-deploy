@@ -50,11 +50,11 @@ projects[openlayers][version] = 2.0-beta3
 projects[openlayers_plus][subdir] = contrib
 projects[openlayers_plus][version] = 1.x-dev
 
-projects[openlayers_icons_styles][type] = module
-projects[openlayers_icons_styles][subdir] = contrib
-projects[openlayers_icons_styles][download][type] = "git"
-projects[openlayers_icons_styles][download][url] = "http://git.drupal.org/sandbox/Pol/1260668.git"
-projects[openlayers_icons_styles][download][branch] = "7.x-1.x"
+;projects[openlayers_icons_styles][type] = module
+;projects[openlayers_icons_styles][subdir] = contrib
+;projects[openlayers_icons_styles][download][type] = "git"
+;projects[openlayers_icons_styles][download][url] = "http://git.drupal.org/sandbox/Pol/1260668.git"
+;projects[openlayers_icons_styles][download][branch] = "7.x-1.x"
 
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
