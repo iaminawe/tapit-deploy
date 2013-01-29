@@ -54,10 +54,13 @@ projects[openlayers_icons_styles][type] = module
 projects[openlayers_icons_styles][subdir] = contrib
 projects[openlayers_icons_styles][download][type] = "git"
 projects[openlayers_icons_styles][download][url] = "http://git.drupal.org/sandbox/Pol/1260668.git"
-projects[openlayers_icons_styles][download][branch] = "master"
+projects[openlayers_icons_styles][download][branch] = "7.x-1.x"
 
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
+
+projects[geophp][subdir] = contrib
+projects[geophp][version] = 1.7
 
 projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
@@ -87,6 +90,9 @@ projects[drush_feeds_import][download][type] = "git"
 projects[drush_feeds_import][download][url] = "http://git.drupal.org/sandbox/enzo/1865202.git"
 projects[drush_feeds_import][download][branch] = "master"
 
+projects[job_scheduler][subdir] = contrib
+projects[job_scheduler][version] = 2.0-alpha3
+
 ;;;;;;;;;;;;;;;;
 ; Vizualisation
 ;;;;;;;;;;;;;;;
@@ -96,7 +102,6 @@ projects[d3][subdir] = contrib
 projects[d3][download][type] = "git"
 projects[d3][download][url] = "http://git.drupal.org/sandbox/asherry/1477334.git"
 projects[d3][download][branch] = "master"
-
 projects[views_dataviz][subdir] = contrib
 projects[views_dataviz][version] = 1.0-alpha3
 
@@ -124,3 +129,4 @@ projects[BaseBuildingBlocks[download][branch] = "master"
 ;projects[slicer][download][branch] = "7.x-1.x"
 
 ; Libraries ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
