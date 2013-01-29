@@ -108,9 +108,9 @@ projects[views_dataviz][version] = 1.0-alpha3
 ; Custom Themes ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
 projects[tapitbootstrap][type] = theme
-projects[tapitbootstrap][subdir] = contrib
+projects[tapitbootstrap][subdir] = custom
 projects[tapitbootstrap][download][type] = "git"
-projects[tapitbootstrap][download][url] = "git@bitbucket.org:gcoppen/tapitbootstrap.git"
+projects[tapitbootstrap][download][url] = "https://bitbucket.org/gcoppen/tapitbootstrap.git"
 projects[tapitbootstrap[download][branch] = "master"
 
 ; Custom Modules / Features ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
