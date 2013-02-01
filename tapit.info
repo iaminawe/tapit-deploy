@@ -12,18 +12,25 @@ dependencies[] = path
 dependencies[] = taxonomy
 dependencies[] = search
 dependencies[] = shortcut
-dependencies[] = toolbar
+;dependencies[] = toolbar
 dependencies[] = field_ui
 dependencies[] = file
 dependencies[] = rdf
 
 ;contrib
 dependencies[] = ctools
+dependencies[] = admin_menu
+dependencies[] = backup_migrate
+dependencies[] = backports
 dependencies[] = context
 dependencies[] = ds
 dependencies[] = entity
 dependencies[] = features
+dependencies[] = fences
+dependencies[] = jquery_update
+dependencies[] = strongarm
 dependencies[] = googleanalytics
+dependencies[] = libraries
 dependencies[] = menu_block
 dependencies[] = pathauto
 dependencies[] = pdf_reader
@@ -31,6 +38,8 @@ dependencies[] = transliteration
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = wysiwyg
+dependencies[] = omega_tools
+dependencies[] = better_formats
 
 ;custom
 ;dependencies[] = tapit_pages
