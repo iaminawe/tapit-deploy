@@ -132,14 +132,4 @@ projects[tapitbootstrap-module[download][branch] = "master
 ;projects[dantech_pages][download][url] = "git://github.com/tapit/dantech_pages.git"
 ;projects[dantech_pages][download][branch] = "7.x-1.x"
 
-; Libraries ;;;;;;;;;;;;;;;;;;;;;;;;;
 
-libraries[leaflet][download][type] = "get"
-libraries[leaflet][download][url] = "https://github.com/CloudMade/Leaflet/zipball/v0.3.1"
-libraries[leaflet][directory_name] = "leaflet"
-libraries[leaflet][destination] = "libraries"
-
-libraries[leaflet_markercluster][download][type] = "git"
-libraries[leaflet_markercluster][download][url] = "https://github.com/Leaflet/Leaflet.markercluster"
-libraries[leaflet_markercluster][directory_name] = "leaflet_markercluster"
-libraries[leaflet_markercluster][destination] = "libraries"
