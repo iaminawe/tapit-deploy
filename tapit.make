@@ -111,17 +111,17 @@ projects[views_dataviz][version] = 1.0-alpha3
 
 ; Bootstrap Theme & module ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-projects[tapitbootstrap][type] = theme
-projects[tapitbootstrap][subdir] = custom
-projects[tapitbootstrap][download][type] = "git"
-projects[tapitbootstrap][download][url] = "https://bitbucket.org/gcoppen/tapitbootstrap.git"
-projects[tapitbootstrap[download][branch] = "master"
+;projects[tapitbootstrap][type] = theme
+;projects[tapitbootstrap][subdir] = custom
+;projects[tapitbootstrap][download][type] = "git"
+;projects[tapitbootstrap][download][url] = "https://bitbucket.org/gcoppen/tapitbootstrap.git"
+;projects[tapitbootstrap[download][branch] = "master"
 
-projects[tapitbootstrap-module][type] = module
-projects[tapitbootstrap-module][subdir] = custom
-projects[tapitbootstrap-module][download][type] = "git"
-projects[tapitbootstrap-module][download][url] = "https://github.com/iaminawe/tapitbootstrap-module.git"
-projects[tapitbootstrap-module[download][branch] = "master
+;projects[tapitbootstrap-module][type] = module
+;projects[tapitbootstrap-module][subdir] = custom
+;projects[tapitbootstrap-module][download][type] = "git"
+;projects[tapitbootstrap-module][download][url] = "https://github.com/iaminawe/tapitbootstrap-module.git"
+;projects[tapitbootstrap-module[download][branch] = "master
 
 
 ; Custom Modules / Features ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
