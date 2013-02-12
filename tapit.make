@@ -52,16 +52,19 @@ projects[openlayers_plus][version] = 1.x-dev
 ;projects[openlayers_icons_styles][download][branch] = "7.x-1.x"
 
 projects[leaflet][subdir] = contrib
-projects[leaflet][version] = 1.0-beta2
+projects[leaflet][version] = 7.x-1.x-dev
 
 projects[leaflet_markercluster][subdir] = contrib
-projects[leaflet_markercluster][version] = 1.0-beta1
+projects[leaflet_markercluster][version] = 7.x-1.x-dev
 
 projects[leaflet_more_maps][subdir] = contrib
 projects[leaflet_more_maps][version] = 1.2
 
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
+
+projects[geocoder][subdir] = contrib
+projects[geocoder][version] = 1.x-dev
 
 projects[geophp][subdir] = contrib
 projects[geophp][version] = 1.7
