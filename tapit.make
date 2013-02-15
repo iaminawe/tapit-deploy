@@ -75,8 +75,8 @@ projects[location_taxonomize][version] = 2.4
 projects[mapbox][subdir] = contrib
 projects[mapbox][version] = 2.0-alpha2
 
-projects[olfp][subdir] = contrib
-projects[olfp][version] = 2.x-dev
+;projects[olfp][subdir] = contrib
+;projects[olfp][version] = 2.x-dev
 
 ;;;;;;;;;;;;;;;
 ; Data Import
