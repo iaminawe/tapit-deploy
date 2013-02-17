@@ -36,7 +36,7 @@ dependencies[] = transliteration
 dependencies[] = views
 dependencies[] = views_ui
 dependencies[] = wysiwyg
-dependencies[] = omega_tools
+;dependencies[] = omega_tools
 dependencies[] = better_formats
 
 ;custom

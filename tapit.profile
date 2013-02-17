@@ -12,3 +12,13 @@ function tapit_form_install_configure_form_alter(&$form, $form_state) {
   $form['server_settings']['site_default_country']['#default_value'] = 'ZA';
   $form['server_settings']['date_default_timezone']['#default_value'] = 'Africa/Johannesburg';
 }
+
+/**
+ * Implements hook_form_alter().
+ */
+function system_form_install_select_profile_form_alter(&$form, $form_state) {
+  // select tapit_dev install profile by default
+  foreach ($form['profile'] as $key => $element) {
+    $form['profile'][$key]['#value'] = 'tapit';
+  }
+}
