@@ -1,0 +1,5 @@
+name = Tap-it Maps
+description = Custom formatting for the leaflet map
+package = Tap-it
+core = 7.x
+dependencies[] = leaflet

@@ -1,0 +1,33 @@
+<?php
+function tapit_maps_leaflet_map_info() {
+  return array(
+    'OSM Mapnik' =>
+    array(
+      'label' => 'OSM Mapnik',
+      'description' => t('Leaflet default map.'),
+      'settings' => array(
+        'zoom' => 12,
+        'dragging' => TRUE,
+        'touchZoom' => TRUE,
+        'scrollWheelZoom' => TRUE,
+        'doubleClickZoom' => TRUE,
+        'zoomControl' => TRUE,
+        'attributionControl' => TRUE,
+        'trackResize' => TRUE,
+        'fadeAnimation' => TRUE,
+        'zoomAnimation' => TRUE,
+        'closePopupOnClick' => TRUE,
+        'layerControl' => TRUE
+      ),
+      'layers' => array(
+        'earth' => array(
+          'urlTemplate' => 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+          'options' => array(
+            'attribution' => 'OSM Mapnik'
+          )
+        ),
+      ),
+    ),
+  );
+}
+?>
