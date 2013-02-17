@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the tapit_pages feature.
+ */
+
+include_once 'tapit_pages.features.inc';
