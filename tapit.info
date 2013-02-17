@@ -40,10 +40,11 @@ dependencies[] = wysiwyg
 dependencies[] = better_formats
 
 ;custom
-;dependencies[] = tapit_pages
-;dependencies[] = tapit_maps
-;dependencies[] = tapit_stats
-;dependencies[] = tapit_dashboard
-;dependencies[] = tapit_import
+dependencies[] = tapit_global
+dependencies[] = tapit_formats
+dependencies[] = tapit_roles
+dependencies[] = tapit_pages
+dependencies[] = tapit_stores
+dependencies[] = tapit_importers
 
 files[] = tapit.profile
