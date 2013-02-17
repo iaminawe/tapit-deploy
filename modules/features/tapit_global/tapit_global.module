@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the tapit_global feature.
+ */
+
+include_once 'tapit_global.features.inc';
