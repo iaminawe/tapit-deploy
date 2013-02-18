@@ -279,13 +279,6 @@ function tapit_roles_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: administer profiler builder.
-  $permissions['administer profiler builder'] = array(
-    'name' => 'administer profiler builder',
-    'roles' => array(),
-    'module' => 'profiler_builder',
-  );
-
   // Exported permission: administer search.
   $permissions['administer search'] = array(
     'name' => 'administer search',
