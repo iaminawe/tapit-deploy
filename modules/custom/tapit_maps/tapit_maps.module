@@ -3,10 +3,10 @@ function tapit_maps_leaflet_map_info() {
   return array(
     'OSM Mapnik' =>
     array(
-      'label' => 'OSM Mapnik',
-      'description' => t('Leaflet default map.'),
+      'label' => 'Tap-it Map',
+      'description' => t('Tap-it map presets.'),
       'settings' => array(
-        'zoom' => 12,
+        'zoom' => 18,
         'dragging' => TRUE,
         'touchZoom' => TRUE,
         'scrollWheelZoom' => TRUE,
