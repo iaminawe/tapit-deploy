@@ -370,32 +370,11 @@ function tapit_roles_user_default_permissions() {
     'module' => 'user',
   );
 
-  // Exported permission: clear node feeds.
-  $permissions['clear node feeds'] = array(
-    'name' => 'clear node feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
   // Exported permission: clear traders_importer feeds.
   $permissions['clear traders_importer feeds'] = array(
     'name' => 'clear traders_importer feeds',
     'roles' => array(),
     'module' => 'feeds',
-  );
-
-  // Exported permission: clear user feeds.
-  $permissions['clear user feeds'] = array(
-    'name' => 'clear user feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: create any block bean.
-  $permissions['create any block bean'] = array(
-    'name' => 'create any block bean',
-    'roles' => array(),
-    'module' => 'bean',
   );
 
   // Exported permission: create page content.
@@ -417,13 +396,6 @@ function tapit_roles_user_default_permissions() {
     'name' => 'create url aliases',
     'roles' => array(),
     'module' => 'path',
-  );
-
-  // Exported permission: delete any block bean.
-  $permissions['delete any block bean'] = array(
-    'name' => 'delete any block bean',
-    'roles' => array(),
-    'module' => 'bean',
   );
 
   // Exported permission: delete any page content.
@@ -496,25 +468,11 @@ function tapit_roles_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: delete terms in 6.
-  $permissions['delete terms in 6'] = array(
-    'name' => 'delete terms in 6',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: display drupal links.
   $permissions['display drupal links'] = array(
     'name' => 'display drupal links',
     'roles' => array(),
     'module' => 'admin_menu',
-  );
-
-  // Exported permission: edit any block bean.
-  $permissions['edit any block bean'] = array(
-    'name' => 'edit any block bean',
-    'roles' => array(),
-    'module' => 'bean',
   );
 
   // Exported permission: edit any page content.
@@ -580,13 +538,6 @@ function tapit_roles_user_default_permissions() {
     'module' => 'taxonomy',
   );
 
-  // Exported permission: edit terms in 6.
-  $permissions['edit terms in 6'] = array(
-    'name' => 'edit terms in 6',
-    'roles' => array(),
-    'module' => 'taxonomy',
-  );
-
   // Exported permission: flush caches.
   $permissions['flush caches'] = array(
     'name' => 'flush caches',
@@ -594,23 +545,9 @@ function tapit_roles_user_default_permissions() {
     'module' => 'admin_menu',
   );
 
-  // Exported permission: import node feeds.
-  $permissions['import node feeds'] = array(
-    'name' => 'import node feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
   // Exported permission: import traders_importer feeds.
   $permissions['import traders_importer feeds'] = array(
     'name' => 'import traders_importer feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: import user feeds.
-  $permissions['import user feeds'] = array(
-    'name' => 'import user feeds',
     'roles' => array(),
     'module' => 'feeds',
   );
@@ -706,13 +643,6 @@ function tapit_roles_user_default_permissions() {
     'module' => 'better_formats',
   );
 
-  // Exported permission: tamper node.
-  $permissions['tamper node'] = array(
-    'name' => 'tamper node',
-    'roles' => array(),
-    'module' => 'feeds_tamper',
-  );
-
   // Exported permission: tamper traders_importer.
   $permissions['tamper traders_importer'] = array(
     'name' => 'tamper traders_importer',
@@ -720,30 +650,9 @@ function tapit_roles_user_default_permissions() {
     'module' => 'feeds_tamper',
   );
 
-  // Exported permission: tamper user.
-  $permissions['tamper user'] = array(
-    'name' => 'tamper user',
-    'roles' => array(),
-    'module' => 'feeds_tamper',
-  );
-
-  // Exported permission: unlock node feeds.
-  $permissions['unlock node feeds'] = array(
-    'name' => 'unlock node feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
   // Exported permission: unlock traders_importer feeds.
   $permissions['unlock traders_importer feeds'] = array(
     'name' => 'unlock traders_importer feeds',
-    'roles' => array(),
-    'module' => 'feeds',
-  );
-
-  // Exported permission: unlock user feeds.
-  $permissions['unlock user feeds'] = array(
-    'name' => 'unlock user feeds',
     'roles' => array(),
     'module' => 'feeds',
   );
@@ -798,13 +707,6 @@ function tapit_roles_user_default_permissions() {
     'name' => 'view advanced help topic',
     'roles' => array(),
     'module' => 'advanced_help',
-  );
-
-  // Exported permission: view any block bean.
-  $permissions['view any block bean'] = array(
-    'name' => 'view any block bean',
-    'roles' => array(),
-    'module' => 'bean',
   );
 
   // Exported permission: view bean page.

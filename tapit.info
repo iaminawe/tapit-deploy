@@ -2,49 +2,136 @@ name = Tap-it Installer
 description = Installs tap-it maps and stats setup
 version = 7.x-0.1
 core = 7.x
+
+; ----------
+; Dependencies
+; ----------
+; Administration
+dependencies[] = admin_devel
+dependencies[] = admin_menu
+dependencies[] = admin_menu_toolbar
+dependencies[] = admin_views
+dependencies[] = toolbar_admin_menu
+; Bean
+dependencies[] = bean
+dependencies[] = bean_admin_ui
+dependencies[] = bean_all
+dependencies[] = bean_uuid
+; CCK
+dependencies[] = filefield_nginx_progress
+; Chaos tool suite
+dependencies[] = ctools
+; Context
+dependencies[] = context
+dependencies[] = context_layouts
+dependencies[] = context_ui
+; Core
 dependencies[] = block
-dependencies[] = comment
 dependencies[] = contextual
-dependencies[] = help
-dependencies[] = image
-dependencies[] = menu
-dependencies[] = path
-dependencies[] = taxonomy
-dependencies[] = search
-dependencies[] = shortcut
-;dependencies[] = toolbar
+dependencies[] = dashboard
+dependencies[] = dblog
+dependencies[] = field
+dependencies[] = field_sql_storage
 dependencies[] = field_ui
 dependencies[] = file
+dependencies[] = filter
+dependencies[] = help
+dependencies[] = image
+dependencies[] = list
+dependencies[] = menu
+dependencies[] = node
+dependencies[] = options
+dependencies[] = path
+dependencies[] = php
 dependencies[] = rdf
-
-;contrib
-dependencies[] = ctools
-dependencies[] = admin_menu
-dependencies[] = backup_migrate
-dependencies[] = backports
-dependencies[] = context
+dependencies[] = search
+dependencies[] = syslog
+dependencies[] = system
+dependencies[] = taxonomy
+dependencies[] = text
+dependencies[] = toolbar
+dependencies[] = update
+dependencies[] = user
+; Display Suite
 dependencies[] = ds
-dependencies[] = entity
-dependencies[] = features
+dependencies[] = ds_extras
+dependencies[] = ds_ui
+; Feeds
+dependencies[] = drush_feeds_import
+dependencies[] = feeds
+dependencies[] = feeds_import
+dependencies[] = feeds_tamper
+dependencies[] = feeds_tamper_ui
+dependencies[] = feeds_ui
+; Feeds Addon
+dependencies[] = feeds_imagegrabber
+; Fields
+dependencies[] = addressfield
+dependencies[] = email
+dependencies[] = entityreference
 dependencies[] = fences
-dependencies[] = jquery_update
-dependencies[] = strongarm
+dependencies[] = field_group
+dependencies[] = geofield
+dependencies[] = link
+dependencies[] = references_dialog
+; Input filters
+dependencies[] = image_resize_filter
+dependencies[] = wysiwyg_filter
+; Location
+dependencies[] = location_taxonomize
+dependencies[] = location_taxonomize_af
+; Other
+dependencies[] = advanced_help
+dependencies[] = backports
+dependencies[] = backup_migrate
+dependencies[] = better_formats
+dependencies[] = chosen
+dependencies[] = diff
+dependencies[] = entity
+dependencies[] = entity_token
+dependencies[] = geofield_map
+dependencies[] = geophp
+dependencies[] = insert
+dependencies[] = job_scheduler
+dependencies[] = job_scheduler_trigger
+dependencies[] = leaflet
+dependencies[] = leaflet_markercluster
+dependencies[] = leaflet_more_maps
+dependencies[] = leaflet_views
 dependencies[] = libraries
+dependencies[] = logintoboggan
 dependencies[] = menu_block
 dependencies[] = pathauto
+dependencies[] = robotstxt
+dependencies[] = simplified_menu_admin
+dependencies[] = strongarm
+dependencies[] = token
+dependencies[] = token_tweaks
 dependencies[] = transliteration
-dependencies[] = views
-dependencies[] = views_ui
+; UUID
+dependencies[] = uuid
+; User interface
+dependencies[] = jquery_update
 dependencies[] = wysiwyg
-;dependencies[] = omega_tools
-dependencies[] = better_formats
+; Views
+dependencies[] = views
+dependencies[] = views_bulk_operations
+dependencies[] = views_dataviz
+dependencies[] = views_ui
+; Visualization
+dependencies[] = d3
+dependencies[] = d3_example
+dependencies[] = d3_views
+; Features
+dependencies[] = features
+dependencies[] = uuid_features
 
 ;custom
 ;dependencies[] = tapit_global
 ;dependencies[] = tapit_formats
 ;dependencies[] = tapit_roles
-;dependencies[] = tapit_pages
-;dependencies[] = tapit_stores
-;dependencies[] = tapit_importers
+dependencies[] = tapit_pages
+dependencies[] = tapit_stores
+dependencies[] = tapit_importers
 
 files[] = tapit.profile

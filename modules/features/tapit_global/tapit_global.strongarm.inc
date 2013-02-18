@@ -91,45 +91,6 @@ function tapit_global_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'bean_all_blacklist_bean';
-  $strongarm->value = TRUE;
-  $export['bean_all_blacklist_bean'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'bean_all_blacklist_system';
-  $strongarm->value = array(
-    0 => 'main',
-    1 => 'powered-by',
-    2 => 'help',
-  );
-  $export['bean_all_blacklist_system'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'block_cache';
-  $strongarm->value = 0;
-  $export['block_cache'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'cache';
-  $strongarm->value = 1;
-  $export['cache'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'cache_lifetime';
-  $strongarm->value = '0';
-  $export['cache_lifetime'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'chosen_jquery_selector';
   $strongarm->value = 'select:visible';
   $export['chosen_jquery_selector'] = $strongarm;
@@ -186,13 +147,6 @@ function tapit_global_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'install_time';
-  $strongarm->value = 1359727869;
-  $export['install_time'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'jquery_update_compression_type';
   $strongarm->value = 'min';
   $export['jquery_update_compression_type'] = $strongarm;
@@ -236,28 +190,22 @@ function tapit_global_strongarm() {
   $strongarm->name = 'location_taxonomize_settings';
   $strongarm->value = array(
     'enable' => 1,
-    'term_attach' => 1,
-    'hide_terms_field' => 1,
+    'term_attach' => 0,
+    'hide_terms_field' => 0,
     'naming' => array(
       'country' => 'name',
-      'usa' => 0,
       'province' => 'name',
+      'usa' => 1,
     ),
     'na_text' => 'Unknown',
     'longname_enable' => 0,
     'longname' => array(
       'main' => 0,
-      'fields' => array(
-        'country' => 'country',
-        'administrative_area' => 'administrative_area',
-        'locality' => 'locality',
-        'postal_code' => 0,
-        'thoroughfare' => 0,
-      ),
+      'fields' => NULL,
       'separator' => ',',
       'country_naming' => 'code',
-      'usa' => 1,
       'province_naming' => 'code',
+      'usa' => 1,
     ),
   );
   $export['location_taxonomize_settings'] = $strongarm;
@@ -265,36 +213,12 @@ function tapit_global_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'location_taxonomize_show_messages';
-  $strongarm->value = 1;
-  $export['location_taxonomize_show_messages'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'location_taxonomize_vid';
-  $strongarm->value = '5';
-  $export['location_taxonomize_vid'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'location_taxonomize_vocab';
   $strongarm->value = array(
-    'state' => 'settings',
     'source' => 'location_taxonomize_af',
-    'hierarchy' => array(
-      'country' => 'country',
-      'administrative_area' => 'administrative_area',
-      'locality' => 'locality',
-      'postal_code' => 'postal_code',
-      'thoroughfare' => 'thoroughfare',
-      0 => 0,
-      'sub_administrative_area' => 0,
-      'dependent_locality' => 0,
-      'organisation_name' => 0,
-      'premise' => 0,
-    ),
+    'method' => 'existing',
+    'possible_vid' => NULL,
+    'hierarchy' => NULL,
   );
   $export['location_taxonomize_vocab'] = $strongarm;
 
@@ -308,62 +232,8 @@ function tapit_global_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'menu_expanded';
-  $strongarm->value = array();
-  $export['menu_expanded'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'menu_masks';
-  $strongarm->value = array(
-    0 => 501,
-    1 => 250,
-    2 => 245,
-    3 => 127,
-    4 => 125,
-    5 => 124,
-    6 => 123,
-    7 => 122,
-    8 => 121,
-    9 => 117,
-    10 => 63,
-    11 => 62,
-    12 => 61,
-    13 => 60,
-    14 => 59,
-    15 => 58,
-    16 => 56,
-    17 => 44,
-    18 => 31,
-    19 => 30,
-    20 => 29,
-    21 => 28,
-    22 => 24,
-    23 => 23,
-    24 => 21,
-    25 => 15,
-    26 => 14,
-    27 => 13,
-    28 => 12,
-    29 => 11,
-    30 => 10,
-    31 => 8,
-    32 => 7,
-    33 => 6,
-    34 => 5,
-    35 => 4,
-    36 => 3,
-    37 => 2,
-    38 => 1,
-  );
-  $export['menu_masks'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'node_admin_theme';
-  $strongarm->value = 1;
+  $strongarm->value = '1';
   $export['node_admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -379,13 +249,6 @@ function tapit_global_strongarm() {
   $strongarm->name = 'pathauto_blog_pattern';
   $strongarm->value = 'blogs/[user:name]';
   $export['pathauto_blog_pattern'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'pathauto_forum_pattern';
-  $strongarm->value = '[term:vocabulary]/[term:name]';
-  $export['pathauto_forum_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -526,29 +389,6 @@ Disallow: /?q=user/logout/
     'favicon_upload' => '',
   );
   $export['theme_settings'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'theme_tapitstrap_settings';
-  $strongarm->value = array(
-    'toggle_logo' => 1,
-    'toggle_name' => 0,
-    'toggle_slogan' => 1,
-    'toggle_node_user_picture' => 1,
-    'toggle_comment_user_picture' => 1,
-    'toggle_comment_user_verification' => 1,
-    'toggle_favicon' => 1,
-    'toggle_main_menu' => 1,
-    'toggle_secondary_menu' => 1,
-    'default_logo' => 0,
-    'logo_path' => 'public://logo.png',
-    'logo_upload' => '',
-    'default_favicon' => 1,
-    'favicon_path' => '',
-    'favicon_upload' => '',
-  );
-  $export['theme_tapitstrap_settings'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

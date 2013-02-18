@@ -194,5 +194,9 @@ function tapit_stores_uuid_features_default_terms() {
     'uuid' => 'fea9632b-1e89-27e4-19a2-ebbf61685715',
     'vocabulary_machine_name' => 'wholesaler',
   );
+  variable_set('uuid_features_file_types', array());
+  variable_set('uuid_features_file_mode', 'inline');
+  variable_set('uuid_features_file_assets_path', '');
+  variable_set('uuid_features_file_supported_fields', 'file, image');
   return $terms;
 }
