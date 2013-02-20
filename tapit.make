@@ -74,7 +74,7 @@ projects[profile2][version] = 1.3
 projects[profile2_one_page][type] = module
 projects[profile2_one_page][subdir] = contrib
 projects[profile2_one_page][download][type] = "git"
-projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git profile2_one_page"
+projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
 projects[profile2_one_page][download][branch] = "master"
 
 
