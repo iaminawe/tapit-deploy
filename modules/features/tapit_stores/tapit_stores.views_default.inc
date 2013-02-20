@@ -22,7 +22,6 @@ function tapit_stores_views_default_views() {
 
   /* Display: Master */
   $handler = $view->new_display('default', 'Master', 'default');
-  $handler->display->display_options['title'] = 'Stores';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
   $handler->display->display_options['cache']['type'] = 'none';
@@ -34,26 +33,26 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['style_options']['name_field'] = 'title';
   $handler->display->display_options['style_options']['description_field'] = '#rendered_entity';
   $handler->display->display_options['style_options']['view_mode'] = 'teaser';
-  $handler->display->display_options['style_options']['map'] = 'mapbox-warden';
+  $handler->display->display_options['style_options']['map'] = 'leaflet-mapbox';
   $handler->display->display_options['style_options']['height'] = '500';
   $handler->display->display_options['style_options']['icon'] = array(
-    'iconUrl' => '',
+    'iconUrl' => 'profiles/tapit/themes/tapstrap/images/6.png',
     'shadowUrl' => '',
     'iconSize' => array(
-      'x' => '',
-      'y' => '',
+      'x' => '28',
+      'y' => '43',
     ),
     'iconAnchor' => array(
-      'x' => '',
-      'y' => '',
+      'x' => '14',
+      'y' => '43',
     ),
     'shadowAnchor' => array(
       'x' => '',
       'y' => '',
     ),
     'popupAnchor' => array(
-      'x' => '',
-      'y' => '',
+      'x' => '0',
+      'y' => '-40',
     ),
   );
   /* Field: Content: Title */

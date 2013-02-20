@@ -1,12 +1,11 @@
 <?php
 function tapit_maps_leaflet_map_info() {
   return array(
-    'OSM Mapnik' =>
+    'custom map' =>
     array(
-      'label' => 'Tap-it Map',
-      'description' => t('Tap-it map presets.'),
+      'label' => 'custom map',
+      'description' => t('Leaflet map with custom zoom settings.'),
       'settings' => array(
-        'zoom' => 18,
         'dragging' => TRUE,
         'touchZoom' => TRUE,
         'scrollWheelZoom' => TRUE,
@@ -17,13 +16,18 @@ function tapit_maps_leaflet_map_info() {
         'fadeAnimation' => TRUE,
         'zoomAnimation' => TRUE,
         'closePopupOnClick' => TRUE,
-        'layerControl' => TRUE
+        'layerControl' => FALSE,
+        'maxZoom' => 18,
+        'zoom' => 6,
       ),
+      'center' => array(
+      'lat' => -30, 
+      'lon' => 25),
       'layers' => array(
         'earth' => array(
           'urlTemplate' => 'http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
           'options' => array(
-            'attribution' => 'OSM Mapnik'
+            'attribution' => 'custom map'
           )
         ),
       ),
@@ -31,3 +35,4 @@ function tapit_maps_leaflet_map_info() {
   );
 }
 ?>
+
