@@ -95,6 +95,7 @@ dependencies[] = job_scheduler_trigger
 dependencies[] = leaflet
 dependencies[] = leaflet_markercluster
 dependencies[] = leaflet_more_maps
+dependencies[] = leaflet_mapbox
 dependencies[] = leaflet_views
 dependencies[] = libraries
 dependencies[] = logintoboggan
@@ -131,5 +132,6 @@ dependencies[] = tapit_roles
 dependencies[] = tapit_pages
 dependencies[] = tapit_stores
 dependencies[] = tapit_importers
+dependencies[] = tapit_maps
 
 files[] = tapit.profile

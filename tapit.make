@@ -9,9 +9,6 @@ core = 7.x
 projects[leaflet][subdir] = contrib
 projects[leaflet][version] = 1.x-dev
 
-projects[leaflet_mapbox][subdir] = contrib
-projects[leaflet_mapbox][version] = 1.1
-
 projects[leaflet_markercluster][subdir] = contrib
 projects[leaflet_markercluster][version] = 1.x-dev
 
@@ -29,9 +26,6 @@ projects[geophp][version] = 1.7
 
 projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
-
-projects[mapbox][subdir] = contrib
-projects[mapbox][version] = 2.0-alpha2
 
 
 ;;;;;;;;;;;;;;;
@@ -69,5 +63,19 @@ projects[d3][download][branch] = "master"
 projects[views_dataviz][type] = module
 projects[views_dataviz][subdir] = contrib
 projects[views_dataviz][version] = 1.0-alpha3
+
+;;;;;;;;;
+; User profile
+;;;;;;;;;
+
+projects[profile2][subdir] = contrib
+projects[profile2][version] = 1.3
+
+projects[profile2_one_page][type] = module
+projects[profile2_one_page][subdir] = contrib
+projects[profile2_one_page][download][type] = "git"
+projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git profile2_one_page"
+projects[profile2_one_page][download][branch] = "master"
+
 
 
