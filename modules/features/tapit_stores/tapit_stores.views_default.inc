@@ -36,11 +36,11 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['style_options']['map'] = 'leaflet-mapbox';
   $handler->display->display_options['style_options']['height'] = '500';
   $handler->display->display_options['style_options']['icon'] = array(
-    'iconUrl' => 'profiles/tapit/themes/tapstrap/images/6.png',
+    'iconUrl' => 'profiles/tapit/themes/tapstrap/images/icon_shop1.png',
     'shadowUrl' => '',
     'iconSize' => array(
-      'x' => '28',
-      'y' => '43',
+      'x' => '',
+      'y' => '',
     ),
     'iconAnchor' => array(
       'x' => '14',
@@ -183,6 +183,8 @@ function tapit_stores_views_default_views() {
 
   /* Display: Listing */
   $handler = $view->new_display('attachment', 'Listing', 'listing_attachment');
+  $handler->display->display_options['defaults']['title'] = FALSE;
+  $handler->display->display_options['title'] = 'Trading Stores';
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -193,6 +195,14 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['row_plugin'] = 'fields';
   $handler->display->display_options['defaults']['row_options'] = FALSE;
+  $handler->display->display_options['defaults']['header'] = FALSE;
+  /* Header: Global: Text area */
+  $handler->display->display_options['header']['area']['id'] = 'area';
+  $handler->display->display_options['header']['area']['table'] = 'views';
+  $handler->display->display_options['header']['area']['field'] = 'area';
+  $handler->display->display_options['header']['area']['empty'] = TRUE;
+  $handler->display->display_options['header']['area']['content'] = '<h2>Trader Stores</h2>';
+  $handler->display->display_options['header']['area']['format'] = 'html';
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: Content: Title */
   $handler->display->display_options['fields']['title']['id'] = 'title';

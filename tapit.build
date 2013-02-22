@@ -8,5 +8,5 @@ includes[buildthat] = https://raw.github.com/iaminawe/buildthat/7.x-1.x/buildtha
 
 projects[tapit][type] = "profile"
 projects[tapit][download][type] = "git"
-projects[tapit][download][url] = "git://github.com/iaminawe/tapit-deploy.git"
+projects[tapit][download][url] = "git@github.com:iaminawe/tapit-deploy.git"
 projects[tapit][download][branch] = "7.x-1.x"

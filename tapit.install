@@ -51,10 +51,10 @@ function tapit_install() {
   $query->execute();
 
   // revert features to ensure they are all installed
-  $features = array(
+ $features = array(
     'uuid_features'
   );
-  features_revert($features);
+features_revert($features);
 
   // Update the menu router information.
   menu_rebuild();

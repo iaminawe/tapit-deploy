@@ -201,7 +201,11 @@ function tapit_global_strongarm() {
     'longname_enable' => 0,
     'longname' => array(
       'main' => 0,
-      'fields' => NULL,
+      'fields' => array(
+        'country' => 'country',
+        'administrative_area' => 'administrative_area',
+        'locality' => 'locality',
+      ),
       'separator' => ',',
       'country_naming' => 'code',
       'province_naming' => 'code',
@@ -215,10 +219,21 @@ function tapit_global_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'location_taxonomize_vocab';
   $strongarm->value = array(
+    'state' => 'initialization',
     'source' => 'location_taxonomize_af',
+    'possible_vid' => '5',
     'method' => 'existing',
-    'possible_vid' => NULL,
-    'hierarchy' => NULL,
+    'hierarchy' => array(
+      'country' => 'country',
+      'administrative_area' => 'administrative_area',
+      'locality' => 'locality',
+      'sub_administrative_area' => 0,
+      'dependent_locality' => 0,
+      'postal_code' => 0,
+      'organisation_name' => 0,
+      'thoroughfare' => 0,
+      'premise' => 0,
+    ),
   );
   $export['location_taxonomize_vocab'] = $strongarm;
 
