@@ -149,3 +149,4 @@ dependencies[] = tapit_stores
 ;dependencies[] = tapit_importers
 ;dependencies[] = tapit_maps
 
+files[] = tapit.profile
