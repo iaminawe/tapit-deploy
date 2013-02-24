@@ -332,3 +332,4 @@ function tapit_configure_formatters() {
     filter_format_save($format);
   }
 }
+}
