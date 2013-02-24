@@ -74,8 +74,6 @@ function tapit_install() {
   node_access_needs_rebuild(FALSE);
   // ignore any other install messages
   drupal_get_messages();
-}
-
 
   // Add text formats.
   $filtered_html_format = array(
