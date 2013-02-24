@@ -40,8 +40,6 @@ function tapit_install() {
   variable_set('admin_theme', $admin_theme);
   variable_set('node_admin_theme', '1');
 
-}
-
 
     // drop system / user blocks to ensure correct building
   db_delete('block')->condition('module', 'system')->execute();
