@@ -30,30 +30,21 @@ dependencies[] = context
 ; Core
 dependencies[] = block
 dependencies[] = contextual
-dependencies[] = dashboard
 dependencies[] = dblog
 dependencies[] = field
-dependencies[] = field_sql_storage
 dependencies[] = field_ui
 dependencies[] = file
-dependencies[] = filter
 dependencies[] = help
 dependencies[] = image
-dependencies[] = list
 dependencies[] = menu
-dependencies[] = node
-dependencies[] = options
 dependencies[] = path
-dependencies[] = php
+dependencies[] = options
+dependencies[] = overlay
 dependencies[] = rdf
 dependencies[] = search
-dependencies[] = syslog
-dependencies[] = system
 dependencies[] = taxonomy
-dependencies[] = text
 dependencies[] = toolbar
-dependencies[] = update
-dependencies[] = user
+
 
 ; Display Suite
 dependencies[] = ds_extras
@@ -131,21 +122,16 @@ dependencies[] = views_ui
 dependencies[] = views
 
 
-; Visualization
-dependencies[] = d3_example
-dependencies[] = d3_views
-dependencies[] = d3
-
 ; Features
 dependencies[] = uuid_features
 dependencies[] = features
 
 ;custom
-dependencies[] = tapit_global
-dependencies[] = tapit_formats
-dependencies[] = tapit_roles
-dependencies[] = tapit_pages
-dependencies[] = tapit_stores
+;dependencies[] = tapit_global
+;dependencies[] = tapit_formats
+;dependencies[] = tapit_roles
+;dependencies[] = tapit_pages
+;dependencies[] = tapit_stores
 ;dependencies[] = tapit_importers
 ;dependencies[] = tapit_maps
 
