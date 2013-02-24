@@ -51,30 +51,19 @@ dependencies[] = ds_extras
 dependencies[] = ds_ui
 dependencies[] = ds
 
-; Feeds
-;dependencies[] = drush_feeds_import
-;dependencies[] = feeds_import
-;dependencies[] = feeds_tamper
-;dependencies[] = feeds_tamper_ui
-;dependencies[] = feeds_ui
-;dependencies[] = feeds
-
-; Feeds Addon
-;dependencies[] = feeds_imagegrabber
 
 ; Fields
 dependencies[] = addressfield
 dependencies[] = email
 dependencies[] = entityreference
-;dependencies[] = fences
 dependencies[] = field_group
 dependencies[] = geofield
 dependencies[] = link
 dependencies[] = references_dialog
 
 ; Input filters
-dependencies[] = image_resize_filter
-dependencies[] = wysiwyg_filter
+;dependencies[] = image_resize_filter
+;dependencies[] = wysiwyg_filter
 
 ; Location
 dependencies[] = location_taxonomize
@@ -92,8 +81,6 @@ dependencies[] = entity_token
 dependencies[] = geofield_map
 dependencies[] = geophp
 dependencies[] = insert
-dependencies[] = job_scheduler
-dependencies[] = job_scheduler_trigger
 dependencies[] = leaflet
 dependencies[] = leaflet_markercluster
 dependencies[] = leaflet_more_maps
@@ -128,8 +115,8 @@ dependencies[] = features
 
 ;custom
 ;dependencies[] = tapit_roles
+;dependencies[] = tapit_formats
 dependencies[] = tapit_global
-dependencies[] = tapit_formats
 dependencies[] = tapit_pages
 dependencies[] = tapit_stores
 ;dependencies[] = tapit_importers
