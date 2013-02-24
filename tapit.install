@@ -136,7 +136,6 @@ function tapit_install() {
   // Setting up the editor.
   tapit_configure_wysiwyg();
   tapit_configure_formatters();
-}
 
 /**
  * Sets up WYSIWYG.
