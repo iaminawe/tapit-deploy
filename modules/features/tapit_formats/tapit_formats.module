@@ -1,7 +1,0 @@
-<?php
-/**
- * @file
- * Code for the tapit_formats feature.
- */
-
-include_once 'tapit_formats.features.inc';
