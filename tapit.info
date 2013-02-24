@@ -127,10 +127,10 @@ dependencies[] = uuid_features
 dependencies[] = features
 
 ;custom
-;dependencies[] = tapit_global
-;dependencies[] = tapit_formats
-;dependencies[] = tapit_roles
-;dependencies[] = tapit_pages
+dependencies[] = tapit_roles
+dependencies[] = tapit_global
+dependencies[] = tapit_formats
+dependencies[] = tapit_pages
 ;dependencies[] = tapit_stores
 ;dependencies[] = tapit_importers
 ;dependencies[] = tapit_maps
