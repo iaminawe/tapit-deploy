@@ -13,13 +13,6 @@ function tapit_stores_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'additional_settings__active_tab_store';
-  $strongarm->value = 'edit-submission';
-  $export['additional_settings__active_tab_store'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'leaflet_mapbox_code';
   $strongarm->value = 'iaminawe.map-ncl1yy6g';
   $export['leaflet_mapbox_code'] = $strongarm;

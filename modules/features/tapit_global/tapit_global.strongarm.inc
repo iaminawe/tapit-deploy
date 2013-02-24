@@ -13,63 +13,6 @@ function tapit_global_strongarm() {
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_cache_client';
-  $strongarm->value = 0;
-  $export['admin_menu_cache_client'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_devel_modules_skip';
-  $strongarm->value = array(
-    'admin_devel' => 0,
-    'context_ui' => 0,
-    'devel' => 0,
-    'devel_node_access' => 0,
-    'field_ui' => 0,
-    'rules_admin' => 0,
-    'views_ui' => 0,
-  );
-  $export['admin_menu_devel_modules_skip'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_margin_top';
-  $strongarm->value = 0;
-  $export['admin_menu_margin_top'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_position_fixed';
-  $strongarm->value = 0;
-  $export['admin_menu_position_fixed'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_tweak_modules';
-  $strongarm->value = 0;
-  $export['admin_menu_tweak_modules'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_tweak_permissions';
-  $strongarm->value = 0;
-  $export['admin_menu_tweak_permissions'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'admin_menu_tweak_tabs';
-  $strongarm->value = 0;
-  $export['admin_menu_tweak_tabs'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
   $strongarm->name = 'backup_migrate_destination_id';
   $strongarm->value = 'download';
   $export['backup_migrate_destination_id'] = $strongarm;
@@ -108,20 +51,6 @@ function tapit_global_strongarm() {
   $strongarm->name = 'clean_url';
   $strongarm->value = TRUE;
   $export['clean_url'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'file_private_path';
-  $strongarm->value = 'sites/tapit.dev/private/files';
-  $export['file_private_path'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'file_public_path';
-  $strongarm->value = 'sites/tapit.dev/files';
-  $export['file_public_path'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
@@ -190,12 +119,12 @@ function tapit_global_strongarm() {
   $strongarm->name = 'location_taxonomize_settings';
   $strongarm->value = array(
     'enable' => 1,
-    'term_attach' => 0,
-    'hide_terms_field' => 0,
+    'term_attach' => 1,
+    'hide_terms_field' => 1,
     'naming' => array(
-      'country' => 'name',
-      'province' => 'name',
+      'country' => 'code',
       'usa' => 1,
+      'province' => 'name',
     ),
     'na_text' => 'Unknown',
     'longname_enable' => 0,
@@ -208,8 +137,8 @@ function tapit_global_strongarm() {
       ),
       'separator' => ',',
       'country_naming' => 'code',
-      'province_naming' => 'code',
       'usa' => 1,
+      'province_naming' => 'code',
     ),
   );
   $export['location_taxonomize_settings'] = $strongarm;
@@ -219,14 +148,13 @@ function tapit_global_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'location_taxonomize_vocab';
   $strongarm->value = array(
-    'state' => 'initialization',
+    'state' => 'settings',
     'source' => 'location_taxonomize_af',
-    'possible_vid' => '5',
-    'method' => 'existing',
     'hierarchy' => array(
       'country' => 'country',
       'administrative_area' => 'administrative_area',
       'locality' => 'locality',
+      0 => 0,
       'sub_administrative_area' => 0,
       'dependent_locality' => 0,
       'postal_code' => 0,
@@ -243,13 +171,6 @@ function tapit_global_strongarm() {
   $strongarm->name = 'maintenance_mode';
   $strongarm->value = 0;
   $export['maintenance_mode'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'node_admin_theme';
-  $strongarm->value = '1';
-  $export['node_admin_theme'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */

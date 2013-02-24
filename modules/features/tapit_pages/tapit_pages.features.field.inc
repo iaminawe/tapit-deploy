@@ -70,15 +70,19 @@ function tapit_pages_field_default_fields() {
       'settings' => array(
         'better_formats' => array(
           'allowed_formats' => array(
-            'html' => 'html',
+            'filtered_html' => 0,
+            'full_html' => 0,
             'plain_text' => 'plain_text',
           ),
           'allowed_formats_toggle' => 0,
           'default_order_toggle' => 0,
           'default_order_wrapper' => array(
             'formats' => array(
-              'html' => array(
+              'filtered_html' => array(
                 'weight' => '0',
+              ),
+              'full_html' => array(
+                'weight' => '1',
               ),
               'plain_text' => array(
                 'weight' => '10',
