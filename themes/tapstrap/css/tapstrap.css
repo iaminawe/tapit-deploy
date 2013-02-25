@@ -2,12 +2,7 @@
 	http://dev.tapit.2.iaminawe.com/profiles/tapit/themes/tapstrap/css/tapstrap.css?mirzn7 */
 
 #header{
-  -webkit-box-shadow: rgb(177, 177, 177) 0px -5px 20px 0px inset;
-  background-color: rgb(208, 208, 208);
-  background-image: -webkit-linear-gradient(top, rgb(235, 235, 235) 0%, rgb(208, 208, 208) 100%);
-  background-repeat: no-repeat;
-  box-shadow: rgb(177, 177, 177) 0px -5px 20px 0px inset;
-  color: rgb(49, 52, 54);
+  background-color: white;
   display: block;
    height:80px;
   margin-bottom: 0px;
@@ -19,11 +14,13 @@
   padding-right: 20px;
   padding-left: 40px !important;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 20px;
   background-color: #fafafa;
- background-image: none;
    background-repeat: repeat-x;
   border: 1px solid #d4d4d4;
+    background-image: -webkit-linear-gradient(top, rgb(235, 235, 235) 0%, rgb(208, 208, 208) 100%);
+  
+  
  }
 
 body {
