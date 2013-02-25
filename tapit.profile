@@ -8,7 +8,7 @@
 function tapit_form_install_configure_form_alter(&$form, $form_state) {
 
   // Pre-populate the site name and email address.
-  $form['site_information']['site_name']['#default_value'] = 'Tap-it Maps & Stats'];
+  $form['site_information']['site_name']['#default_value'] = 'Tap-it Maps & Stats';
   $form['site_information']['site_mail']['#default_value'] = 'gregg@iaminawe.com';
 
   // Account information defaults
