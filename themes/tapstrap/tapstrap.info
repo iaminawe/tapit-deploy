@@ -8,7 +8,7 @@ core        = 7.x
 base theme  = zenstrap
 
 ; Then we add our own stylesheets.
-;stylesheets[all][] = css/normalize.css
+stylesheets[all][] = css/tapstrap.css
 
 
 ; Optionally add some JavaScripts to your theme.
@@ -49,8 +49,6 @@ features[] = comment_user_picture
 features[] = favicon
 features[] = main_menu
 
-
-
 ; Set the default values of settings on the theme-settings.php form.
 
 settings[zen_breadcrumb]           = yes
@@ -67,7 +65,4 @@ settings[zen_rebuild_registry]     = 0
 settings[zen_wireframes]           = 0
 settings[tapstrap_login_modal]     = 1
 settings[tapstrap_disable_sticky_tables] = 0
-
-
-
 
