@@ -70,9 +70,11 @@ projects[d3][download][type] = "git"
 projects[d3][download][url] = "http://git.drupal.org/sandbox/asherry/1477334.git"
 projects[d3][download][branch] = "master"
 
-projects[views_dataviz][type] = module
 projects[views_dataviz][subdir] = contrib
 projects[views_dataviz][version] = 1.0-alpha3
+
+projects[views_calc][subdir] = contrib
+projects[views_calc][version] = 1.0
 
 ;;;;;;;;;
 ; User profile
