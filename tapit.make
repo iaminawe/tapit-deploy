@@ -27,6 +27,17 @@ projects[geophp][version] = 1.7
 projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
 
+projects[ip_geoloc][subdir] = contrib
+projects[ip_geoloc][version] = 1.19
+
+projects[global_filter][subdir] = contrib
+projects[global_filter][version] = 1.1
+
+projects[select_with_style][subdir] = contrib
+projects[select_with_style][version] = 1.7
+
+projects[contextual_range_filter][subdir] = contrib
+projects[contextual_range_filter][version] = 1.1
 
 ;;;;;;;;;;;;;;;
 ; Data Import
