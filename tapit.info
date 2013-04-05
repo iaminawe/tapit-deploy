@@ -114,10 +114,17 @@ dependencies[] = uuid_features
 dependencies[] = features
 
 ;custom
-dependencies[] = tapit_global
+;dependencies[] = tapit_global
 ;dependencies[] = tapit_pages
-dependencies[] = tapit_stores
+;dependencies[] = tapit_stores
 ;dependencies[] = tapit_importers
 ;dependencies[] = tapit_maps
 
 files[] = tapit.profile
+
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
+

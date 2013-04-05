@@ -3,3 +3,9 @@ description = Custom formatting for the leaflet map
 package = Tap-it
 core = 7.x
 dependencies[] = leaflet
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
+

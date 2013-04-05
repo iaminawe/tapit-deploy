@@ -29,3 +29,10 @@ features[variable][] = node_options_page
 features[variable][] = node_preview_page
 features[variable][] = node_submitted_page
 project path = sites/all/modules/features
+
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
+

@@ -45,3 +45,10 @@ features[variable][] = theme_tapstrap_settings
 features[variable][] = user_register
 features[variable][] = wipe_rebuild
 project path = profiles/tapit/modules/features
+
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
+

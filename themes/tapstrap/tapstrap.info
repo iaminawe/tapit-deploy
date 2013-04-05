@@ -3,17 +3,28 @@
 
 screenshot  = screenshot.png
 name = Tapstrap
-description = A tapstrap sub theme - is a combination of Zen and Twitter Bootstrap.
+description = A tapstrap admin sub theme - is a combination of Zen and Twitter Bootstrap.
 core        = 7.x
 base theme  = zenstrap
 
 ; Then we add our own stylesheets.
-stylesheets[all][] = css/tapstrap.css
-
+stylesheets[all][] = css/tapstrap_admin_styles.css
+stylesheets[all][] = css/flat-ui.css
+stylesheets[all][] = css/fullcalendar.css
 
 ; Optionally add some JavaScripts to your theme.
 
-; scripts[] = js/script.js
+;scripts[] = js/custom_checkbox_and_radio.js
+;scripts[] = js/custom_radio.js
+;scripts[] = js/fullcalendar.min.js
+;scripts[] = js/gcal.js
+;scripts[] = js/jquery-ui-1.10.0.custom.min.js
+;scripts[] = js/jquery.dropkick-1.0.0.js
+;scripts[] = js/jquery.knob.js
+;scripts[] = js/jquery.peity.min.js
+;scripts[] = js/jquery.sparkline.min.js
+;scripts[] = js/jquery.tablesorter.min.js
+
 
 regions[header]         = Header
 regions[navigation]     = Navigation bar
@@ -65,4 +76,11 @@ settings[zen_rebuild_registry]     = 0
 settings[zen_wireframes]           = 0
 settings[tapstrap_login_modal]     = 1
 settings[tapstrap_disable_sticky_tables] = 0
+
+
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
 

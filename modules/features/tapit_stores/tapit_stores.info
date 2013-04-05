@@ -15,7 +15,7 @@ dependencies[] = geophp
 dependencies[] = image
 dependencies[] = leaflet
 dependencies[] = leaflet_mapbox
-dependencies[] = leaflet_markercluster
+;dependencies[] = leaflet_markercluster
 dependencies[] = leaflet_more_maps
 dependencies[] = leaflet_views
 dependencies[] = location_taxonomize
@@ -142,3 +142,10 @@ features_exclude[dependencies][features] = features
 features_exclude[dependencies][options] = options
 features_exclude[dependencies][uuid] = uuid
 project path = profiles/tapit/modules/features
+
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
+

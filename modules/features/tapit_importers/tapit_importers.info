@@ -21,3 +21,10 @@ features[feeds_tamper][] = traders_importer-cellphone-find_replace
 features[variable][] = default_feeds_tamper
 features[variable][] = feeds_reschedule
 project path = sites/all/modules/features
+
+
+; Information added by drush on 2013-03-18
+version = ""
+project = "tapit"
+datestamp = "1363601045"
+
