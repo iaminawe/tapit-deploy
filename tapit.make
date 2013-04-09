@@ -47,10 +47,7 @@ projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.x-dev
 
 projects[feeds_tamper][subdir] = contrib
-projects[feeds_tamper][version] = 1.0-beta4
-
-projects[feeds_tamper_string2id][subdir] = contrib
-projects[feeds_tamper_string2id][version] = 1.x-dev
+projects[feeds_tamper][version] = 1.x-dev
 
 projects[entityreference_feeds][subdir] = contrib
 projects[entityreference_feeds][version] = 1.x-dev
