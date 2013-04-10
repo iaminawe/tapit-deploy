@@ -67,6 +67,13 @@ projects[drush_feeds_import][download][branch] = "master"
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha3
 
+projects[flag][subdir] = contrib
+projects[flag][version] = 3.0-alpha4
+
+projects[feedback][subdir] = contrib
+projects[feedback][version] = 2.x-dev
+
+
 
 ;;;;;;;;;;;;;;;;
 ; Vizualisation
