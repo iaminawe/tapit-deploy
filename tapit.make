@@ -83,7 +83,7 @@ projects[d3][type] = module
 projects[d3][subdir] = contrib
 projects[d3][download][type] = "git"
 projects[d3][download][url] = "http://git.drupal.org/sandbox/asherry/1477334.git"
-projects[d3][download][branch] = "master"
+projects[d3][download][branch] = "7.x-1.x"
 
 projects[views_datasource][subdir] = contrib
 projects[views_datasource][version] = 1.x-dev
