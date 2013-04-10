@@ -1,0 +1,19 @@
+<?php
+/**
+ * @file
+ * Supports mapping incoming data provided as string identifiers to arbitrary
+ * Drupal content.
+ *
+ * Provides a feeds_tamper option to do the conversion, and
+ */
+
+/**
+ * Advertise our feeds_tamper plugin.
+ *
+ * Implements hook_ctools_plugin_directory().
+ */
+function feeds_tamper_tapit_timedate_ctools_plugin_directory($module, $plugin) {
+  if ($module == 'feeds_tamper') {
+    return 'plugins';
+  }
+}
