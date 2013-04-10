@@ -47,10 +47,7 @@ projects[feeds][subdir] = contrib
 projects[feeds][version] = 2.x-dev
 
 projects[feeds_tamper][subdir] = contrib
-projects[feeds_tamper][version] = 1.0-beta4
-
-projects[feeds_tamper_string2id][subdir] = contrib
-projects[feeds_tamper_string2id][version] = 1.x-dev
+projects[feeds_tamper][version] = 1.x-dev
 
 projects[entityreference_feeds][subdir] = contrib
 projects[entityreference_feeds][version] = 1.x-dev
@@ -69,6 +66,13 @@ projects[drush_feeds_import][download][branch] = "master"
 
 projects[job_scheduler][subdir] = contrib
 projects[job_scheduler][version] = 2.0-alpha3
+
+projects[flag][subdir] = contrib
+projects[flag][version] = 3.0-alpha4
+
+projects[feedback][subdir] = contrib
+projects[feedback][version] = 2.x-dev
+
 
 
 ;;;;;;;;;;;;;;;;
