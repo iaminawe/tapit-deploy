@@ -39,6 +39,14 @@ projects[select_with_style][version] = 1.7
 projects[contextual_range_filter][subdir] = contrib
 projects[contextual_range_filter][version] = 1.1
 
+projects[flag_note][subdir] = contrib
+projects[flag_note][version] = 1.x-dev
+
+projects[colorbox_node][subdir] = contrib
+projects[colorbox_node][version] = 2.6
+
+
+
 ;;;;;;;;;;;;;;;
 ; Data Import
 ;;;;;;;;;;;;;;;
