@@ -95,13 +95,18 @@ body {
  
 }
 
-.view-id-stores.view-display-id-page .view-header{
+.view-id-stores.view-display-id-page .view-header,
+.view-visit-traders-map.view-display-id-page .view-header,
+.view-service-providers-map.view-display-id-page .view-header{
    position:absolute;
    right:10px;
    top:20px;
  }
 
-.view-id-stores.view-display-id-listing_attachment .view-header{
+.view-id-stores.view-display-id-listing_attachment .view-header,
+.view-visit-traders-map.view-display-id-listing_attachment .view-header,
+.view-service-providers-map.view-display-id-listing_attachment .view-header
+{
   position:relative;
   margin-top: 10px;
 }
