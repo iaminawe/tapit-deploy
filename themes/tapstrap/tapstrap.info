@@ -24,6 +24,9 @@ stylesheets[all][] = css/fullcalendar.css
 ;scripts[] = js/jquery.peity.min.js
 ;scripts[] = js/jquery.sparkline.min.js
 ;scripts[] = js/jquery.tablesorter.min.js
+scripts[] = js/leaflet-hash.js
+scripts[] = js/Leaflet.fullscreen.js
+
 
 
 regions[header]         = Header

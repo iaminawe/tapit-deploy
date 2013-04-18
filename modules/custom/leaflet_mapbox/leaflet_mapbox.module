@@ -40,6 +40,8 @@ function leaflet_mapbox_leaflet_map_info() {
     'zoom'               =>  6,
     'zoomAnimation'      => TRUE,
     'zoomControl'        => TRUE,
+    'zoomControl'        => TRUE,
+    'fullscreenControl' => TRUE,
   );
 
   $map_info = array();

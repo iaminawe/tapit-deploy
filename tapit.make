@@ -6,14 +6,14 @@ core = 7.x
 ;;;;;;;;;
 
 
-projects[leaflet][subdir] = contrib
-projects[leaflet][version] = 1.x-dev
+;projects[leaflet][subdir] = contrib
+;projects[leaflet][version] = 1.x-dev
 
-projects[leaflet_markercluster][subdir] = contrib
-projects[leaflet_markercluster][version] = 1.x-dev
+;projects[leaflet_markercluster][subdir] = contrib
+;projects[leaflet_markercluster][version] = 1.x-dev
 
-projects[leaflet_more_maps][subdir] = contrib
-projects[leaflet_more_maps][version] = 1.2
+;projects[leaflet_more_maps][subdir] = contrib
+;projects[leaflet_more_maps][version] = 1.2
 
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
@@ -28,7 +28,7 @@ projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
 
 projects[ip_geoloc][subdir] = contrib
-projects[ip_geoloc][version] = 1.19
+projects[ip_geoloc][version] = 7.x-1.x-dev
 
 projects[global_filter][subdir] = contrib
 projects[global_filter][version] = 1.1
@@ -83,7 +83,7 @@ projects[d3][type] = module
 projects[d3][subdir] = contrib
 projects[d3][download][type] = "git"
 projects[d3][download][url] = "http://git.drupal.org/sandbox/asherry/1477334.git"
-projects[d3][download][branch] = "master"
+projects[d3][download][branch] = "7.x-1.x"
 
 projects[views_datasource][subdir] = contrib
 projects[views_datasource][version] = 1.x-dev
