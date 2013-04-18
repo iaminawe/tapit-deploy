@@ -28,7 +28,7 @@ projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
 
 projects[ip_geoloc][subdir] = contrib
-projects[ip_geoloc][version] = 1.19
+projects[ip_geoloc][version] = 7.x-1.x-dev
 
 projects[global_filter][subdir] = contrib
 projects[global_filter][version] = 1.1
