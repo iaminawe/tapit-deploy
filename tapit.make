@@ -96,6 +96,12 @@ projects[d3][download][branch] = "7.x-1.x"
 projects[views_datasource][subdir] = contrib
 projects[views_datasource][version] = 1.x-dev
 
+projects[views_data_export][subdir] = contrib
+projects[views_data_export][version] = 3.0-beta6
+
+projects[views_date_format_sql][subdir] = contrib
+projects[views_date_format_sql][version] = 3.1
+
 projects[views_dataviz][subdir] = contrib
 projects[views_dataviz][version] = 1.0-alpha3
 
