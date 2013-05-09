@@ -96,8 +96,10 @@ body {
 }
 
 .view-id-stores.view-display-id-page .view-header,
+.view-id-incentives_map_2.view-display-id-page .view-header,
 .view-visit-traders-map.view-display-id-page .view-header,
-.view-service-providers-map.view-display-id-page .view-header{
+.view-service-providers-map.view-display-id-page .view-header,
+.view-activity-map.view-display-id-page .view-header{
    position:absolute;
    right:10px;
    top:20px;
@@ -512,60 +514,6 @@ ul.stat-list {
   display: inline-block;
   margin: 2px; }
 
-/* ============== stream ============== */
-.filters input[type="checkbox"] {
-  float: left;
-  margin-right: 10px; }
-.filters h5 {
-  margin-top: 20px;
-  padding-bottom: 5px;
-  border-bottom: 1px solid #EEE; }
-.filters span {
-  color: #999; }
-
-.stream .item {
-  border-bottom: 1px solid #EEE;
-  padding: 10px 0px 30px 60px; }
-  .stream .item .stream-icon {
-    display: inline-block;
-    background-color: #CCC;
-    border-radius: 4px;
-    height: 40px;
-    width: 40px;
-    text-align: center;
-    margin-left: -40px;
-    margin-bottom: -40px;
-    position: relative;
-    top: 15px;
-    right: 20px;
-    float: left; }
-    .stream .item .stream-icon i {
-      margin-top: 12px; }
-  .stream .item .stream-success {
-    background-color: #4cb158; }
-  .stream .item .stream-danger {
-    background-color: #ea494a; }
-  .stream .item .stream-warning {
-    background-color: #ffa93c; }
-  .stream .item .stream-info {
-    background-color: #14b8d4; }
-  .stream .item .avatar {
-    border-radius: 4px;
-    margin-left: -40px;
-    margin-bottom: -40px;
-    height: 40px;
-    position: relative;
-    top: 15px;
-    right: 20px;
-    float: left; }
-  .stream .item h4 {
-    margin-bottom: 6px; }
-  .stream .item p {
-    color: #777; }
-  .stream .item p.date {
-    padding: 0;
-    float: right;
-    margin-top: 10px; }
 
 
 /* ============== calendar ============== */
