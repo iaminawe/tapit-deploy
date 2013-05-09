@@ -146,4 +146,9 @@ function tapstrap_preprocess_html(&$variables, $hook) {
  * @param $hook
  *   The name of the template being rendered ("page" in this case.)
  */
-
+function tapstrap_get_node_count($content_type) {
+     $query = "SELECT COUNT(*) amount FROM {node} n ".
+              "WHERE n.type = :type";
+     $result = db_query($query, array(':type' => $content_type))->fetch();
+     return $result->amount;
+}
