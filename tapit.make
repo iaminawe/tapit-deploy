@@ -31,7 +31,7 @@ projects[ip_geoloc][subdir] = contrib
 projects[ip_geoloc][version] = 1.x-dev
 
 projects[global_filter][subdir] = contrib
-projects[global_filter][version] = 1.1
+projects[global_filter][version] = 1.x-dev
 
 projects[select_with_style][subdir] = contrib
 projects[select_with_style][version] = 1.7
@@ -41,6 +41,12 @@ projects[contextual_range_filter][version] = 1.1
 
 projects[flag_note][subdir] = contrib
 projects[flag_note][version] = 1.x-dev
+
+projects[session_cache][subdir] = contrib
+projects[session_cache][version] = 1.0
+
+projects[homebox][subdir] = contrib
+projects[homebox][version] = 1.0
 
 projects[colorbox_node][subdir] = contrib
 projects[colorbox_node][version] = 2.6
@@ -103,7 +109,7 @@ projects[views_date_format_sql][subdir] = contrib
 projects[views_date_format_sql][version] = 3.1
 
 projects[views_dataviz][subdir] = contrib
-projects[views_dataviz][version] = 1.0-alpha3
+projects[views_dataviz][version] = 1.x-dev
 
 projects[views_calc][subdir] = contrib
 projects[views_calc][version] = 1.0
