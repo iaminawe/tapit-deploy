@@ -37,7 +37,7 @@ function leaflet_mapbox_leaflet_map_info() {
     'scrollWheelZoom'    => TRUE,
     'touchZoom'          => TRUE,
     'trackResize'        => TRUE,
-    'zoom'               =>  6,
+    //'zoom'               =>  6,
     'zoomAnimation'      => TRUE,
     'zoomControl'        => TRUE,
     'zoomControl'        => TRUE,
@@ -50,9 +50,7 @@ function leaflet_mapbox_leaflet_map_info() {
     'label' => variable_get('leaflet_mapbox_label', ''),
     'description' => variable_get('leaflet_mapbox_description', ''),
     'settings' => $settings,
-      'center' => array(
-      'lat' => -30,
-      'lon' => 25),
+
     'layers' => array(
       'earth' => array(
         'urlTemplate' => "http://{s}.tiles.mapbox.com/v3/$code/{z}/{x}/{y}.png",
