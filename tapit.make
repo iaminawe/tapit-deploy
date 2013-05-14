@@ -48,6 +48,9 @@ projects[session_cache][version] = 1.0
 projects[homebox][subdir] = contrib
 projects[homebox][version] = 1.0
 
+projects[quicktabs][subdir] = contrib
+projects[quicktabs][version] = 3.4
+
 projects[colorbox_node][subdir] = contrib
 projects[colorbox_node][version] = 2.6
 
@@ -113,6 +116,9 @@ projects[views_dataviz][version] = 1.x-dev
 
 projects[views_calc][subdir] = contrib
 projects[views_calc][version] = 1.0
+
+projects[computed_field][subdir] = contrib
+projects[computed_field][version] = 1.0-beta1
 
 ;;;;;;;;;
 ; User profile
