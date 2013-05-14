@@ -46,7 +46,7 @@ projects[session_cache][subdir] = contrib
 projects[session_cache][version] = 1.0
 
 projects[homebox][subdir] = contrib
-projects[homebox][version] = 1.0
+projects[homebox][version] = 2.x-dev
 
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.4
@@ -127,7 +127,6 @@ projects[computed_field][version] = 1.0-beta1
 projects[profile2][subdir] = contrib
 projects[profile2][version] = 1.3
 
-projects[profile2_one_page][type] = module
 projects[profile2_one_page][subdir] = contrib
 projects[profile2_one_page][download][type] = "git"
 projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
