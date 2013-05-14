@@ -127,10 +127,10 @@ projects[computed_field][version] = 1.0-beta1
 projects[profile2][subdir] = contrib
 projects[profile2][version] = 1.3
 
-projects[profile2_one_page][subdir] = contrib
-projects[profile2_one_page][download][type] = "git"
-projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
-projects[profile2_one_page][download][branch] = "master"
+;projects[profile2_one_page][subdir] = contrib
+;projects[profile2_one_page][download][type] = "git"
+;projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
+;projects[profile2_one_page][download][branch] = "master"
 
 
 
