@@ -54,7 +54,14 @@ projects[quicktabs][version] = 3.4
 projects[colorbox_node][subdir] = contrib
 projects[colorbox_node][version] = 2.6
 
+projects[views_accordion][subdir] = contrib
+projects[views_accordion][version] = 1.0-rc2
 
+projects[mobile_navigation][type] = module
+projects[mobile_navigation][subdir] = contrib
+projects[mobile_navigation][download][type] = "git"
+projects[mobile_navigation][download][url] = "http://git.drupal.org/sandbox/x7ian/1996698.git"
+projects[mobile_navigation][download][branch] = "master"
 
 ;;;;;;;;;;;;;;;
 ; Data Import
