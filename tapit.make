@@ -28,7 +28,7 @@ projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
 
 projects[ip_geoloc][subdir] = contrib
-projects[ip_geoloc][version] = 1.x-dev
+projects[ip_geoloc][version] = 1.2
 
 projects[global_filter][subdir] = contrib
 projects[global_filter][version] = 1.x-dev
@@ -46,7 +46,7 @@ projects[session_cache][subdir] = contrib
 projects[session_cache][version] = 1.0
 
 projects[homebox][subdir] = contrib
-projects[homebox][version] = 1.0
+projects[homebox][version] = 2.x-dev
 
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.4
@@ -54,7 +54,14 @@ projects[quicktabs][version] = 3.4
 projects[colorbox_node][subdir] = contrib
 projects[colorbox_node][version] = 2.6
 
+projects[views_accordion][subdir] = contrib
+projects[views_accordion][version] = 1.0-rc2
 
+projects[mobile_navigation][type] = module
+projects[mobile_navigation][subdir] = contrib
+projects[mobile_navigation][download][type] = "git"
+projects[mobile_navigation][download][url] = "http://git.drupal.org/sandbox/x7ian/1996698.git"
+projects[mobile_navigation][download][branch] = "master"
 
 ;;;;;;;;;;;;;;;
 ; Data Import
@@ -127,11 +134,10 @@ projects[computed_field][version] = 1.0-beta1
 projects[profile2][subdir] = contrib
 projects[profile2][version] = 1.3
 
-projects[profile2_one_page][type] = module
-projects[profile2_one_page][subdir] = contrib
-projects[profile2_one_page][download][type] = "git"
-projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
-projects[profile2_one_page][download][branch] = "master"
+;projects[profile2_one_page][subdir] = contrib
+;projects[profile2_one_page][download][type] = "git"
+;projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
+;projects[profile2_one_page][download][branch] = "master"
 
 
 
