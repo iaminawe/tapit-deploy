@@ -210,24 +210,25 @@ function leaflet_more_maps_leaflet_map_info() {
 
   // MapBox/OSM http://mapbox.com
   $mapbox_names = array(
-    //'Streets', // as used by foursquare
-    //'Chester',
-    //'Graphite',
-    //'Lacquer',
-    //'Light',
-    //'Nightvision',
-    //'Osgoode',
-    //'Simple',
-    //'St-Clair',
-    //'Union',
-    //'Zenburn',
+   // 'Streets', // as used by foursquare
+  //  'Chester',
+   // 'Graphite',
+  //  'Lacquer',
+   // 'Light',
+   // 'Nightvision',
+ //   'Osgoode',
+  //  'Simple',
+  //  'St-Clair',
+   // 'Union',
+   // 'Zenburn',
     'Warden'
   );
   $attr_mapbox = 'Tiles by <a href="http://mapbox.com">MapBox</a>. Map data &copy; <a href="http://openstreetap.org">OpenStreetMap</a> and contributors';
   foreach ($mapbox_names as $mapbox_name) {
     $code = drupal_strtolower($mapbox_name);
     $label = "MapBox $mapbox_name (zoom 0..17)";
-    $url_template = "http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-$code/$zxy";
+    //$url_template = "http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-$code/$zxy";
+    $url_template ="http://a.tiles.mapbox.com/v3/iaminawe.map-4ukihs41.html"
     $map_info["mapbox-$code"] = array(
       'label' => $code == 'streets' ? t('Mapbox streets, classic (zoom 0..17)') : $label,
       'description' => $label,
@@ -243,7 +244,6 @@ function leaflet_more_maps_leaflet_map_info() {
 
   return $map_info;
 }
-
 /**
  * Implements hook_leaflet_map_info_alter().
  *
