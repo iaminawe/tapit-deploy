@@ -221,15 +221,15 @@ function leaflet_more_maps_leaflet_map_info() {
   //  'St-Clair',
    // 'Union',
    // 'Zenburn',
-    'Warden'
+    'Greyscale'
   );
-  $attr_mapbox = 'Tiles by <a href="http://mapbox.com">MapBox</a>. Map data &copy; <a href="http://openstreetap.org">OpenStreetMap</a> and contributors';
+  $attr_mapbox = '';
   foreach ($mapbox_names as $mapbox_name) {
     $code = drupal_strtolower($mapbox_name);
     $label = "MapBox $mapbox_name (zoom 0..17)";
     //$url_template = "http://{s}.tiles.mapbox.com/v3/mapbox.mapbox-$code/$zxy";
     $url_template ="http://a.tiles.mapbox.com/v3/iaminawe.map-4ukihs41.html"
-    $map_info["mapbox-$code"] = array(
+    $map_info["iaminawe.map-4ukihs41"] = array(
       'label' => $code == 'streets' ? t('Mapbox streets, classic (zoom 0..17)') : $label,
       'description' => $label,
       'settings' => array('maxZoom' => 17) + $default_settings,
