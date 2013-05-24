@@ -57,11 +57,11 @@ function tapit_stores_flag_default_flags() {
     'show_on_page' => 0,
     'show_on_teaser' => 1,
     'i18n' => 0,
-    'api_version' => 3,
     'module' => 'tapit_stores',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   // Exported flag: "Log Visit".
   $flags['visited'] = array(
@@ -86,11 +86,11 @@ function tapit_stores_flag_default_flags() {
     'show_on_page' => 1,
     'show_on_teaser' => 1,
     'i18n' => 0,
-    'api_version' => 3,
     'module' => 'tapit_stores',
     'locked' => array(
       0 => 'name',
     ),
+    'api_version' => 3,
   );
   return $flags;
 

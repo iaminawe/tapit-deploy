@@ -330,5 +330,191 @@ function tapit_stores_views_default_views() {
   );
   $export['stores'] = $view;
 
+  $view = new view();
+  $view->name = 'traders';
+  $view->description = 'A filterable listing and map view of trading stores on a map';
+  $view->tag = 'default';
+  $view->base_table = 'node';
+  $view->human_name = 'Traders';
+  $view->core = 7;
+  $view->api_version = '3.0';
+  $view->disabled = FALSE; /* Edit this to true to make a default view disabled initially */
+
+  /* Display: Master */
+  $handler = $view->new_display('default', 'Master', 'default');
+  $handler->display->display_options['title'] = 'Traders';
+  $handler->display->display_options['use_more_always'] = FALSE;
+  $handler->display->display_options['access']['type'] = 'perm';
+  $handler->display->display_options['cache']['type'] = 'time';
+  $handler->display->display_options['cache']['results_lifespan'] = '3600';
+  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['output_lifespan'] = '3600';
+  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['query']['type'] = 'views_query';
+  $handler->display->display_options['exposed_form']['type'] = 'basic';
+  $handler->display->display_options['pager']['type'] = 'full';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '60';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
+  $handler->display->display_options['pager']['options']['id'] = '0';
+  $handler->display->display_options['pager']['options']['quantity'] = '9';
+  $handler->display->display_options['style_plugin'] = 'responsive_grid';
+  $handler->display->display_options['style_options']['alignment'] = 'vertical';
+  $handler->display->display_options['style_options']['column_classes'] = 'span3';
+  $handler->display->display_options['row_plugin'] = 'node';
+  $handler->display->display_options['row_options']['links'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = 'There are no stores that meet your search criteria';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  /* Field: Content: Title */
+  $handler->display->display_options['fields']['title']['id'] = 'title';
+  $handler->display->display_options['fields']['title']['table'] = 'node';
+  $handler->display->display_options['fields']['title']['field'] = 'title';
+  $handler->display->display_options['fields']['title']['label'] = '';
+  $handler->display->display_options['fields']['title']['alter']['word_boundary'] = FALSE;
+  $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
+  /* Field: Content: GPS */
+  $handler->display->display_options['fields']['field_trader_gps']['id'] = 'field_trader_gps';
+  $handler->display->display_options['fields']['field_trader_gps']['table'] = 'field_data_field_trader_gps';
+  $handler->display->display_options['fields']['field_trader_gps']['field'] = 'field_trader_gps';
+  $handler->display->display_options['fields']['field_trader_gps']['label'] = '';
+  $handler->display->display_options['fields']['field_trader_gps']['element_type'] = '0';
+  $handler->display->display_options['fields']['field_trader_gps']['element_label_colon'] = FALSE;
+  $handler->display->display_options['fields']['field_trader_gps']['element_wrapper_type'] = '0';
+  $handler->display->display_options['fields']['field_trader_gps']['element_default_classes'] = FALSE;
+  $handler->display->display_options['fields']['field_trader_gps']['click_sort_column'] = 'geom';
+  $handler->display->display_options['fields']['field_trader_gps']['type'] = 'geofield_latlon';
+  $handler->display->display_options['fields']['field_trader_gps']['settings'] = array(
+    'data' => 'full',
+    'format' => 'degrees_minutes_seconds',
+    'labels' => 1,
+  );
+  $handler->display->display_options['fields']['field_trader_gps']['field_api_classes'] = TRUE;
+  /* Sort criterion: Content: Title */
+  $handler->display->display_options['sorts']['title']['id'] = 'title';
+  $handler->display->display_options['sorts']['title']['table'] = 'node';
+  $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Filter criterion: Content: Title */
+  $handler->display->display_options['filters']['title']['id'] = 'title';
+  $handler->display->display_options['filters']['title']['table'] = 'node';
+  $handler->display->display_options['filters']['title']['field'] = 'title';
+  $handler->display->display_options['filters']['title']['operator'] = 'contains';
+  $handler->display->display_options['filters']['title']['group'] = 1;
+  $handler->display->display_options['filters']['title']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['title']['expose']['operator_id'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['label'] = 'Search';
+  $handler->display->display_options['filters']['title']['expose']['operator'] = 'title_op';
+  $handler->display->display_options['filters']['title']['expose']['identifier'] = 'name';
+  $handler->display->display_options['filters']['title']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  /* Filter criterion: Content: Published */
+  $handler->display->display_options['filters']['status']['id'] = 'status';
+  $handler->display->display_options['filters']['status']['table'] = 'node';
+  $handler->display->display_options['filters']['status']['field'] = 'status';
+  $handler->display->display_options['filters']['status']['value'] = 1;
+  $handler->display->display_options['filters']['status']['group'] = 1;
+  $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'store' => 'store',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
+  /* Filter criterion: Content: location_taxonomize_terms (field_location_taxonomize_terms) */
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['id'] = 'field_location_taxonomize_terms_tid';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['table'] = 'field_data_field_location_taxonomize_terms';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['field'] = 'field_location_taxonomize_terms_tid';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['expose']['operator_id'] = 'field_location_taxonomize_terms_tid_op';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['expose']['label'] = 'Location';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['expose']['operator'] = 'field_location_taxonomize_terms_tid_op';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['expose']['identifier'] = 'location';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+  );
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['group_info']['label'] = 'location_taxonomize_terms (field_location_taxonomize_terms)';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['group_info']['identifier'] = 'field_location_taxonomize_terms_tid';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['group_info']['remember'] = FALSE;
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['group_info']['group_items'] = array(
+    1 => array(),
+    2 => array(),
+    3 => array(),
+  );
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['vocabulary'] = 'location_taxonomize';
+  /* Filter criterion: Content: Wholesalers (field_store_wholesalers) */
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['id'] = 'field_store_wholesalers_target_id';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['table'] = 'field_data_field_store_wholesalers';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['field'] = 'field_store_wholesalers_target_id';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['group'] = 1;
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['expose']['operator_id'] = 'field_store_wholesalers_target_id_op';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['expose']['label'] = 'Wholesaler';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['expose']['operator'] = 'field_store_wholesalers_target_id_op';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['expose']['identifier'] = 'wholesalers';
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['expose']['multiple'] = TRUE;
+  $handler->display->display_options['filters']['field_store_wholesalers_target_id']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  /* Filter criterion: Content: Store Type (field_store_type) */
+  $handler->display->display_options['filters']['field_store_type_tid']['id'] = 'field_store_type_tid';
+  $handler->display->display_options['filters']['field_store_type_tid']['table'] = 'field_data_field_store_type';
+  $handler->display->display_options['filters']['field_store_type_tid']['field'] = 'field_store_type_tid';
+  $handler->display->display_options['filters']['field_store_type_tid']['value'] = array(
+    992 => '992',
+  );
+  $handler->display->display_options['filters']['field_store_type_tid']['group'] = 1;
+  $handler->display->display_options['filters']['field_store_type_tid']['exposed'] = TRUE;
+  $handler->display->display_options['filters']['field_store_type_tid']['expose']['operator_id'] = 'field_store_type_tid_op';
+  $handler->display->display_options['filters']['field_store_type_tid']['expose']['label'] = 'Type';
+  $handler->display->display_options['filters']['field_store_type_tid']['expose']['operator'] = 'field_store_type_tid_op';
+  $handler->display->display_options['filters']['field_store_type_tid']['expose']['identifier'] = 'field_store_type_tid';
+  $handler->display->display_options['filters']['field_store_type_tid']['expose']['remember_roles'] = array(
+    2 => '2',
+    1 => 0,
+    3 => 0,
+    4 => 0,
+    5 => 0,
+  );
+  $handler->display->display_options['filters']['field_store_type_tid']['type'] = 'select';
+  $handler->display->display_options['filters']['field_store_type_tid']['vocabulary'] = 'store_status';
+
+  /* Display: Page */
+  $handler = $view->new_display('page', 'Page', 'page');
+  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
+  $handler->display->display_options['defaults']['empty'] = FALSE;
+  /* No results behavior: Global: Text area */
+  $handler->display->display_options['empty']['area']['id'] = 'area';
+  $handler->display->display_options['empty']['area']['table'] = 'views';
+  $handler->display->display_options['empty']['area']['field'] = 'area';
+  $handler->display->display_options['empty']['area']['empty'] = TRUE;
+  $handler->display->display_options['empty']['area']['content'] = '<h3>There are no stores that meet your search criteria<h3>';
+  $handler->display->display_options['empty']['area']['format'] = 'filtered_html';
+  $handler->display->display_options['path'] = 'traders';
+  $handler->display->display_options['menu']['type'] = 'normal';
+  $handler->display->display_options['menu']['title'] = 'Traders';
+  $handler->display->display_options['menu']['weight'] = '0';
+  $handler->display->display_options['menu']['name'] = 'main-menu';
+  $handler->display->display_options['menu']['context'] = 0;
+  $export['traders'] = $view;
+
   return $export;
 }

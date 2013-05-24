@@ -13,6 +13,97 @@ function tapit_stores_field_group_info() {
   $field_group = new stdClass();
   $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
   $field_group->api_version = 1;
+  $field_group->identifier = 'group_device|node|trader|form';
+  $field_group->group_name = 'group_device';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'store';
+  $field_group->mode = 'form';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Device Info',
+    'weight' => '2',
+    'children' => array(
+      0 => 'field_trader_device_imei',
+      1 => 'field_trader_device_token',
+      2 => 'field_trader_devicetype',
+      3 => 'field_trader_serial_number',
+      4 => 'field_trader_service_provider',
+      5 => 'field_trader_sim',
+    ),
+    'format_type' => 'fieldset',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+        'required_fields' => 1,
+      ),
+    ),
+  );
+  $export['group_device|node|trader|form'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_store_contactgroup|node|store|default';
+  $field_group->group_name = 'group_store_contactgroup';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'store';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Contact',
+    'weight' => '3',
+    'children' => array(
+      0 => 'field_trader_cellphone',
+      1 => 'field_trader_email',
+      2 => 'field_trader_telephone',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_store_contactgroup|node|store|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
+  $field_group->identifier = 'group_store_device|node|store|default';
+  $field_group->group_name = 'group_store_device';
+  $field_group->entity_type = 'node';
+  $field_group->bundle = 'store';
+  $field_group->mode = 'default';
+  $field_group->parent_name = '';
+  $field_group->data = array(
+    'label' => 'Device',
+    'weight' => '5',
+    'children' => array(
+      0 => 'field_trader_device_imei',
+      1 => 'field_trader_device_token',
+      2 => 'field_trader_devicetype',
+      3 => 'field_trader_serial_number',
+      4 => 'field_trader_service_provider',
+      5 => 'field_trader_sim',
+    ),
+    'format_type' => 'div',
+    'format_settings' => array(
+      'formatter' => 'collapsible',
+      'instance_settings' => array(
+        'description' => '',
+        'classes' => '',
+      ),
+    ),
+  );
+  $export['group_store_device|node|store|default'] = $field_group;
+
+  $field_group = new stdClass();
+  $field_group->disabled = FALSE; /* Edit this to true to make a default field_group disabled initially */
+  $field_group->api_version = 1;
   $field_group->identifier = 'group_storeinfo_group|node|store|default';
   $field_group->group_name = 'group_storeinfo_group';
   $field_group->entity_type = 'node';
