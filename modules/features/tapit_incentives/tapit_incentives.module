@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the tapit_incentives feature.
+ */
+
+include_once 'tapit_incentives.features.inc';
