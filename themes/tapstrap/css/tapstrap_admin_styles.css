@@ -1,25 +1,64 @@
 /* @override 
-	http://dev.tapit.2.iaminawe.com/profiles/tapit/themes/tapstrap/css/tapstrap.css?mirzn7 */
+	http://dev.tapit.2.iaminawe.com/profiles/tapit/themes/tapstrap/css/tapstrap.css?mirzn7
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn57hv
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn59kj
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5c8a
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5dcc
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5go9
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5ton
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5ul7
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5v0s
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5yxm
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn70fp
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn7i4c
+	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn9677
+	 */
 
-#header{
-    display: block;
-   height:70px;
-  margin-bottom: 0px;
-
+.left{
+  float: left;
+  margin-right: 10px;
 }
 
+.addressfield-container-inline{
+  float: left;
+  min-height:00px;
+}
+
+h1#page-title{
+ 
+}
+
+ul.breadcrumb{
+  background-color: white;
+clear: both;
+}
 .navbar-inner {
-  min-height: 40px;
+background: #86BC51;
   padding-right: 20px;
   padding-left: 40px !important;
   padding-top: 10px;
   padding-bottom: 10px;
-  background-color: #fafafa;
   background-repeat: repeat-x;
   border: 1px solid #d4d4d4;
-  background-image: -webkit-linear-gradient(top, rgb(235, 235, 235) 0%, rgb(208, 208, 208) 100%);
   
   
+ }
+ 
+ .accordion-heading a{
+   background-color: white;
+   border: none;
+
+ }
+ 
+ li.dropdown-menu-title{
+   color: white;
+   background-color: #527530 !important;
+   padding: 10px !important;
+   padding-top: 0px !;
+ }
+ 
+ ul.dropdown-menu{
+   background-color: #527530;
  }
 
 .nav-pills > .active > a, .nav-pills > .active > a:hover, .nav-pills > .active > a:focus {
@@ -63,7 +102,7 @@ padding: 0;
 
 .flag-wrapper a{
   color:white;
-  
+
 }
 
 body {
@@ -76,6 +115,8 @@ body {
   body h1, body h2, body h3, body h4, body h5, body h6 {
     text-transform: uppercase;
     font-weight: 300; }
+    
+    
 
 .views-responsive-grid h3{
   font-size: 20px !important;
@@ -84,6 +125,11 @@ body {
 
 #page{max-width: none
   
+}
+
+.group-traderinfo-group h4{
+  font-weight: bold;
+  font-size: 22px;
 }
 
 .marker-cluster div span{
@@ -100,9 +146,8 @@ body {
 .view-visit-traders-map.view-display-id-page .view-header,
 .view-service-providers-map.view-display-id-page .view-header,
 .view-activity-map.view-display-id-page .view-header{
-   position:absolute;
-   right:10px;
-   top:20px;
+   margin-top: -70px;
+   text-align: right;
  }
 
 .view-id-stores.view-display-id-listing_attachment .view-header,
@@ -120,6 +165,26 @@ h3{
 
 a{
   text-decoration: none !important;
+}
+
+.dropdown-toggle a.btn{
+  
+}
+
+#logo{
+  width: 180px;
+height: 100px;
+background: url("../images/receipt.png") no-repeat 0 -150px;
+position: absolute;
+padding-top: 10px;
+padding-left: 5px;
+top: 0;
+}
+
+a#logo img{
+  max-width:70% !important;
+  margin-left: 10px;
+  margin-top: 5px;
 }
 
 .view-mode-teaser{
@@ -187,7 +252,9 @@ margin-bottom: 10px;
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #999; }
+  color: #999; 
+  clear: both;
+  }
   footer a {
     color: #999; }
 
@@ -268,26 +335,7 @@ footer {
   margin-top: 40px;
   margin-bottom: 80px; }
 
-/* ============== sidebar ============== */
-.sidebar {
-  border-top: 1px solid #EEE; }
-  .sidebar ul {
-    padding: 0;
-    margin: 0; }
-    .sidebar ul li {
-      list-style-type: none; }
-      .sidebar ul li a {
-        display: block;
-        padding: 10px;
-        border-bottom: 1px solid #EEE;
-        }
-      .sidebar ul li a:hover {
-        background-color: #EEE;
-        /*        color: #FFF;*/
-        text-decoration: none; }
-      .sidebar ul li ul {
-        background-color: #F6F6F6;
-        box-shadow: inset 0 1px 10px #E0E0E0; }
+
 
 /* ============== stat lists ============== */
 ul.stat-list {
@@ -602,6 +650,86 @@ ul.stat-list {
     height: 100% !important;
 }
 
+.node-store #leaflet-map{
+  width: 100%;
+
+}
+
+.node-store .leaflet-control{
+
+}
+
+.node-type-store ul.nav.nav-tabs{
+  float: right;
+ margin-top: -70px;
+}
+
+div.horizontal-tabs {
+  margin: 0 0 1em 0; /* LTR */
+  padding: 0;
+  border: none;
+  position: relative; /* IE6/7 */
+}
+
+.horizontal-tabs fieldset.horizontal-tabs-pane {
+  padding: 1em 1em;
+  border: 0;
+  background-color: white;
+  margin-top: -3px;
+  margin-right: 20px;
+
+ 
+  box-sizing: border-box;
+}
+
+.ui-tabs-panel{
+  padding: 0 !important;
+}
+
+.node-type-store .group-middle{
+   margin-top: 25px;
+   padding-right: 20px;
+   box-sizing: border-box;
+}
+
+ul.horizontal-tabs-list{
+  background-color: #F6F6F6 !important;
+  border: 0 !important;
+}
+
+.numblock{
+  background-color: #86BC51;
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+}
+
+.numblock table{
+  background-color: #86BC51;
+  color: white;
+  font-size: 14px;
+  text-transform: uppercase;
+  font-weight: 700;
+  -moz-border-radius: 15px;
+  -webkit-border-radius: 15px;
+  border-radius: 15px;
+  font-weight: normal;
+}
+
+
+.view-id-orders.view-display-id-entity_view_3 .view-content{
+  display: none;
+}
+
+.numblock h2.block-title{
+  font-size: 16px;
+  line-height: 18px;
+}
+
 .leaflet-pseudo-fullscreen {
     position: fixed !important;
     width: 100% !important;
@@ -615,3 +743,100 @@ ul.stat-list {
     background-image: url(../images/leaflet.fullscreen.png);
 }
 
+.odd{
+  background-color: #135C32 !important;
+  border: none;
+}
+
+
+tr.odd{
+  color: #135C32;
+}
+
+tr.even{
+  background-color: #C2DCA8 !important;
+  color: #135C32;
+}
+
+#edit-search-block-form--2.form-text{
+  padding: 5px;
+}
+
+.contextual-links-region .contextual-links-region .contextual-links-wrapper {
+  margin-right: 40px;
+}
+
+.contextual-links-region .contextual-links-region .contextual-links-region .contextual-links-wrapper {
+  margin-right: 70px;
+}
+
+#block-quicktabs-orders{
+  background-color: #87BB57 !important;
+}
+
+
+.quicktabs_main.quicktabs-style-zen{
+  clear:both;
+}
+ul.quicktabs-tabs.quicktabs-style-zen{
+  margin:0 0 10px 0;
+  padding:0 0 3px;
+  font-size:1em;
+  list-style: none;
+  height:21px;
+  background: transparent;
+  border: none !important;
+}
+*html ul.quicktabs-tabs.quicktabs-style-zen li{
+  margin-bottom:-5px;
+}
+ul.quicktabs-tabs.quicktabs-style-zen li{
+  float: left;
+  margin:0 5px;
+  padding: 5px;
+   background: #C2DCA8;
+   -webkit-border-top-left-radius: 5px;
+   -webkit-border-top-right-radius: 5px;
+   -moz-border-radius-topleft: 5px;
+   -moz-border-radius-topright: 5px;
+   border-top-left-radius: 5px;
+   border-top-right-radius: 5px;
+  
+}
+ul.quicktabs-tabs.quicktabs-style-zen li a{
+  font:bold 12px/170% Verdana;
+  font-size-adjust:none;
+  display: block;
+  margin: 0;
+  padding:4px 17px 0px 12px;
+  border-width: 0;
+  font-weight:bold;
+  text-decoration:none;
+  background: transparent;
+  color: #135C32;
+  
+}
+ul.quicktabs-tabs.quicktabs-style-zen li:hover a{
+  border-width: 0;
+background:#ACD08B;
+color: white;
+}
+quicktabs-tabs.quicktabs-style-zen li:hover{
+  background:#ACD08B;
+  color: #87BB57;
+}
+ul.quicktabs-tabs.quicktabs-style-zen li.active a,
+ul.quicktabs-tabs.quicktabs-style-zen li.active a:hover{
+  text-decoration:none;
+  border-width: 0;
+ background: #135C32;
+ color: white;
+}
+ul.quicktabs-tabs.quicktabs-style-zen li.active{
+   background: #135C32;
+   color: white;
+}
+
+.block-views-statistics-products-block span2.numblock{
+  background-color: red !importantl
+}

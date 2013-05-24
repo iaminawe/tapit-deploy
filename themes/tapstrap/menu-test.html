@@ -1,0 +1,117 @@
+<html>
+<head>
+  <style>
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap.css');
+@import url('http://twitter.github.com/bootstrap/assets/css/bootstrap-responsive.css');
+
+.container {
+  margin-top: 40px; 
+}
+
+/* below is some code reused from http://codepen.io/bradfrost/pen/sjiCv */
+
+.wrap {
+  position: relative;
+  -webkit-transition: all 0.3s ease-out;  
+  -moz-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+.wrap.active {
+  left: 14em;
+}
+a.side-menu-link {
+  float: left;
+  display: block;
+  padding: 1em;
+}
+
+@media screen and (max-width: 48.063em) {
+  .js .oc {
+    width: auto;
+    position: absolute;
+    top: 0;
+    left: -14em;
+  }
+}
+
+@media screen and (min-width: 48.25em) {
+  a.side-menu-link {
+    display: none;
+  }
+  .wrap.active {
+    left: 0;
+  }
+}</style>
+
+<script>
+$(document).ready(function() {
+  
+  $('body').addClass('js');
+  
+  var $menu = $('#side-menu'),
+    $menulink = $('.side-menu-link'),
+    $wrap = $('#wrap');
+  
+  $menulink.click(function() {
+    $menulink.toggleClass('active');
+    $wrap.toggleClass('active');
+    return false;
+  });
+});
+  
+</script>
+  
+</head>
+<body>
+<div class="container" id="main">
+  <div class="row-fluid" style="
+    margin-bottom: 10px;">
+    <p class="span12">
+      <a href="#menu" class="side-menu-link btn btn-mini" title="Click for sub-menu">
+        <i class="icon-th"></i>
+      </a>
+    </p>
+  </div>
+  <div id="wrap" class="row-fluid wrap">
+    <!--Sidebar content-->
+    <aside class="well span3 oc" id="side-menu" role="navigation">
+      <ul class="nav nav-list">
+        <li class="nav-header">Title 1</li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li class="nav-header">Title 2</li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li class="nav-header">Title 3</li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li class="nav-header">Title 4</li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li class="nav-header">Title 5</li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li class="nav-header">Title 6</li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li><a href="#">Sube Menu Link</a></li>
+        <li><a href="#">Sube Menu Link</a></li>
+      </ul>
+    </aside>
+    
+    <!--Body content-->
+    <section class="well span9 ">
+      <h2>Web Module - Index</h2>
+      <ul class="nav">
+        <li><a href="#">Orders</a></li>
+        <li><a href="#">Customers</a></li>
+      </ul>
+    </section>
+    
+  </div>
+</div>
+
+
+
+</body>
+</html>

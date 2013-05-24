@@ -10,7 +10,11 @@ base theme  = zenstrap
 ; Then we add our own stylesheets.
 stylesheets[all][] = css/tapstrap_admin_styles.css
 stylesheets[all][] = css/flat-ui.css
-stylesheets[all][] = css/fullcalendar.css
+;stylesheets[all][] = css/fullcalendar.css
+stylesheets[all][] = css/glyphicons.css
+stylesheets[all][] = css/halflings.css
+;stylesheets[all][] = css/style.css
+;stylesheets[all][] = css/style-responsive.css
 
 ; Optionally add some JavaScripts to your theme.
 

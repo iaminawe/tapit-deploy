@@ -8,103 +8,58 @@
 
 <div id="page">
 
-  <header id="header" role="banner">
-<div id="navigation" class="navbar navbar-fixed-top">
-
-        <div class="navbar-inner">
-          <div class="container">
-    <?php if ($logo): ?>
-      <div id="logo">
+<header id="header" role="banner">
+		<!-- start: Header -->
+	<div class="navbar">
+		<div class="navbar-inner">
+			<div class="container-fluid">
+				<a class="btn btn-navbar" data-toggle="collapse" data-target=".top-nav.nav-collapse,.sidebar-nav.nav-collapse">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+				</a>
+				 <?php if ($logo): ?>
+      <div id="logo" class="brand">
         <a href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home" id="logo"><img src="<?php print $logo; ?>" alt="<?php print t('Home'); ?>" /></a>
       </div>
     <?php endif; ?>
-
-      <?php if ($site_name || $site_slogan): ?>
-<!--       <hgroup id="name-and-slogan" > -->
-        <?php if ($site_name): ?>
-<!--           <h1 id="site-name"> -->
-            <a class="brand" href="<?php print $front_page; ?>" title="<?php print t('Home'); ?>" rel="home"><span><?php print $site_name; ?></span></a>
-<!--           </h1> -->
-        <?php endif; ?>
-
-<!--       </hgroup><!-- /#name-and-slogan -->
-    <?php endif; ?>
-
-      <?php if ($main_menu): ?>
-        
-        <nav id="main-menu" role="navigation">
-          <a class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-          </a>
-          <?php
-          // This code snippet is hard to modify. We recommend turning off the
-          // "Main menu" on your sub-theme's settings form, deleting this PHP
-          // code block, and, instead, using the "Menu block" module.
-          // @see http://drupal.org/project/menu_block
-          $tree = menu_tree('main-menu');
-          //indicate this is main menu being rendered
-          $tree['#main_menu'] = TRUE;
-          foreach ($tree as $id => &$element) {
-            if (is_numeric($id)) {
-              $element['#main_menu'] = TRUE;
-            }
-          }
-          print '<div class="nav-collapse">' . theme('links__system_main_menu', array(
-            'links' => $tree,
-            'attributes' => array(
-              'class' => array('nav', 'links', 'inline', 'clearfix'),
-            ),
-            'heading' => array(
-              'text' => t('Main menu'),
-              'level' => 'h2',
-              'class' => array('element-invisible'),
-            ),
-          )) . '</div>' ;
-           ?>
-    <?php if ($secondary_menu): ?>
-      <div class="nav-collapse" id = "secondary-menu-wrapper">
-      <nav id="secondary-menu" role="navigation">
-        <?php
-           print theme('links__system_secondary_menu', array(
-              'links' => $secondary_menu,
-              'attributes' => array(
-                'class' => array('nav', 'links', 'inline', 'clearfix'),
-              ),
-              'heading' => array(
-                'text' => $secondary_menu_heading,
-                'level' => 'h2',
-                'class' => array('element-invisible'),
-              ),
-            ));
-        ?>
-      </nav> </div>
-    <?php endif; ?>
-    
-    <?php if ($search_block) : ?>
+								 <?php if ($search_block) : ?>
       <div id="nav-search-bar">
       <?php print $search_block; ?>
       </div>
     <?php endif;?>
 
-        </nav>
-      
-      <?php endif; ?>
-
-      <?php print render($page['navigation']); ?>
-
-
-    <?php if ($site_slogan): ?>
-      <h2 id="site-slogan">
-        <?php print $site_slogan; ?>
-      </h2>
-    <?php endif; ?>
-
-          </div>
-        </div>
-
-    </div><!-- /#navigation -->
+				<!-- start: Header Menu -->
+				<div class="nav-no-collapse header-nav navbar-inverse">
+					<ul class="nav pull-right">
+				 <!-- start: User Dropdown -->
+						<li class="dropdown">
+							<a class="btn dropdown-toggle" data-toggle="dropdown" href="#">
+								<i class="halflings-icon white user"></i>
+								<?php if (user_is_logged_in() == TRUE) {
+                    global $user;
+                    print $user->name;
+                }else{ print "You need to login"; }?>
+								<span class="caret"></span>
+							</a>
+							<ul class="dropdown-menu">
+								<li class="dropdown-menu-title">
+ 									<span>Account Settings</span>
+								</li>
+								<li><?php print '<a href="/tapit/user/'.$user->uid.'/edit">';?>
+<i class="halflings-icon user"></i> Profile</a></li>
+								<li><a href="/tapit/user/logout"><i class="halflings-icon off"></i> Logout</a></li>
+							</ul>
+						</li>
+						<!-- end: User Dropdown -->
+					</ul>
+				</div>
+				<!-- end: Header Menu -->
+				
+			</div>
+		</div>
+	</div>
+	<!-- start: Header -->
 
     <?php print render($page['header']); ?>
 
