@@ -31,19 +31,5 @@ function tapit_stores_strongarm() {
   $strongarm->value = 'Tapit Mapbox';
   $export['leaflet_mapbox_label'] = $strongarm;
 
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'location_taxonomize_show_messages';
-  $strongarm->value = 1;
-  $export['location_taxonomize_show_messages'] = $strongarm;
-
-  $strongarm = new stdClass();
-  $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
-  $strongarm->api_version = 1;
-  $strongarm->name = 'location_taxonomize_vid';
-  $strongarm->value = '5';
-  $export['location_taxonomize_vid'] = $strongarm;
-
   return $export;
 }
