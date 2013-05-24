@@ -46,9 +46,9 @@
 								<li class="dropdown-menu-title">
  									<span>Account Settings</span>
 								</li>
-								<li><?php print '<a href="/tapit/user/'.$user->uid.'/edit">';?>
+								<li><?php print '<a href="/user/'.$user->uid.'/edit">';?>
 <i class="halflings-icon user"></i> Profile</a></li>
-								<li><a href="/tapit/user/logout"><i class="halflings-icon off"></i> Logout</a></li>
+								<li><a href="/user/logout"><i class="halflings-icon off"></i> Logout</a></li>
 							</ul>
 						</li>
 						<!-- end: User Dropdown -->
