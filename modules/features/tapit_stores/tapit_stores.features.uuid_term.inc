@@ -11,1065 +11,500 @@ function tapit_stores_uuid_features_default_terms() {
   $terms = array();
 
   $terms[] = array(
-    'name' => 'Mandonella',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '0046a895-db6d-4275-a271-f0643f0a2691',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'clermont',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '01a7661b-edd1-425f-bd18-ead8630f6092',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'FINRO Jumbo',
+    'name' => 'Independent WC',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '02902413-c20a-4cf4-bd95-87a1ccf4db9b',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '02217e57-feca-4d90-8884-6da158467fdc',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Westville',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '036ba7e1-5017-4997-a6cd-beda07cc1e20',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Port Elizabeth',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '04215ed4-f0eb-437e-97dd-889cfb64272e',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'UMZINTO',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '0ca4e199-b5a3-4657-baa4-9c836ee455e8',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Greytown',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '122316b1-f3df-4c64-a9f9-27e88073411c',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Mkhuze',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '14391448-e99e-40ea-a301-fcf3f29564eb',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Browns Cash & Carry',
+    'name' => 'Weirs EL',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '15bf854d-4216-c664-616f-5b1628d54401',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '0468e8b7-9edc-426c-9aea-52c1fc1220a4',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Hluhluwe',
+    'name' => 'Masscash - Browns Mkuze',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '1627e1da-1994-4137-8e2c-05f48315b2b7',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '048952a3-424e-4d07-a082-0ffcc5658e14',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'KwaZulu Natal',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '44ddc3a4-3e3e-421f-ab5c-a085733ef96d',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Eastern Cape',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '44ddc3a4-3e3e-421f-ab5c-a085733ef96d',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Durban',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '21a91c75-4b1c-4594-a1de-03c051ecbd67',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Dalton',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '22b60807-4a44-4076-ac98-e5409f55ca25',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Mbazwana',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '254fccba-d646-4722-837a-811df6f1885f',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Vodacom (IP)',
+    'name' => 'Masscash - WCC',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '2dbe10d9-9b81-c414-45ca-a5429699266d',
-    'vocabulary_machine_name' => 'service_provider',
+    'uuid' => '0bc29702-50bc-4665-af84-3e4d316e6453',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Mkuze',
+    'name' => 'None',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '2de4b486-0cc8-41dd-aedb-8030d3f5bfb5',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '10ab709e-38d4-4fbd-9807-b8a8f1d5a7d5',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Durban Central',
+    'name' => 'Independent  - Weirs PE , Finro Jumbo',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '333d5c48-403e-4641-9d65-6b3d489b71f8',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '15769798-c6f5-4fda-b94e-6913b1a7091a',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Mboza',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '33af6c00-3dbe-43ac-9bb6-f21150e20279',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'p.m.b',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '38bebf3c-a129-498a-b7ed-a5ef246a6b12',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Keiskamahoek',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '3c9ae3d3-1411-427c-93ee-e934846b2bfa',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'N/A',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '3f033dad-022a-5ec4-09dd-fe3da699c58b',
-    'vocabulary_machine_name' => 'service_provider',
-  );
-  $terms[] = array(
-    'name' => 'Kwadlangezwa',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '4149a834-60ea-4d99-987c-2de9db9c304c',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Western Cape',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '43208f24-776d-49a5-80ff-05633911d7ce',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '44ddc3a4-3e3e-421f-ab5c-a085733ef96d',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'ZA',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '44ddc3a4-3e3e-421f-ab5c-a085733ef96d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-  );
-  $terms[] = array(
-    'name' => 'JNB',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '46635154-e2bd-47a5-8826-07f4d79e8ed6',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => 'c9e2a1a5-284a-47b1-8036-91cb20b8aaa8',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Middledrift',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '481e2678-8bdc-44dd-bbfd-01990dab80e6',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Vodafone SmartTab10 Android 3.2',
+    'name' => 'KZN Independent',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '4b06cad7-9f94-38e4-718e-97ea6b2dbd66',
-    'vocabulary_machine_name' => 'device_type',
+    'uuid' => '1a1ec0e1-da14-4c0e-8bf3-75aec74e45ea',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Ngwelezani',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '4b29b6dd-87ca-4803-a052-06d5a3293cd9',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Weirs Cash & Carry PE',
+    'name' => 'Masscash - WCC',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '4c2e5360-8be7-9b94-014f-fae2bf31a151',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '217719e3-c133-42bd-93b4-386a1202123c',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Cape Town',
+    'name' => 'Like Minds',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '4db1983e-6808-4652-9f7a-8286f8d5bf62',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '43208f24-776d-49a5-80ff-05633911d7ce',
-    ),
+    'uuid' => '21d29094-ed2d-4915-b012-1420ca6b0108',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Empangeni Cash & Carry',
+    'name' => 'Masscash - Jumbo Epping',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => '249be601-6ded-4b2e-8fcf-6c7c5cfb71b1',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Empangeni C&C',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '4df22267-618b-e6d4-5dd3-79902b89db3d',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '288e5e0a-f408-4b11-9505-894731dd066c',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Esikhawini',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '4df56dad-d1fd-4d47-b7b9-97eb53843d3c',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Kieskamahoek',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '4f1c0cf5-b676-4b37-ad61-043deeac4956',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Port Shepstone',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '50e2b99a-55ff-477f-b22c-0d4cada7782d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Keiskammahoek',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '52cfc3c0-edac-415a-b09b-15179a8c8c0d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Melmoth',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '535194c5-fa92-4abf-8a4a-551ed6491414',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Small',
+    'name' => 'n/a',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '54ff1a31-1c29-c074-0da6-047f17d3b17e',
-    'vocabulary_machine_name' => 'size',
+    'uuid' => '28edad22-ee13-4b3e-a527-8e38b20e4b77',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Ndengezi',
+    'name' => 'Independent WC',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '3475123c-7ff8-470b-895c-094f27a263d3',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Smollan',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '56b06ae5-56dc-47c0-aff9-a6de5627505b',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Vodacom',
-    'description' => '',
-    'format' => 'html',
-    'weight' => '0',
-    'uuid' => '56e3b065-884b-c824-9d1d-b183d6aca3a5',
-    'vocabulary_machine_name' => 'service_provider',
+    'uuid' => '35ac5ee6-b898-4901-95ca-dcb1b10e5e30',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
     'name' => 'Jumbo Cash & Carry',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '5ca9813e-cf82-3e84-fd9e-0c2652a96735',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '35c45940-32f6-4abe-a326-d89a71cfb680',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Jumbo Ottery',
+    'name' => 'Independent - Weirs PE, Finro Jumbo',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '60b99524-e9fa-d534-c1b8-e18971d8bdfb',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '3906aa31-6057-4023-b9a2-61ee2edbc1e7',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Gingindlovu',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '6151e194-b518-472c-abbe-880d910cb7ef',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Pennington',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '624788c1-87ce-4552-9398-23133dffb012',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Johannesburg',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '67d3d4ff-0a1d-4c2f-a2ca-dcea81974b0a',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => 'c9e2a1a5-284a-47b1-8036-91cb20b8aaa8',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'DBN',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '69f7e3d8-aaff-4e61-8c15-01df5d07978c',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '7ac2b164-caf5-42f4-9158-a1ed1d00791a',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Cape Town',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '6b170408-7517-4aec-be20-12e50436285d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Jozini',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '6d2211c2-2736-45c4-9772-8dd7bbdcf646',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'PE',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '6dfeef19-c85a-4ca9-b7c9-6c19d1090b14',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Vodaphone Smart tab10 android 13.2',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '6fa29923-6562-12b4-6dfe-3709adb8687d',
-    'vocabulary_machine_name' => 'device_type',
-  );
-  $terms[] = array(
-    'name' => 'Pinetown',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '70e5893e-0aa2-4dad-aabf-b128b6a83ae8',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Umlazi',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '71078d24-0293-42a4-b1c2-b32f04856ca1',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Hlabisa',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '77979cd8-aa2d-4ca0-be0c-4eee59b6c94a',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Cape Province',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '7a8d931f-fdce-4d74-ab3c-aac53c37478d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '43208f24-776d-49a5-80ff-05633911d7ce',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Mpumalanga',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '7ac2b164-caf5-42f4-9158-a1ed1d00791a',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '44ddc3a4-3e3e-421f-ab5c-a085733ef96d',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'East London',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '7f39a07f-4fe3-43ee-aa55-fa505c496494',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'pietermarizburg',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '85234b11-bf3f-4a0c-ac31-458998478a8a',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'MTN',
+    'name' => 'Independent WC',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '854f857b-1bc2-c6d4-bd49-73c3ee8de7a7',
-    'vocabulary_machine_name' => 'service_provider',
+    'uuid' => '3a3b763f-90c1-471f-90e7-15d1e61ebbbb',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Underburg',
+    'name' => 'Independent - Weirs PE; Finro Jumbo',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '87d99e77-cda3-4bf4-a720-f706c5d45c5f',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '3d74e65b-780b-4ca3-89b0-5aa43532c042',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Queensburgh',
+    'name' => 'Weirs PE',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '8c5305dd-ee61-4f66-9727-3e52b997eb94',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '3f9d5881-2810-4183-b027-93f4d5d1a82d',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Hillcrest',
+    'name' => 'KWT',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '8dd527b9-b7d4-46dc-8410-1333af559414',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '43ad49d1-dcd1-4658-9522-8dfd355dd49d',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Vodacom / MTN',
+    'name' => 'Masscash',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '8e71e416-8c67-f6e4-39b7-052f06bca3c8',
-    'vocabulary_machine_name' => 'service_provider',
+    'uuid' => '480b39a5-84ce-483c-ac5b-7d0b1617df8d',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Despatch',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '8e9b54c8-0fd6-4ef9-9954-ff8c3a90e56a',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Samsung Galaxy Tab 2 10.1',
+    'name' => 'Westmead C&C',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => '92174f41-43c1-5e24-9105-7433b00e4a27',
-    'vocabulary_machine_name' => 'device_type',
+    'uuid' => '5515e341-9c86-42b3-a224-84f68d018c07',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Mduku',
+    'name' => 'Independent  - Weirs PE; Finro Jumbo',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => '93f7b73a-acbd-471a-9a70-e39b992dc189',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '59c10dc2-7a85-45c9-aec7-0168b5b0ef16',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Estcourt',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '98507db6-ac11-454d-a8b7-b02ca7bd405d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Pietermarutzbueg',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '9c70cff3-0550-4a33-9ead-b6c93cfe2cf9',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Stanger',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => '9e3060a2-339a-44f5-acad-d16edd1b57b3',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Chatsworth',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'a1ef81d9-532c-4d7b-a8d4-8f11e63b7259',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Nyuswa',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'a64a6b48-ebe7-49fa-895d-5286891715f1',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Kwambonambi',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'a747c475-d7f0-48a8-b39c-d7957975892c',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Nkonkobe Cash & Carry',
+    'name' => 'Masscash - Wiers PE, Finro Jumbo',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'aad45025-fb3c-f0d4-99ca-bc0281b6ba59',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => '601a4427-6b0a-4d71-bdbf-dbd006aacef0',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Kingwilliams town',
+    'name' => 'Masscash - Weirs PE, Finro Jumbo',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => 'ab82ca9a-eb4b-42fd-a748-807c091ad6f0',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
+    'uuid' => '6101cd51-29a2-402d-b59f-2a7cf2c926d2',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'New Germany',
+    'name' => '-None-',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => 'aec90216-2357-44de-8791-f0eb2a53a1cd',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
+    'uuid' => '64d022c7-d3fe-4c37-99af-5cf0e6e2cef5',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Fort Beaufort',
+    'name' => 'Independent - Jumbo Ottery; Jumbo Epping',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => 'b1438e13-27ee-4b18-96fd-1c302c814ed0',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
+    'uuid' => '6746844c-ad96-40b0-a01a-54b2ac62d0d2',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - Jumbo Ottery, Jumbo Epping',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '68766890-97e1-4023-a6ba-8fa63bd59518',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Unilever',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => '68f35c41-15ca-46f0-9e2f-6cdf57462d59',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Masscash - Jumbo Ottery',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => '69914492-5002-4a42-b24e-cbf378884f7d',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - Jumbo Ottery & Jumbo Epping',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => '69b92d20-6807-4a25-ace6-0d3a18ce8822',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Masscash - Weirs PE; Finro Jumbo',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => '6a446767-9d3f-47bc-8648-b2aa85f2b571',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Finro Jumbo',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '6fffd95a-85dc-4510-a1b6-58719002c308',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Weirs EL',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '72fcb579-04fa-45d5-a619-fcb8420ced03',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - Weirs PE, Finro Jumbo',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '7f0a8f71-26b3-4b9b-8497-a8b6badcc6ac',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Jumbo Durban',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '864ec258-1b45-445f-a5a4-e19f5f0cf9f7',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Hweba e-Solutions',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => '89c91403-828e-4540-98f6-9cbe4f83261e',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'KWT C&C',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '8fcff91e-4026-45c9-b65c-cd7d342ff48a',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - WCC, JD',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '980992f3-9dd9-4dde-befa-ec70fbb29872',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - PE',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => '9e70e0b1-addc-4e23-a423-378fa5feb4b4',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - KWT, Weirs EL',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => 'a3be2219-b523-4dab-9bee-01e05b040af1',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - PE',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'a92bc0f0-d70f-4365-9a82-4736ed6b7e6a',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
     'name' => 'Jumbo Epping',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'b31e2de1-eeaa-b064-c115-aa7e4d54d90f',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => 'b3c9e7d1-84c0-4e9d-a5ef-8a1c0a4e16bd',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Mdantsane',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'b57ede04-33e7-43b7-80e2-5a7789b8186f',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Pietermaritzburg',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'b75f4e24-032c-4919-9fa4-c7023113caeb',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Eshowe',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'b978a762-4c6c-4b31-98e4-4cee45e9718d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Empangeni',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'bf1be834-72c9-47e1-9dac-ce2252563727',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Pongola',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'c459e9c6-60d8-4b9b-aa0c-944f1a967b2d',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Gauteng',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'c9e2a1a5-284a-47b1-8036-91cb20b8aaa8',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '44ddc3a4-3e3e-421f-ab5c-a085733ef96d',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Large',
+    'name' => 'Independent - EC',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'd11ace8f-21fe-c8d4-1130-34e105ef28ec',
-    'vocabulary_machine_name' => 'size',
+    'uuid' => 'b85c93c0-76a2-4649-ae58-d679e3e66b82',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Westmead Cash & Carry',
+    'name' => 'na',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => 'bb07dcb3-5dff-459b-a283-00f3a0ffe192',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - WCC; JD',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => 'c6f4e831-70cc-404f-a7b8-368549ac54fe',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'KWT C&C',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'd9ab6b6e-8afc-f164-dd9b-de4db748eb3e',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => 'd6eb9394-2919-41ec-babc-11be5c04c4b7',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Mtuba',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'df58b466-2aca-4588-89c9-41f2f88ac0d8',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Weirs Cash & Carry EL',
+    'name' => 'Independent - EC',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'e1120e3f-d0d6-9cd4-dda1-a364c760f645',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => 'd9febc6f-ae6c-426d-a159-4c0979fe75d3',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'N/A',
+    'name' => 'Independent  - WCC , JD',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => 'e2978b69-dcb3-faf4-4d6b-ac7962999c62',
-    'vocabulary_machine_name' => 'device_type',
+    'uuid' => 'e0f73e90-71b2-47b8-b67b-d1184832e26a',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'King Williams Town',
+    'name' => 'Masscash - ECC',
     'description' => NULL,
     'format' => NULL,
     'weight' => '0',
-    'uuid' => 'e3ee73db-d16b-4218-a80d-7212f29634ef',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
+    'uuid' => 'e1a8c11f-42d8-4315-894e-ed0d6d00e207',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Adelaide',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'e755ba4e-e11e-46b6-a18e-cbe85558a29c',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Medium',
+    'name' => 'Jumbo Ottery',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'e8e8e619-733f-6124-6980-fe074613ddb0',
-    'vocabulary_machine_name' => 'size',
+    'uuid' => 'e24bdb1d-d0ad-4951-979a-e47af7c16a12',
+    'vocabulary_machine_name' => 'affiliation',
   );
   $terms[] = array(
-    'name' => 'Southbroom',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'eeda4378-3de1-485c-b251-96e63fb6518a',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Alice',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'f4af739c-14a3-4780-9a60-4c1453d3d73e',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1f7ba6ab-963a-40ba-ae0a-e80edacf1d78',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Richards Bay',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'f5382ca3-c82a-40e3-aa36-f8928f7cc8cc',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Newcastle',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'f5cf5088-072a-4c38-9dfd-631e9f098667',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'Kwajobe',
-    'description' => NULL,
-    'format' => NULL,
-    'weight' => '0',
-    'uuid' => 'fd576b60-8099-4851-bc31-09a6c854e708',
-    'vocabulary_machine_name' => 'location_taxonomize',
-    'location_taxonomize_longname' => array(),
-    'parent' => array(
-      0 => '1aa56e8b-7b82-4712-af8e-e3dbda262ab1',
-    ),
-  );
-  $terms[] = array(
-    'name' => 'King Williams Town Cash & Carry',
+    'name' => 'Empangeni C&C',
     'description' => '',
-    'format' => 'html',
+    'format' => 'filtered_html',
     'weight' => '0',
-    'uuid' => 'fea9632b-1e89-27e4-19a2-ebbf61685715',
-    'vocabulary_machine_name' => 'wholesaler',
+    'uuid' => 'e3f96ae2-5119-4694-8414-713a099e6db3',
+    'vocabulary_machine_name' => 'affiliation',
   );
-  variable_set('uuid_features_file_types', array());
-  variable_set('uuid_features_file_mode', 'inline');
-  variable_set('uuid_features_file_assets_path', '');
-  variable_set('uuid_features_file_supported_fields', 'file, image');
+  $terms[] = array(
+    'name' => 'Independent KZN',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'e46c385c-2d9b-4213-b495-49658447cbd8',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent - Jumbo Ottery, Jumbo Epping',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'e52dead4-4474-40d5-80d2-192844f50df6',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'tap-IT',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'e9f8b022-5ea8-460e-9d87-5349e0f1ded2',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'f14efc1d-3ddc-4c31-9cee-5e7b677ba052',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Independent  - WCC; JD',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => 'f5047043-6d99-441e-8806-dcb49f1300c2',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Browns Mkuze',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'f58f735d-a0bf-4e67-9ccc-0b6b23598806',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Weirs EL',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'f8dc145c-8bcf-4cc3-985d-5d7415836f80',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Nkonkobe C&C',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'f96056a4-1f11-492d-9bec-6df5d23c29c5',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Masscash - Weirs EL',
+    'description' => NULL,
+    'format' => NULL,
+    'weight' => '0',
+    'uuid' => 'fb80cf83-41ff-4abe-b0dc-c83e05948f1a',
+    'vocabulary_machine_name' => 'affiliation',
+  );
+  $terms[] = array(
+    'name' => 'Tiger Brands',
+    'description' => '',
+    'format' => 'filtered_html',
+    'weight' => '0',
+    'uuid' => 'fed52477-f30c-401f-8cdc-dabee24638ab',
+    'vocabulary_machine_name' => 'affiliation',
+  );
   return $terms;
 }

@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the tapit_maps feature.
+ */
+
+include_once 'tapit_maps_feature.features.inc';
