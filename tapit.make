@@ -57,12 +57,6 @@ projects[colorbox_node][version] = 2.6
 projects[views_accordion][subdir] = contrib
 projects[views_accordion][version] = 1.0-rc2
 
-projects[mobile_navigation][type] = module
-projects[mobile_navigation][subdir] = contrib
-projects[mobile_navigation][download][type] = "git"
-projects[mobile_navigation][download][url] = "http://git.drupal.org/sandbox/x7ian/1996698.git"
-projects[mobile_navigation][download][branch] = "master"
-
 projects[tabsnomore][type] = module
 projects[tabsnomore][subdir] = contrib
 projects[tabsnomore][download][type] = "git"
@@ -105,8 +99,6 @@ projects[flag][version] = 3.0-alpha4
 
 projects[feedback][subdir] = contrib
 projects[feedback][version] = 2.x-dev
-
-
 
 ;;;;;;;;;;;;;;;;
 ; Vizualisation
