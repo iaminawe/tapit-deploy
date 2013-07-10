@@ -22,7 +22,7 @@ projects[geocoder][subdir] = contrib
 projects[geocoder][version] = 1.x-dev
 
 projects[geophp][subdir] = contrib
-projects[geophp][version] = 1.7
+projects[geophp][version] = 1.x-dev
 
 projects[location_taxonomize][subdir] = contrib
 projects[location_taxonomize][version] = 2.4
