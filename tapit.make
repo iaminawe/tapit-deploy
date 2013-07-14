@@ -8,6 +8,7 @@ core = 7.x
 
 projects[leaflet][subdir] = contrib
 projects[leaflet][version] = 1.x-dev
+projects[leaflet][patch][1954942]= https://drupal.org/files/leaflet-fix_leaflet_library_location-1954942-11_0.patch
 
 projects[leaflet_markercluster][subdir] = contrib
 projects[leaflet_markercluster][version] = 1.x-dev
