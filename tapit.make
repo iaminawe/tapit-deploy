@@ -6,14 +6,17 @@ core = 7.x
 ;;;;;;;;;
 
 
-;projects[leaflet][subdir] = contrib
-;projects[leaflet][version] = 1.x-dev
+projects[leaflet][subdir] = contrib
+projects[leaflet][version] = 1.x-dev
 
-;projects[leaflet_markercluster][subdir] = contrib
-;projects[leaflet_markercluster][version] = 1.x-dev
+projects[leaflet_markercluster][subdir] = contrib
+projects[leaflet_markercluster][version] = 1.x-dev
 
-;projects[leaflet_more_maps][subdir] = contrib
-;projects[leaflet_more_maps][version] = 1.2
+projects[leaflet_more_maps][subdir] = contrib
+projects[leaflet_more_maps][version] = 1.5
+
+projects[leaflet_mapbox][subdir] = contrib
+projects[leaflet_mapbox][version] = 1.2
 
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
