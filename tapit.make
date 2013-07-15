@@ -9,15 +9,19 @@ core = 7.x
 projects[leaflet][subdir] = contrib
 projects[leaflet][version] = 1.x-dev
 projects[leaflet][patch][1954942]= https://drupal.org/files/leaflet-fix_leaflet_library_location-1954942-11_0.patch
+projects[leaflet][patch][91c37f25021fd741a34567cc18db2ac9]= https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_addhash.patch?login=iaminawe&token=91c37f25021fd741a34567cc18db2ac9
 
 projects[leaflet_markercluster][subdir] = contrib
 projects[leaflet_markercluster][version] = 1.x-dev
+projects[leaflet_markercluster][patch][97426c063f44cf5cb6f3ce347f59bc29]=https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_markercluster_addhash.patch?login=iaminawe&token=97426c063f44cf5cb6f3ce347f59bc29
 
 projects[leaflet_more_maps][subdir] = contrib
 projects[leaflet_more_maps][version] = 1.5
+projects[leaflet_more_maps][patch][fe6a4b7d480fe2b94d811cfff4d0af8c]= https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_more_maps_fullscreen.patch?login=iaminawe&token=fe6a4b7d480fe2b94d811cfff4d0af8c
 
 projects[leaflet_mapbox][subdir] = contrib
 projects[leaflet_mapbox][version] = 1.2
+projects[leaflet_mapbox][patch][b83576f4af7d2a1aa81c980f55ce9a10]=https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_mapbox_addfullscreen.patch?login=iaminawe&token=b83576f4af7d2a1aa81c980f55ce9a10
 
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
