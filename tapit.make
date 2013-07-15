@@ -16,7 +16,7 @@ projects[leaflet_markercluster][version] = 1.x-dev
 projects[leaflet_markercluster][patch][97426c063f44cf5cb6f3ce347f59bc29]=https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_markercluster_addhash.patch?login=iaminawe&token=97426c063f44cf5cb6f3ce347f59bc29
 
 projects[leaflet_more_maps][subdir] = contrib
-projects[leaflet_more_maps][version] = 1.5
+projects[leaflet_more_maps][version] = 1.x-dev
 projects[leaflet_more_maps][patch][fe6a4b7d480fe2b94d811cfff4d0af8c]= https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_more_maps_fullscreen.patch?login=iaminawe&token=fe6a4b7d480fe2b94d811cfff4d0af8c
 
 projects[leaflet_mapbox][subdir] = contrib
