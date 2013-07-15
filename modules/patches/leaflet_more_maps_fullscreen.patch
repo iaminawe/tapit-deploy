@@ -1,0 +1,12 @@
+diff --git a/leaflet_more_maps.module b/leaflet_more_maps.module
+index 6649c20..24bd5ac 100644
+--- a/leaflet_more_maps.module
++++ b/leaflet_more_maps.module
+@@ -31,6 +31,7 @@ function leaflet_more_maps_leaflet_map_info() {
+     // 'zoom'               =>  2,
+     'zoomAnimation'      => TRUE,
+     'zoomControl'        => TRUE,
++    'fullscreenControl' => TRUE,
+   );
+   $map_info = array();
+   _leaflet_more_maps_assemble_default_map_info($map_info, $default_settings);

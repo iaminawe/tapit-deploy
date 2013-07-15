@@ -1,0 +1,14 @@
+diff --git a/leaflet_markercluster.drupal.js b/leaflet_markercluster.drupal.js
+index dd5d7d8..46e27e5 100644
+--- a/leaflet_markercluster.drupal.js
++++ b/leaflet_markercluster.drupal.js
+@@ -151,6 +151,9 @@
+           lMap.attributionControl.setPrefix(this.map.attribution.prefix);
+           lMap.attributionControl.addAttribution(this.map.attribution.text);
+         }
++        
++         // Add hash functionality to leaflet
++        var hash = new L.Hash(lMap);
+ 
+         // add the leaflet map to our settings object to make it accessible
+         this.lMap = lMap;

@@ -1,0 +1,12 @@
+diff --git a/leaflet_mapbox.module b/leaflet_mapbox.module
+index bc673ae..f4a46e5 100644
+--- a/leaflet_mapbox.module
++++ b/leaflet_mapbox.module
+@@ -40,6 +40,7 @@ function leaflet_mapbox_leaflet_map_info() {
+     'zoom'               => variable_get('leaflet_mapbox_zoomlevel', 2),
+     'zoomAnimation'      => TRUE,
+     'zoomControl'        => TRUE,
++    'fullscreenControl' => TRUE,
+   );
+ 
+   $map_info = array();

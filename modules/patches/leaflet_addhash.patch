@@ -1,0 +1,14 @@
+diff --git a/leaflet.drupal.js b/leaflet.drupal.js
+index 3e2fe1d..08483d5 100644
+--- a/leaflet.drupal.js
++++ b/leaflet.drupal.js
+@@ -94,6 +94,9 @@
+           lMap.attributionControl.setPrefix(this.map.attribution.prefix);
+           lMap.attributionControl.addAttribution(this.map.attribution.text);
+         }
++        
++        // Add in hash functionality
++        var hash = new L.Hash(lMap);
+ 
+         // add the leaflet map to our settings object to make it accessible
+         this.lMap = lMap;
