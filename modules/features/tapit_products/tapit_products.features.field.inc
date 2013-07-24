@@ -1791,6 +1791,7 @@ function tapit_products_field_default_fields() {
           'weight' => '17',
         ),
       ),
+      'ds_extras_field_template' => '',
       'entity_type' => 'node',
       'field_name' => 'field_product_refcategory',
       'label' => 'Category',

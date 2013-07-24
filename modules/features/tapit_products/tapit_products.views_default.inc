@@ -64,7 +64,6 @@ function tapit_products_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'products/new';
   $handler->display->display_options['menu']['type'] = 'normal';
   $handler->display->display_options['menu']['title'] = 'New Products List';
@@ -76,7 +75,6 @@ function tapit_products_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Latest Promotions';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -125,15 +123,13 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   /* Field: COUNT(Content: Product) */
   $handler->display->display_options['fields']['field_product_liked']['id'] = 'field_product_liked';
   $handler->display->display_options['fields']['field_product_liked']['table'] = 'field_data_field_product_liked';
   $handler->display->display_options['fields']['field_product_liked']['field'] = 'field_product_liked';
   $handler->display->display_options['fields']['field_product_liked']['group_type'] = 'count';
   $handler->display->display_options['fields']['field_product_liked']['separator'] = ', ';
-  /* Sort criterion: COUNT(Content: Product (field_product_liked)) */
+  /* Sort criterion: COUNT(Content (historical data): Product (field_product_liked)) */
   $handler->display->display_options['sorts']['field_product_liked_target_id']['id'] = 'field_product_liked_target_id';
   $handler->display->display_options['sorts']['field_product_liked_target_id']['table'] = 'field_data_field_product_liked';
   $handler->display->display_options['sorts']['field_product_liked_target_id']['field'] = 'field_product_liked_target_id';
@@ -153,7 +149,7 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'product' => 'product',
   );
-  /* Filter criterion: COUNT(Content: Product (field_product_liked)) */
+  /* Filter criterion: COUNT(Content (historical data): Product (field_product_liked)) */
   $handler->display->display_options['filters']['field_product_liked_target_id']['id'] = 'field_product_liked_target_id';
   $handler->display->display_options['filters']['field_product_liked_target_id']['table'] = 'field_data_field_product_liked';
   $handler->display->display_options['filters']['field_product_liked_target_id']['field'] = 'field_product_liked_target_id';
@@ -163,12 +159,10 @@ function tapit_products_views_default_views() {
 
   /* Display: Likes */
   $handler = $view->new_display('page', 'Likes', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'statistics/products/likes';
 
   /* Display: Likes by Product */
   $handler = $view->new_display('block', 'Likes by Product', 'block_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'views_dataviz';
   $handler->display->display_options['style_options']['grouping'] = array(
@@ -201,10 +195,8 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: COUNT(Content: Product (field_product_liked)) */
+  /* Sort criterion: COUNT(Content (historical data): Product (field_product_liked)) */
   $handler->display->display_options['sorts']['field_product_liked_target_id']['id'] = 'field_product_liked_target_id';
   $handler->display->display_options['sorts']['field_product_liked_target_id']['table'] = 'field_data_field_product_liked';
   $handler->display->display_options['sorts']['field_product_liked_target_id']['field'] = 'field_product_liked_target_id';
@@ -227,7 +219,7 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'product' => 'product',
   );
-  /* Filter criterion: COUNT(Content: Product (field_product_liked)) */
+  /* Filter criterion: COUNT(Content (historical data): Product (field_product_liked)) */
   $handler->display->display_options['filters']['field_product_liked_target_id']['id'] = 'field_product_liked_target_id';
   $handler->display->display_options['filters']['field_product_liked_target_id']['table'] = 'field_data_field_product_liked';
   $handler->display->display_options['filters']['field_product_liked_target_id']['field'] = 'field_product_liked_target_id';
@@ -238,7 +230,6 @@ function tapit_products_views_default_views() {
 
   /* Display: Likes by Store */
   $handler = $view->new_display('block', 'Likes by Store', 'block_2');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   /* Relationship: Entity Reference: Referencing entity */
   $handler->display->display_options['relationships']['reverse_field_product_liker_node']['id'] = 'reverse_field_product_liker_node';
@@ -259,10 +250,8 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: COUNT(Content: Store (field_product_liker)) */
+  /* Sort criterion: COUNT(Content (historical data): Store (field_product_liker)) */
   $handler->display->display_options['sorts']['field_product_liker_target_id']['id'] = 'field_product_liker_target_id';
   $handler->display->display_options['sorts']['field_product_liker_target_id']['table'] = 'field_data_field_product_liker';
   $handler->display->display_options['sorts']['field_product_liker_target_id']['field'] = 'field_product_liker_target_id';
@@ -287,7 +276,7 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'store' => 'store',
   );
-  /* Filter criterion: COUNT(Content: Store (field_product_liker)) */
+  /* Filter criterion: COUNT(Content (historical data): Store (field_product_liker)) */
   $handler->display->display_options['filters']['field_product_liker_target_id']['id'] = 'field_product_liker_target_id';
   $handler->display->display_options['filters']['field_product_liker_target_id']['table'] = 'field_data_field_product_liker';
   $handler->display->display_options['filters']['field_product_liker_target_id']['field'] = 'field_product_liker_target_id';
@@ -300,7 +289,6 @@ function tapit_products_views_default_views() {
   $handler = $view->new_display('block', 'Likes by Date', 'block_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Likes by Date';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['relationships'] = FALSE;
   $handler->display->display_options['defaults']['fields'] = FALSE;
   /* Field: COUNT(Content: Title) */
@@ -336,7 +324,6 @@ function tapit_products_views_default_views() {
 
   /* Display: Most Liked Products */
   $handler = $view->new_display('block', 'Most Liked Products', 'block');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '20';
@@ -371,7 +358,6 @@ function tapit_products_views_default_views() {
   /* Display: Likes EVA */
   $handler = $view->new_display('entity_view', 'Likes EVA', 'entity_view_1');
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -424,7 +410,7 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['created']['format_date_sql'] = 1;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Store (field_product_liker) */
+  /* Contextual filter: Content (historical data): Store (field_product_liker) */
   $handler->display->display_options['arguments']['field_product_liker_target_id']['id'] = 'field_product_liker_target_id';
   $handler->display->display_options['arguments']['field_product_liker_target_id']['table'] = 'field_data_field_product_liker';
   $handler->display->display_options['arguments']['field_product_liker_target_id']['field'] = 'field_product_liker_target_id';
@@ -460,7 +446,6 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'numblock span2';
   $handler->display->display_options['defaults']['use_ajax'] = FALSE;
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
@@ -491,7 +476,7 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['sorts'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Store (field_product_liker) */
+  /* Contextual filter: Content (historical data): Store (field_product_liker) */
   $handler->display->display_options['arguments']['field_product_liker_target_id']['id'] = 'field_product_liker_target_id';
   $handler->display->display_options['arguments']['field_product_liker_target_id']['table'] = 'field_data_field_product_liker';
   $handler->display->display_options['arguments']['field_product_liker_target_id']['field'] = 'field_product_liker_target_id';
@@ -561,7 +546,7 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: New Product (field_product_featured_adref) */
+  /* Contextual filter: Content (historical data): New Product (field_product_featured_adref) */
   $handler->display->display_options['arguments']['field_product_featured_adref_target_id']['id'] = 'field_product_featured_adref_target_id';
   $handler->display->display_options['arguments']['field_product_featured_adref_target_id']['table'] = 'field_data_field_product_featured_adref';
   $handler->display->display_options['arguments']['field_product_featured_adref_target_id']['field'] = 'field_product_featured_adref_target_id';
@@ -587,7 +572,6 @@ function tapit_products_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['path'] = 'product/variants';
   $handler->display->display_options['menu']['title'] = 'New Product Variants';
   $handler->display->display_options['menu']['weight'] = '0';
@@ -598,7 +582,6 @@ function tapit_products_views_default_views() {
   $handler = $view->new_display('block', 'Block', 'block');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Latest Products';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['pager'] = FALSE;
   $handler->display->display_options['pager']['type'] = 'some';
   $handler->display->display_options['pager']['options']['items_per_page'] = '10';
@@ -611,7 +594,6 @@ function tapit_products_views_default_views() {
 
   /* Display: EVA Field */
   $handler = $view->new_display('entity_view', 'EVA Field', 'entity_view_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['entity_type'] = 'node';
   $handler->display->display_options['bundles'] = array(
     0 => 'advert',
@@ -654,8 +636,6 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['title']['field'] = 'title';
   $handler->display->display_options['fields']['title']['label'] = '';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   /* Sort criterion: COUNT(Content: Title) */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
@@ -1891,8 +1871,6 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -1984,8 +1962,6 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   /* Field: Content: Stores */
   $handler->display->display_options['fields']['field_surveyincentive_stores']['id'] = 'field_surveyincentive_stores';
   $handler->display->display_options['fields']['field_surveyincentive_stores']['table'] = 'field_data_field_surveyincentive_stores';
@@ -2107,14 +2083,12 @@ function tapit_products_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_2']['label'] = 'bar';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'true';
-  /* Field: Global: View */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['view']['id'] = 'view';
   $handler->display->display_options['fields']['view']['table'] = 'views';
   $handler->display->display_options['fields']['view']['field'] = 'view';
   $handler->display->display_options['fields']['view']['label'] = 'values';
   $handler->display->display_options['fields']['view']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view']['view'] = 'statistics_visits';
-  $handler->display->display_options['fields']['view']['display'] = 'views_data_export_1';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -2191,7 +2165,6 @@ function tapit_products_views_default_views() {
 
   /* Display: Product Incentive Type Pie */
   $handler = $view->new_display('block', 'Product Incentive Type Pie', 'block_2');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'views_dataviz';
   $handler->display->display_options['style_options']['_curveType'] = '0';
@@ -2219,7 +2192,6 @@ function tapit_products_views_default_views() {
 
   /* Display: Product Incentive Category Pie */
   $handler = $view->new_display('block', 'Product Incentive Category Pie', 'block_3');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'views_dataviz';
   $handler->display->display_options['style_options']['_curveType'] = '0';
