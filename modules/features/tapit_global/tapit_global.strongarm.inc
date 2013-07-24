@@ -42,7 +42,7 @@ function tapit_global_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'chosen_minimum';
-  $strongarm->value = '20';
+  $strongarm->value = '0';
   $export['chosen_minimum'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -56,7 +56,7 @@ function tapit_global_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'file_temporary_path';
-  $strongarm->value = 'sites/tapit.dev/private/temp';
+  $strongarm->value = 'sites/stats.tap-it.co.za/private/temp';
   $export['file_temporary_path'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -133,7 +133,9 @@ function tapit_global_strongarm() {
       'fields' => array(
         'country' => 'country',
         'administrative_area' => 'administrative_area',
+        'sub_administrative_area' => 0,
         'locality' => 'locality',
+        'dependent_locality' => 0,
       ),
       'separator' => ',',
       'country_naming' => 'code',
@@ -148,15 +150,16 @@ function tapit_global_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'location_taxonomize_vocab';
   $strongarm->value = array(
-    'state' => 'settings',
+    'state' => 'initialization',
     'source' => 'location_taxonomize_af',
+    'possible_vid' => '2',
+    'method' => 'existing',
     'hierarchy' => array(
       'country' => 'country',
       'administrative_area' => 'administrative_area',
+      'sub_administrative_area' => 'sub_administrative_area',
       'locality' => 'locality',
-      0 => 0,
-      'sub_administrative_area' => 0,
-      'dependent_locality' => 0,
+      'dependent_locality' => 'dependent_locality',
       'postal_code' => 0,
       'organisation_name' => 0,
       'thoroughfare' => 0,
@@ -169,14 +172,14 @@ function tapit_global_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'maintenance_mode';
-  $strongarm->value = 0;
+  $strongarm->value = FALSE;
   $export['maintenance_mode'] = $strongarm;
 
   $strongarm = new stdClass();
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'pathauto_node_pattern';
-  $strongarm->value = 'content/[node:title]';
+  $strongarm->value = '[node:title]';
   $export['pathauto_node_pattern'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -247,6 +250,7 @@ Disallow: /CHANGELOG.txt
 Disallow: /cron.php
 Disallow: /INSTALL.mysql.txt
 Disallow: /INSTALL.pgsql.txt
+Disallow: /INSTALL.sqlite.txt
 Disallow: /install.php
 Disallow: /INSTALL.txt
 Disallow: /LICENSE.txt
@@ -257,6 +261,7 @@ Disallow: /xmlrpc.php
 # Paths (clean URLs)
 Disallow: /admin/
 Disallow: /comment/reply/
+Disallow: /filter/tips/
 Disallow: /node/add/
 Disallow: /search/
 Disallow: /user/register/
@@ -266,6 +271,7 @@ Disallow: /user/logout/
 # Paths (no clean URLs)
 Disallow: /?q=admin/
 Disallow: /?q=comment/reply/
+Disallow: /?q=filter/tips/
 Disallow: /?q=node/add/
 Disallow: /?q=search/
 Disallow: /?q=user/password/
@@ -279,7 +285,7 @@ Disallow: /?q=user/logout/
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_403';
-  $strongarm->value = '';
+  $strongarm->value = 'toboggan/denied';
   $export['site_403'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -293,7 +299,7 @@ Disallow: /?q=user/logout/
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'site_frontpage';
-  $strongarm->value = 'stores';
+  $strongarm->value = 'maps/stores';
   $export['site_frontpage'] = $strongarm;
 
   $strongarm = new stdClass();
@@ -302,16 +308,16 @@ Disallow: /?q=user/logout/
   $strongarm->name = 'theme_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
-    'toggle_name' => 1,
-    'toggle_slogan' => 1,
+    'toggle_name' => 0,
+    'toggle_slogan' => 0,
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
     'toggle_comment_user_verification' => 1,
     'toggle_favicon' => 1,
-    'toggle_main_menu' => 1,
-    'toggle_secondary_menu' => 1,
-    'default_logo' => 1,
-    'logo_path' => '',
+    'toggle_main_menu' => 0,
+    'toggle_secondary_menu' => 0,
+    'default_logo' => 0,
+    'logo_path' => 'public://logo_0.png',
     'logo_upload' => '',
     'default_favicon' => 1,
     'favicon_path' => '',
@@ -325,19 +331,19 @@ Disallow: /?q=user/logout/
   $strongarm->name = 'theme_tapstrap_settings';
   $strongarm->value = array(
     'toggle_logo' => 1,
-    'toggle_name' => 1,
+    'toggle_name' => 0,
     'toggle_slogan' => 0,
     'toggle_node_user_picture' => 1,
     'toggle_comment_user_picture' => 1,
-    'toggle_favicon' => 1,
+    'toggle_favicon' => 0,
     'toggle_main_menu' => 1,
-    'default_logo' => 1,
-    'logo_path' => '',
+    'default_logo' => 0,
+    'logo_path' => 'public://logo_0.png',
     'logo_upload' => '',
-    'default_favicon' => 1,
+    'default_favicon' => 0,
     'favicon_path' => '',
     'favicon_upload' => '',
-    'zen_breadcrumb' => 'yes',
+    'zen_breadcrumb' => 'no',
     'zen_breadcrumb_separator' => ' › ',
     'zen_breadcrumb_home' => 1,
     'zen_breadcrumb_trailing' => 1,
@@ -352,17 +358,22 @@ Disallow: /?q=user/logout/
     'zen_rebuild_registry' => 0,
     'zen_wireframes' => 0,
     'zenstrap_login_modal' => 1,
-    'zenstrap_single_accordion' => 0,
+    'zenstrap_single_accordion' => 'main-menu',
     'zenstrap_menu_accordion' => array(
-      'main-menu' => 0,
+      'main-menu' => 'main-menu',
+      'devel' => 0,
       'management' => 0,
       'navigation' => 0,
       'user-menu' => 0,
     ),
     'zenstrap_disable_sticky_tables' => 0,
-    'zenstrap_searchbox' => 0,
-    'zenstrap_horizontal_forms' => 1,
-    'zenstrap_modal_forms' => '',
+    'zenstrap_searchbox' => 1,
+    'zenstrap_horizontal_forms' => 0,
+    'zenstrap_modal_forms' => 'product/*
+promotion/*
+publication/*
+wholesaler/"
+supplier/*',
   );
   $export['theme_tapstrap_settings'] = $strongarm;
 
