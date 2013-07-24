@@ -69,7 +69,7 @@ function tapit_products_context_default_contexts() {
   $context->conditions = array(
     'path' => array(
       'values' => array(
-        'statistics/likes' => 'statistics/likes',
+        'statistics/products' => 'statistics/products',
       ),
     ),
   );
