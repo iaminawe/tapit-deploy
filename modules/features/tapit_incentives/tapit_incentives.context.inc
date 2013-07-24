@@ -80,12 +80,6 @@ function tapit_incentives_context_default_contexts() {
           'region' => 'content',
           'weight' => '-2',
         ),
-        'views-3c88e98c3fc9458409492cc245c288b0' => array(
-          'module' => 'views',
-          'delta' => '3c88e98c3fc9458409492cc245c288b0',
-          'region' => 'content',
-          'weight' => '-1',
-        ),
         'views-d2528f671e9b810a2f618a8f087c5742' => array(
           'module' => 'views',
           'delta' => 'd2528f671e9b810a2f618a8f087c5742',

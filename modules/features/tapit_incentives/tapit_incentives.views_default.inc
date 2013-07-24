@@ -93,7 +93,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['sorts']['created']['table'] = 'node';
   $handler->display->display_options['sorts']['created']['field'] = 'created';
   $handler->display->display_options['sorts']['created']['order'] = 'DESC';
-  /* Contextual filter: Content: Incentive (field_incentive_reference) */
+  /* Contextual filter: Content (historical data): Incentive (field_incentive_reference) */
   $handler->display->display_options['arguments']['field_incentive_reference_target_id']['id'] = 'field_incentive_reference_target_id';
   $handler->display->display_options['arguments']['field_incentive_reference_target_id']['table'] = 'field_data_field_incentive_reference';
   $handler->display->display_options['arguments']['field_incentive_reference_target_id']['field'] = 'field_incentive_reference_target_id';
@@ -124,7 +124,6 @@ function tapit_incentives_views_default_views() {
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
   $handler->display->display_options['path'] = 'incentives/list';
   $handler->display->display_options['menu']['type'] = 'normal';
@@ -133,7 +132,6 @@ function tapit_incentives_views_default_views() {
 
   /* Display: Stores Incentives */
   $handler = $view->new_display('entity_view', 'Stores Incentives', 'entity_view_1');
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'table';
   $handler->display->display_options['style_options']['grouping'] = array(
@@ -224,16 +222,16 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['fields']['field_start_date']['id'] = 'field_start_date';
   $handler->display->display_options['fields']['field_start_date']['table'] = 'field_data_field_start_date';
   $handler->display->display_options['fields']['field_start_date']['field'] = 'field_start_date';
-  $handler->display->display_options['fields']['field_start_date']['exclude'] = TRUE;
+  $handler->display->display_options['fields']['field_start_date']['label'] = 'Date';
   $handler->display->display_options['fields']['field_start_date']['settings'] = array(
-    'format_type' => 'short',
+    'format_type' => 'sa_date',
     'fromto' => 'both',
     'multiple_number' => '',
     'multiple_from' => '',
     'multiple_to' => '',
   );
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Store (field_incentive_store) */
+  /* Contextual filter: Content (historical data): Store (field_incentive_store) */
   $handler->display->display_options['arguments']['field_incentive_store_target_id']['id'] = 'field_incentive_store_target_id';
   $handler->display->display_options['arguments']['field_incentive_store_target_id']['table'] = 'field_data_field_incentive_store';
   $handler->display->display_options['arguments']['field_incentive_store_target_id']['field'] = 'field_incentive_store_target_id';
@@ -262,7 +260,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -280,7 +278,6 @@ function tapit_incentives_views_default_views() {
   $handler = $view->new_display('entity_view', 'Store Incentives Total', 'entity_view_2');
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['css_class'] = 'span2 numblock';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['group_by'] = FALSE;
   $handler->display->display_options['group_by'] = TRUE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
@@ -308,7 +305,7 @@ function tapit_incentives_views_default_views() {
 <span>INCENTIVES</span>';
   $handler->display->display_options['fields']['nothing']['element_label_colon'] = FALSE;
   $handler->display->display_options['defaults']['arguments'] = FALSE;
-  /* Contextual filter: Content: Store (field_incentive_store) */
+  /* Contextual filter: Content (historical data): Store (field_incentive_store) */
   $handler->display->display_options['arguments']['field_incentive_store_target_id']['id'] = 'field_incentive_store_target_id';
   $handler->display->display_options['arguments']['field_incentive_store_target_id']['table'] = 'field_data_field_incentive_store';
   $handler->display->display_options['arguments']['field_incentive_store_target_id']['field'] = 'field_incentive_store_target_id';
@@ -337,7 +334,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['type']['expose']['label'] = 'Type';
   $handler->display->display_options['filters']['type']['expose']['operator'] = 'type_op';
   $handler->display->display_options['filters']['type']['expose']['identifier'] = 'type';
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -373,26 +370,20 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['exposed_form']['type'] = 'basic';
   $handler->display->display_options['pager']['type'] = 'none';
   $handler->display->display_options['pager']['options']['offset'] = '0';
-  $handler->display->display_options['style_plugin'] = 'views_dataviz';
-  $handler->display->display_options['style_options']['grouping'] = array(
-    0 => array(
-      'field' => 'field_incentive_store',
-      'rendered' => 1,
-      'rendered_strip' => 0,
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_incentive_reference' => 'field_incentive_reference',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_incentive_reference' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['type'] = 'ColumnChart';
-  $handler->display->display_options['style_options']['_curveType'] = '0';
-  $handler->display->display_options['style_options']['_height'] = '500';
-  $handler->display->display_options['style_options']['chart_area_left'] = '90';
-  $handler->display->display_options['style_options']['chart_area_top'] = '50';
-  $handler->display->display_options['style_options']['colors'] = '#51762B';
-  /* Relationship: Entity Reference: Referenced Entity */
-  $handler->display->display_options['relationships']['field_incentive_store_target_id']['id'] = 'field_incentive_store_target_id';
-  $handler->display->display_options['relationships']['field_incentive_store_target_id']['table'] = 'field_data_field_incentive_store';
-  $handler->display->display_options['relationships']['field_incentive_store_target_id']['field'] = 'field_incentive_store_target_id';
-  $handler->display->display_options['relationships']['field_incentive_store_target_id']['label'] = 'store';
-  $handler->display->display_options['relationships']['field_incentive_store_target_id']['required'] = TRUE;
   /* Field: COUNT(DISTINCT Content: Incentive) */
   $handler->display->display_options['fields']['field_incentive_reference']['id'] = 'field_incentive_reference';
   $handler->display->display_options['fields']['field_incentive_reference']['table'] = 'field_data_field_incentive_reference';
@@ -403,6 +394,8 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['fields']['field_incentive_store']['id'] = 'field_incentive_store';
   $handler->display->display_options['fields']['field_incentive_store']['table'] = 'field_data_field_incentive_store';
   $handler->display->display_options['fields']['field_incentive_store']['field'] = 'field_incentive_store';
+  $handler->display->display_options['fields']['field_incentive_store']['label'] = '';
+  $handler->display->display_options['fields']['field_incentive_store']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['field_incentive_store']['settings'] = array(
     'link' => 0,
   );
@@ -426,7 +419,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['status_1']['field'] = 'status';
   $handler->display->display_options['filters']['status_1']['relationship'] = 'field_incentive_store_target_id';
   $handler->display->display_options['filters']['status_1']['value'] = '1';
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -440,21 +433,28 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['defaults']['css_class'] = FALSE;
   $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
-  $handler->display->display_options['style_plugin'] = 'views_dataviz';
-  $handler->display->display_options['style_options']['grouping'] = array(
-    0 => array(
-      'field' => 'field_incentive_store',
-      'rendered' => 1,
-      'rendered_strip' => 0,
+  $handler->display->display_options['style_plugin'] = 'table';
+  $handler->display->display_options['style_options']['columns'] = array(
+    'field_incentive_reference' => 'field_incentive_reference',
+    'field_incentive_store' => 'field_incentive_store',
+  );
+  $handler->display->display_options['style_options']['default'] = '-1';
+  $handler->display->display_options['style_options']['info'] = array(
+    'field_incentive_reference' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
+    ),
+    'field_incentive_store' => array(
+      'sortable' => 0,
+      'default_sort_order' => 'asc',
+      'align' => '',
+      'separator' => '',
+      'empty_column' => 0,
     ),
   );
-  $handler->display->display_options['style_options']['type'] = 'ColumnChart';
-  $handler->display->display_options['style_options']['_curveType'] = 'function';
-  $handler->display->display_options['style_options']['_pieSliceText'] = 'percentage';
-  $handler->display->display_options['style_options']['_height'] = '600';
-  $handler->display->display_options['style_options']['chart_area_left'] = '90';
-  $handler->display->display_options['style_options']['chart_area_top'] = '50';
-  $handler->display->display_options['style_options']['colors'] = '#84BD4A';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
   $handler->display->display_options['defaults']['row_plugin'] = FALSE;
   $handler->display->display_options['defaults']['row_options'] = FALSE;
@@ -478,7 +478,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['header']['result']['field'] = 'result';
   $handler->display->display_options['header']['result']['content'] = '@total Stores have participated';
   $handler->display->display_options['defaults']['sorts'] = FALSE;
-  /* Sort criterion: COUNT(Content: Incentive (field_incentive_reference)) */
+  /* Sort criterion: COUNT(Content (historical data): Incentive (field_incentive_reference)) */
   $handler->display->display_options['sorts']['field_incentive_reference_target_id']['id'] = 'field_incentive_reference_target_id';
   $handler->display->display_options['sorts']['field_incentive_reference_target_id']['table'] = 'field_data_field_incentive_reference';
   $handler->display->display_options['sorts']['field_incentive_reference_target_id']['field'] = 'field_incentive_reference_target_id';
@@ -588,14 +588,12 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_2']['label'] = 'bar';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'true';
-  /* Field: Global: View */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['view']['id'] = 'view';
   $handler->display->display_options['fields']['view']['table'] = 'views';
   $handler->display->display_options['fields']['view']['field'] = 'view';
   $handler->display->display_options['fields']['view']['label'] = 'values';
   $handler->display->display_options['fields']['view']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view']['view'] = 'statistics_visits';
-  $handler->display->display_options['fields']['view']['display'] = 'views_data_export_1';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';
@@ -732,7 +730,6 @@ function tapit_incentives_views_default_views() {
   $handler = $view->new_display('block', 'Total Incentives', 'block_3');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Total Incentives';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -776,7 +773,6 @@ function tapit_incentives_views_default_views() {
   $handler = $view->new_display('block', 'Approved Incentives', 'block_6');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Approved Incentives';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -809,7 +805,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'incentives' => 'incentives',
   );
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -821,7 +817,6 @@ function tapit_incentives_views_default_views() {
   $handler = $view->new_display('block', 'Pending Incentives', 'block_4');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Pending Incentives';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -854,7 +849,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'incentives' => 'incentives',
   );
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -866,7 +861,6 @@ function tapit_incentives_views_default_views() {
   $handler = $view->new_display('block', 'Retry Incentives', 'block_5');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Retry Incentives';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -899,7 +893,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'incentives' => 'incentives',
   );
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -911,7 +905,6 @@ function tapit_incentives_views_default_views() {
   $handler = $view->new_display('block', 'Total Incentive Responses', 'block_7');
   $handler->display->display_options['defaults']['title'] = FALSE;
   $handler->display->display_options['title'] = 'Total Incentive Responses';
-  $handler->display->display_options['defaults']['hide_admin_links'] = FALSE;
   $handler->display->display_options['defaults']['style_plugin'] = FALSE;
   $handler->display->display_options['style_plugin'] = 'default';
   $handler->display->display_options['defaults']['style_options'] = FALSE;
@@ -944,7 +937,7 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['filters']['type']['value'] = array(
     'incentives' => 'incentives',
   );
-  /* Filter criterion: Content: Incentive Status (field_incentive_status) */
+  /* Filter criterion: Content (historical data): Incentive Status (field_incentive_status) */
   $handler->display->display_options['filters']['field_incentive_status_target_id']['id'] = 'field_incentive_status_target_id';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['table'] = 'field_data_field_incentive_status';
   $handler->display->display_options['filters']['field_incentive_status_target_id']['field'] = 'field_incentive_status_target_id';
@@ -1017,8 +1010,6 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -1110,8 +1101,6 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['fields']['title']['id'] = 'title';
   $handler->display->display_options['fields']['title']['table'] = 'node';
   $handler->display->display_options['fields']['title']['field'] = 'title';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '600';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '600';
   /* Field: Content: Stores */
   $handler->display->display_options['fields']['field_surveyincentive_stores']['id'] = 'field_surveyincentive_stores';
   $handler->display->display_options['fields']['field_surveyincentive_stores']['table'] = 'field_data_field_surveyincentive_stores';
@@ -1233,14 +1222,12 @@ function tapit_incentives_views_default_views() {
   $handler->display->display_options['fields']['nothing_2']['field'] = 'nothing';
   $handler->display->display_options['fields']['nothing_2']['label'] = 'bar';
   $handler->display->display_options['fields']['nothing_2']['alter']['text'] = 'true';
-  /* Field: Global: View */
+  /* Field: Broken/missing handler */
   $handler->display->display_options['fields']['view']['id'] = 'view';
   $handler->display->display_options['fields']['view']['table'] = 'views';
   $handler->display->display_options['fields']['view']['field'] = 'view';
   $handler->display->display_options['fields']['view']['label'] = 'values';
   $handler->display->display_options['fields']['view']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['view']['view'] = 'statistics_visits';
-  $handler->display->display_options['fields']['view']['display'] = 'views_data_export_1';
   /* Field: Global: Custom text */
   $handler->display->display_options['fields']['nothing']['id'] = 'nothing';
   $handler->display->display_options['fields']['nothing']['table'] = 'views';

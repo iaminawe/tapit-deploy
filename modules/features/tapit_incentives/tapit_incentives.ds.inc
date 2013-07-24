@@ -16,37 +16,40 @@ function tapit_incentives_ds_layout_settings_info() {
   $ds_layout->entity_type = 'node';
   $ds_layout->bundle = 'product_incentive';
   $ds_layout->view_mode = 'default';
-  $ds_layout->layout = 'ds_1col';
+  $ds_layout->layout = 'ds_2col';
   $ds_layout->settings = array(
     'regions' => array(
-      'ds_content' => array(
+      'left' => array(
         0 => 'body',
         1 => 'field_incentive_category',
         2 => 'field_incentive_date',
         3 => 'field_incentive_hint',
         4 => 'field_incentive_tokens',
-        5 => 'field_incentive_region',
-        6 => 'field_incentive_wholesalers',
-        7 => 'field_incentive_type',
-        8 => 'field_incentive_version',
-        9 => 'field_debug_me',
+        5 => 'field_incentive_wholesalers',
+        6 => 'field_incentive_type',
+        7 => 'field_incentive_version',
+        8 => 'field_debug_me',
+      ),
+      'right' => array(
+        9 => 'field_incentive_region',
       ),
     ),
     'fields' => array(
-      'body' => 'ds_content',
-      'field_incentive_category' => 'ds_content',
-      'field_incentive_date' => 'ds_content',
-      'field_incentive_hint' => 'ds_content',
-      'field_incentive_tokens' => 'ds_content',
-      'field_incentive_region' => 'ds_content',
-      'field_incentive_wholesalers' => 'ds_content',
-      'field_incentive_type' => 'ds_content',
-      'field_incentive_version' => 'ds_content',
-      'field_debug_me' => 'ds_content',
+      'body' => 'left',
+      'field_incentive_category' => 'left',
+      'field_incentive_date' => 'left',
+      'field_incentive_hint' => 'left',
+      'field_incentive_tokens' => 'left',
+      'field_incentive_wholesalers' => 'left',
+      'field_incentive_type' => 'left',
+      'field_incentive_version' => 'left',
+      'field_debug_me' => 'left',
+      'field_incentive_region' => 'right',
     ),
     'classes' => array(),
     'wrappers' => array(
-      'ds_content' => 'div',
+      'left' => 'div',
+      'right' => 'div',
     ),
     'layout_wrapper' => 'div',
     'layout_attributes' => '',
