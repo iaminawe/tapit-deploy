@@ -29,6 +29,8 @@ function tapit_stores_field_group_info() {
       3 => 'field_trader_serial_number',
       4 => 'field_trader_service_provider',
       5 => 'field_trader_sim',
+      6 => 'field_service_provider_er',
+      7 => 'field_store_device_type',
     ),
     'format_type' => 'fieldset',
     'format_settings' => array(
@@ -53,7 +55,7 @@ function tapit_stores_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Contact',
-    'weight' => '3',
+    'weight' => '7',
     'children' => array(
       0 => 'field_trader_cellphone',
       1 => 'field_trader_email',
@@ -81,7 +83,7 @@ function tapit_stores_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Device',
-    'weight' => '5',
+    'weight' => '9',
     'children' => array(
       0 => 'field_trader_device_imei',
       1 => 'field_trader_device_token',
@@ -89,6 +91,7 @@ function tapit_stores_field_group_info() {
       3 => 'field_trader_serial_number',
       4 => 'field_trader_service_provider',
       5 => 'field_trader_sim',
+      6 => 'field_app_demonstrated',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -112,19 +115,20 @@ function tapit_stores_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Store Info',
-    'weight' => '4',
+    'weight' => '8',
     'children' => array(
-      0 => 'field_forced_wholesaler',
-      1 => 'field_trader_manager',
-      2 => 'field_trader_reward_card',
-      3 => 'field_trader_size',
-      4 => 'field_trader_affiliation_tax',
-      5 => 'field_masscash_number',
-      6 => 'field_trader_regnumber',
-      7 => 'field_trader_cardbalance',
-      8 => 'field_reward_card_error',
-      9 => 'field_store_type',
-      10 => 'post_date',
+      0 => 'body',
+      1 => 'field_forced_wholesaler',
+      2 => 'field_trader_manager',
+      3 => 'field_trader_reward_card',
+      4 => 'field_trader_size',
+      5 => 'field_trader_affiliation_tax',
+      6 => 'field_masscash_number',
+      7 => 'field_trader_regnumber',
+      8 => 'field_trader_cardbalance',
+      9 => 'field_reward_card_error',
+      10 => 'field_store_trader_state',
+      11 => 'post_date',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -188,10 +192,12 @@ function tapit_stores_field_group_info() {
     'children' => array(
       0 => 'field_trader_address',
       1 => 'field_trader_gps',
-      2 => 'field_trader_owner',
-      3 => 'field_trader_profileimage',
-      4 => 'field_wholesaler_region_ref',
-      5 => 'ds_flag_visit',
+      2 => 'field_trader_id_number',
+      3 => 'field_trader_owner',
+      4 => 'field_trader_profileimage',
+      5 => 'field_wholesaler_region_ref',
+      6 => 'field_storeowner_nationality',
+      7 => 'ds_flag_visit',
     ),
     'format_type' => 'div',
     'format_settings' => array(
@@ -257,7 +263,7 @@ function tapit_stores_field_group_info() {
   $field_group->parent_name = '';
   $field_group->data = array(
     'label' => 'Trader Participation',
-    'weight' => '2',
+    'weight' => '6',
     'children' => array(
       0 => 'group_store_participation',
       1 => 'group_trader_likes',
@@ -288,8 +294,8 @@ function tapit_stores_field_group_info() {
   $field_group->mode = 'default';
   $field_group->parent_name = 'group_traderparticipation';
   $field_group->data = array(
-    'label' => 'Usage',
-    'weight' => '6',
+    'label' => 'Overview',
+    'weight' => '7',
     'children' => array(
       0 => 'field_trader_current_login_time',
       1 => 'field_trader_last_login_time',
@@ -300,15 +306,12 @@ function tapit_stores_field_group_info() {
     ),
     'format_type' => 'htab',
     'format_settings' => array(
-      'formatter' => 'collapsible',
+      'label' => 'Overview',
       'instance_settings' => array(
-        'description' => '',
-        'show_label' => 1,
-        'label_element' => 'h3',
-        'effect' => 'none',
-        'speed' => 'fast',
         'classes' => '',
+        'description' => '',
       ),
+      'formatter' => 'open',
     ),
   );
   $export['group_usage_group|node|store|default'] = $field_group;
@@ -324,7 +327,7 @@ function tapit_stores_field_group_info() {
   $field_group->parent_name = 'group_traderparticipation';
   $field_group->data = array(
     'label' => 'Wholesalers',
-    'weight' => '5',
+    'weight' => '6',
     'children' => array(
       0 => 'field_store_wholesalers',
     ),

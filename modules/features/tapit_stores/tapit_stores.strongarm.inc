@@ -92,25 +92,25 @@ function tapit_stores_strongarm() {
         ),
         'product_likes_entity_view_2' => array(
           'default' => array(
-            'weight' => '2',
+            'weight' => '5',
             'visible' => TRUE,
           ),
         ),
         'statistics_visits_entity_view_3' => array(
           'default' => array(
-            'weight' => '1',
+            'weight' => '3',
             'visible' => TRUE,
           ),
         ),
         'incentives_entity_view_2' => array(
           'default' => array(
-            'weight' => '3',
+            'weight' => '6',
             'visible' => TRUE,
           ),
         ),
         'orders_entity_view_3' => array(
           'default' => array(
-            'weight' => '0',
+            'weight' => '4',
             'visible' => TRUE,
           ),
         ),

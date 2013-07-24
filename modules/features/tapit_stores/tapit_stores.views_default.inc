@@ -25,15 +25,13 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['title'] = 'Trading Stores';
   $handler->display->display_options['use_more_always'] = FALSE;
   $handler->display->display_options['access']['type'] = 'perm';
-  $handler->display->display_options['cache']['type'] = 'time';
-  $handler->display->display_options['cache']['results_lifespan'] = '3600';
-  $handler->display->display_options['cache']['results_lifespan_custom'] = '0';
-  $handler->display->display_options['cache']['output_lifespan'] = '3600';
-  $handler->display->display_options['cache']['output_lifespan_custom'] = '0';
+  $handler->display->display_options['cache']['type'] = 'none';
   $handler->display->display_options['query']['type'] = 'views_query';
   $handler->display->display_options['query']['options']['distinct'] = TRUE;
   $handler->display->display_options['exposed_form']['type'] = 'basic';
-  $handler->display->display_options['pager']['type'] = 'none';
+  $handler->display->display_options['pager']['type'] = 'some';
+  $handler->display->display_options['pager']['options']['items_per_page'] = '400';
+  $handler->display->display_options['pager']['options']['offset'] = '0';
   $handler->display->display_options['style_plugin'] = 'ip_geoloc_leaflet';
   $handler->display->display_options['style_options']['ip_geoloc_views_plugin_latitude'] = 'field_trader_gps';
   $handler->display->display_options['style_options']['ip_geoloc_views_plugin_longitude'] = '';
@@ -72,8 +70,6 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['fields']['title']['element_type'] = 'h4';
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '90%';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '90%';
   /* Field: Content: GPS */
   $handler->display->display_options['fields']['field_trader_gps']['id'] = 'field_trader_gps';
   $handler->display->display_options['fields']['field_trader_gps']['table'] = 'field_data_field_trader_gps';
@@ -107,15 +103,24 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['fields']['field_wholesaler_region_ref']['settings'] = array(
     'link' => 0,
   );
-  /* Field: Content: Store Type */
-  $handler->display->display_options['fields']['field_store_type']['id'] = 'field_store_type';
-  $handler->display->display_options['fields']['field_store_type']['table'] = 'field_data_field_store_type';
-  $handler->display->display_options['fields']['field_store_type']['field'] = 'field_store_type';
-  $handler->display->display_options['fields']['field_store_type']['label'] = 'Type';
   /* Sort criterion: Content: Title */
   $handler->display->display_options['sorts']['title']['id'] = 'title';
   $handler->display->display_options['sorts']['title']['table'] = 'node';
   $handler->display->display_options['sorts']['title']['field'] = 'title';
+  /* Filter criterion: Content (historical data): GPS (field_trader_gps:lat) */
+  $handler->display->display_options['filters']['field_trader_gps_lat']['id'] = 'field_trader_gps_lat';
+  $handler->display->display_options['filters']['field_trader_gps_lat']['table'] = 'field_data_field_trader_gps';
+  $handler->display->display_options['filters']['field_trader_gps_lat']['field'] = 'field_trader_gps_lat';
+  $handler->display->display_options['filters']['field_trader_gps_lat']['operator'] = 'not empty';
+  $handler->display->display_options['filters']['field_trader_gps_lat']['group'] = 1;
+  /* Filter criterion: Content: Type */
+  $handler->display->display_options['filters']['type']['id'] = 'type';
+  $handler->display->display_options['filters']['type']['table'] = 'node';
+  $handler->display->display_options['filters']['type']['field'] = 'type';
+  $handler->display->display_options['filters']['type']['value'] = array(
+    'store' => 'store',
+  );
+  $handler->display->display_options['filters']['type']['group'] = 1;
   /* Filter criterion: Content: Published */
   $handler->display->display_options['filters']['status']['id'] = 'status';
   $handler->display->display_options['filters']['status']['table'] = 'node';
@@ -123,7 +128,7 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['filters']['status']['value'] = 1;
   $handler->display->display_options['filters']['status']['group'] = 1;
   $handler->display->display_options['filters']['status']['expose']['operator'] = FALSE;
-  /* Filter criterion: Content: Region (field_wholesaler_region_ref) */
+  /* Filter criterion: Content (historical data): Region (field_wholesaler_region_ref) */
   $handler->display->display_options['filters']['field_wholesaler_region_ref_target_id']['id'] = 'field_wholesaler_region_ref_target_id';
   $handler->display->display_options['filters']['field_wholesaler_region_ref_target_id']['table'] = 'field_data_field_wholesaler_region_ref';
   $handler->display->display_options['filters']['field_wholesaler_region_ref_target_id']['field'] = 'field_wholesaler_region_ref_target_id';
@@ -152,15 +157,7 @@ function tapit_stores_views_default_views() {
     4 => 0,
     5 => 0,
   );
-  /* Filter criterion: Content: Type */
-  $handler->display->display_options['filters']['type']['id'] = 'type';
-  $handler->display->display_options['filters']['type']['table'] = 'node';
-  $handler->display->display_options['filters']['type']['field'] = 'type';
-  $handler->display->display_options['filters']['type']['value'] = array(
-    'store' => 'store',
-  );
-  $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: location_taxonomize_terms (field_location_taxonomize_terms) */
+  /* Filter criterion: Content (historical data): location_taxonomize_terms (field_location_taxonomize_terms) */
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['id'] = 'field_location_taxonomize_terms_tid';
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['table'] = 'field_data_field_location_taxonomize_terms';
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['field'] = 'field_location_taxonomize_terms_tid';
@@ -186,7 +183,7 @@ function tapit_stores_views_default_views() {
   );
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['vocabulary'] = 'location_taxonomize';
-  /* Filter criterion: Content: Service Provider (field_trader_service_provider) */
+  /* Filter criterion: Content (historical data): Service Provider (field_trader_service_provider) */
   $handler->display->display_options['filters']['field_trader_service_provider_tid']['id'] = 'field_trader_service_provider_tid';
   $handler->display->display_options['filters']['field_trader_service_provider_tid']['table'] = 'field_data_field_trader_service_provider';
   $handler->display->display_options['filters']['field_trader_service_provider_tid']['field'] = 'field_trader_service_provider_tid';
@@ -207,34 +204,6 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['filters']['field_trader_service_provider_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_trader_service_provider_tid']['vocabulary'] = 'service_provider';
   $handler->display->display_options['filters']['field_trader_service_provider_tid']['error_message'] = FALSE;
-  /* Filter criterion: Content: GPS (field_trader_gps:lat) */
-  $handler->display->display_options['filters']['field_trader_gps_lat']['id'] = 'field_trader_gps_lat';
-  $handler->display->display_options['filters']['field_trader_gps_lat']['table'] = 'field_data_field_trader_gps';
-  $handler->display->display_options['filters']['field_trader_gps_lat']['field'] = 'field_trader_gps_lat';
-  $handler->display->display_options['filters']['field_trader_gps_lat']['operator'] = 'not empty';
-  /* Filter criterion: Content: Store Type (field_store_type) */
-  $handler->display->display_options['filters']['field_store_type_tid']['id'] = 'field_store_type_tid';
-  $handler->display->display_options['filters']['field_store_type_tid']['table'] = 'field_data_field_store_type';
-  $handler->display->display_options['filters']['field_store_type_tid']['field'] = 'field_store_type_tid';
-  $handler->display->display_options['filters']['field_store_type_tid']['value'] = array(
-    992 => '992',
-  );
-  $handler->display->display_options['filters']['field_store_type_tid']['exposed'] = TRUE;
-  $handler->display->display_options['filters']['field_store_type_tid']['expose']['operator_id'] = 'field_store_type_tid_op';
-  $handler->display->display_options['filters']['field_store_type_tid']['expose']['label'] = 'Status';
-  $handler->display->display_options['filters']['field_store_type_tid']['expose']['operator'] = 'field_store_type_tid_op';
-  $handler->display->display_options['filters']['field_store_type_tid']['expose']['identifier'] = 'field_store_type_tid';
-  $handler->display->display_options['filters']['field_store_type_tid']['expose']['multiple'] = TRUE;
-  $handler->display->display_options['filters']['field_store_type_tid']['expose']['remember_roles'] = array(
-    2 => '2',
-    1 => 0,
-    3 => 0,
-    4 => 0,
-    5 => 0,
-  );
-  $handler->display->display_options['filters']['field_store_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_store_type_tid']['vocabulary'] = 'store_status';
-  $handler->display->display_options['filters']['field_store_type_tid']['error_message'] = FALSE;
 
   /* Display: Map */
   $handler = $view->new_display('page', 'Map', 'page');
@@ -290,8 +259,6 @@ function tapit_stores_views_default_views() {
   $handler->display->display_options['fields']['title']['alter']['ellipsis'] = FALSE;
   $handler->display->display_options['fields']['title']['element_label_colon'] = FALSE;
   $handler->display->display_options['fields']['title']['element_default_classes'] = FALSE;
-  $handler->display->display_options['fields']['title']['node_in_colorbox_width'] = '80%';
-  $handler->display->display_options['fields']['title']['node_in_colorbox_height'] = '80%';
   /* Field: Content: GPS */
   $handler->display->display_options['fields']['field_trader_gps']['id'] = 'field_trader_gps';
   $handler->display->display_options['fields']['field_trader_gps']['table'] = 'field_data_field_trader_gps';
@@ -304,8 +271,8 @@ function tapit_stores_views_default_views() {
     'data' => 'full',
   );
   $handler->display->display_options['displays'] = array(
-    'page' => 'page',
     'default' => 0,
+    'page' => 0,
   );
   $handler->display->display_options['attachment_position'] = 'after';
   $handler->display->display_options['inherit_exposed_filters'] = TRUE;
@@ -430,7 +397,7 @@ function tapit_stores_views_default_views() {
     'store' => 'store',
   );
   $handler->display->display_options['filters']['type']['group'] = 1;
-  /* Filter criterion: Content: location_taxonomize_terms (field_location_taxonomize_terms) */
+  /* Filter criterion: Content (historical data): location_taxonomize_terms (field_location_taxonomize_terms) */
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['id'] = 'field_location_taxonomize_terms_tid';
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['table'] = 'field_data_field_location_taxonomize_terms';
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['field'] = 'field_location_taxonomize_terms_tid';
@@ -456,7 +423,7 @@ function tapit_stores_views_default_views() {
   );
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['type'] = 'select';
   $handler->display->display_options['filters']['field_location_taxonomize_terms_tid']['vocabulary'] = 'location_taxonomize';
-  /* Filter criterion: Content: Wholesalers (field_store_wholesalers) */
+  /* Filter criterion: Content (historical data): Wholesalers (field_store_wholesalers) */
   $handler->display->display_options['filters']['field_store_wholesalers_target_id']['id'] = 'field_store_wholesalers_target_id';
   $handler->display->display_options['filters']['field_store_wholesalers_target_id']['table'] = 'field_data_field_store_wholesalers';
   $handler->display->display_options['filters']['field_store_wholesalers_target_id']['field'] = 'field_store_wholesalers_target_id';
@@ -474,10 +441,11 @@ function tapit_stores_views_default_views() {
     4 => 0,
     5 => 0,
   );
-  /* Filter criterion: Content: Store Type (field_store_type) */
+  /* Filter criterion: Broken/missing handler */
   $handler->display->display_options['filters']['field_store_type_tid']['id'] = 'field_store_type_tid';
   $handler->display->display_options['filters']['field_store_type_tid']['table'] = 'field_data_field_store_type';
   $handler->display->display_options['filters']['field_store_type_tid']['field'] = 'field_store_type_tid';
+  $handler->display->display_options['filters']['field_store_type_tid']['operator'] = 'or';
   $handler->display->display_options['filters']['field_store_type_tid']['value'] = array(
     992 => '992',
   );
@@ -494,8 +462,6 @@ function tapit_stores_views_default_views() {
     4 => 0,
     5 => 0,
   );
-  $handler->display->display_options['filters']['field_store_type_tid']['type'] = 'select';
-  $handler->display->display_options['filters']['field_store_type_tid']['vocabulary'] = 'store_status';
 
   /* Display: Page */
   $handler = $view->new_display('page', 'Page', 'page');

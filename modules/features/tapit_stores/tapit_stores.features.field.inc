@@ -49,9 +49,10 @@ function tapit_stores_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'hidden',
+          'module' => 'text',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '15',
+          'type' => 'text_default',
+          'weight' => '27',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -148,9 +149,10 @@ function tapit_stores_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
+          'module' => 'text',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '23',
+          'type' => 'text_default',
+          'weight' => '39',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -206,101 +208,6 @@ function tapit_stores_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-store-field_debug3'.
-  $fields['node-store-field_debug3'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_debug3',
-      'foreign keys' => array(
-        'format' => array(
-          'columns' => array(
-            'format' => 'format',
-          ),
-          'table' => 'filter_format',
-        ),
-      ),
-      'indexes' => array(
-        'format' => array(
-          0 => 'format',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'text',
-      'settings' => array(
-        'profile2_private' => FALSE,
-      ),
-      'translatable' => '0',
-      'type' => 'text_long',
-    ),
-    'field_instance' => array(
-      'bundle' => 'store',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '1',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'ds_extras_field_template' => '',
-      'entity_type' => 'node',
-      'field_name' => 'field_debug3',
-      'label' => 'Debug',
-      'required' => 0,
-      'settings' => array(
-        'better_formats' => array(
-          'allowed_formats' => array(
-            'filtered_html' => 'filtered_html',
-            'full_html' => 'full_html',
-            'php_code' => 'php_code',
-            'plain_text' => 'plain_text',
-          ),
-          'allowed_formats_toggle' => 0,
-          'default_order_toggle' => 0,
-          'default_order_wrapper' => array(
-            'formats' => array(
-              'filtered_html' => array(
-                'weight' => '0',
-              ),
-              'full_html' => array(
-                'weight' => '1',
-              ),
-              'php_code' => array(
-                'weight' => '11',
-              ),
-              'plain_text' => array(
-                'weight' => '10',
-              ),
-            ),
-          ),
-        ),
-        'text_processing' => '0',
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'text',
-        'settings' => array(
-          'rows' => '5',
-        ),
-        'type' => 'text_textarea',
-        'weight' => '37',
-      ),
-    ),
-  );
-
   // Exported field: 'node-store-field_forced_wholesaler'.
   $fields['node-store-field_forced_wholesaler'] = array(
     'field_config' => array(
@@ -346,7 +253,7 @@ function tapit_stores_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '33',
+          'weight' => '35',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -430,7 +337,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'inline',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '14',
+          'weight' => '18',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -504,7 +411,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '13',
+          'weight' => '17',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -575,7 +482,7 @@ function tapit_stores_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '27',
+          'weight' => '29',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -660,7 +567,7 @@ function tapit_stores_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_integer',
-          'weight' => '32',
+          'weight' => '34',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -686,6 +593,99 @@ function tapit_stores_field_default_fields() {
         'settings' => array(),
         'type' => 'number',
         'weight' => '14',
+      ),
+    ),
+  );
+
+  // Exported field: 'node-store-field_service_provider_er'.
+  $fields['node-store-field_service_provider_er'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_service_provider_er',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'service_provider' => 'service_provider',
+          ),
+        ),
+        'target_type' => 'taxonomy_term',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'store',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '40',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_service_provider_er',
+      'label' => 'Service Provider',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'taxonomy-index' => array(
+            'status' => TRUE,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'references_dialog_add' => 0,
+          'references_dialog_edit' => 0,
+          'references_dialog_search' => 0,
+          'references_dialog_search_view' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '23',
       ),
     ),
   );
@@ -729,7 +729,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '35',
+          'weight' => '39',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -785,6 +785,99 @@ function tapit_stores_field_default_fields() {
     ),
   );
 
+  // Exported field: 'node-store-field_store_device_type'.
+  $fields['node-store-field_store_device_type'] = array(
+    'field_config' => array(
+      'active' => '1',
+      'cardinality' => '1',
+      'deleted' => '0',
+      'entity_types' => array(),
+      'field_name' => 'field_store_device_type',
+      'foreign keys' => array(
+        'node' => array(
+          'columns' => array(
+            'target_id' => 'nid',
+          ),
+          'table' => 'node',
+        ),
+      ),
+      'indexes' => array(
+        'target_id' => array(
+          0 => 'target_id',
+        ),
+      ),
+      'locked' => '0',
+      'module' => 'entityreference',
+      'settings' => array(
+        'handler' => 'base',
+        'handler_settings' => array(
+          'behaviors' => array(
+            'views-select-list' => array(
+              'status' => 0,
+            ),
+          ),
+          'sort' => array(
+            'type' => 'none',
+          ),
+          'target_bundles' => array(
+            'device_type' => 'device_type',
+          ),
+        ),
+        'target_type' => 'taxonomy_term',
+      ),
+      'translatable' => '0',
+      'type' => 'entityreference',
+    ),
+    'field_instance' => array(
+      'bundle' => 'store',
+      'default_value' => NULL,
+      'deleted' => '0',
+      'description' => '',
+      'display' => array(
+        'default' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => '41',
+        ),
+        'teaser' => array(
+          'label' => 'above',
+          'settings' => array(),
+          'type' => 'hidden',
+          'weight' => 0,
+        ),
+      ),
+      'ds_extras_field_template' => '',
+      'entity_type' => 'node',
+      'field_name' => 'field_store_device_type',
+      'label' => 'Device Type',
+      'required' => 0,
+      'settings' => array(
+        'behaviors' => array(
+          'taxonomy-index' => array(
+            'status' => TRUE,
+          ),
+        ),
+        'user_register_form' => FALSE,
+      ),
+      'widget' => array(
+        'active' => 1,
+        'module' => 'entityreference',
+        'settings' => array(
+          'match_operator' => 'CONTAINS',
+          'path' => '',
+          'references_dialog_add' => 0,
+          'references_dialog_edit' => 0,
+          'references_dialog_search' => 0,
+          'references_dialog_search_view' => '',
+          'size' => '60',
+        ),
+        'type' => 'entityreference_autocomplete',
+        'weight' => '17',
+      ),
+    ),
+  );
+
   // Exported field: 'node-store-field_store_english_proficiency'.
   $fields['node-store-field_store_english_proficiency'] = array(
     'field_config' => array(
@@ -813,7 +906,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '33',
+          'weight' => '37',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -884,7 +977,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '28',
+          'weight' => '32',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -980,7 +1073,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '24',
+          'weight' => '28',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1057,7 +1150,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '26',
+          'weight' => '30',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1153,7 +1246,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '27',
+          'weight' => '31',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1237,7 +1330,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '32',
+          'weight' => '36',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1320,9 +1413,12 @@ function tapit_stores_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '25',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => '26',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1402,7 +1498,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '31',
+          'weight' => '35',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1458,80 +1554,6 @@ function tapit_stores_field_default_fields() {
     ),
   );
 
-  // Exported field: 'node-store-field_store_type'.
-  $fields['node-store-field_store_type'] = array(
-    'field_config' => array(
-      'active' => '1',
-      'cardinality' => '1',
-      'deleted' => '0',
-      'entity_types' => array(),
-      'field_name' => 'field_store_type',
-      'foreign keys' => array(
-        'tid' => array(
-          'columns' => array(
-            'tid' => 'tid',
-          ),
-          'table' => 'taxonomy_term_data',
-        ),
-      ),
-      'indexes' => array(
-        'tid' => array(
-          0 => 'tid',
-        ),
-      ),
-      'locked' => '0',
-      'module' => 'taxonomy',
-      'settings' => array(
-        'allowed_values' => array(
-          0 => array(
-            'vocabulary' => 'store_status',
-            'parent' => '0',
-          ),
-        ),
-        'profile2_private' => FALSE,
-      ),
-      'translatable' => '0',
-      'type' => 'taxonomy_term_reference',
-    ),
-    'field_instance' => array(
-      'bundle' => 'store',
-      'default_value' => NULL,
-      'deleted' => '0',
-      'description' => '',
-      'display' => array(
-        'default' => array(
-          'label' => 'inline',
-          'module' => 'taxonomy',
-          'settings' => array(),
-          'type' => 'taxonomy_term_reference_link',
-          'weight' => '24',
-        ),
-        'teaser' => array(
-          'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => 0,
-        ),
-      ),
-      'entity_type' => 'node',
-      'field_name' => 'field_store_type',
-      'label' => 'Store Type',
-      'required' => 0,
-      'settings' => array(
-        'user_register_form' => FALSE,
-      ),
-      'widget' => array(
-        'active' => 1,
-        'module' => 'options',
-        'settings' => array(
-          'apply_chosen' => 0,
-        ),
-        'type' => 'options_select',
-        'weight' => '23',
-      ),
-    ),
-  );
-
   // Exported field: 'node-store-field_store_vod_strength'.
   $fields['node-store-field_store_vod_strength'] = array(
     'field_config' => array(
@@ -1572,7 +1594,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '29',
+          'weight' => '33',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1761,7 +1783,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '30',
+          'weight' => '34',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1869,9 +1891,12 @@ function tapit_stores_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'above',
-          'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '34',
+          'module' => 'entityreference',
+          'settings' => array(
+            'link' => FALSE,
+          ),
+          'type' => 'entityreference_label',
+          'weight' => '14',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -1946,7 +1971,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'hidden',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '21',
+          'weight' => '25',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2036,7 +2061,7 @@ function tapit_stores_field_default_fields() {
             'use_widget_handlers' => 1,
           ),
           'type' => 'addressfield_default',
-          'weight' => '14',
+          'weight' => '16',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -2120,7 +2145,7 @@ function tapit_stores_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '29',
+          'weight' => '31',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2186,7 +2211,7 @@ function tapit_stores_field_default_fields() {
             'thousand_separator' => ' ',
           ),
           'type' => 'number_decimal',
-          'weight' => '30',
+          'weight' => '32',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2349,11 +2374,11 @@ function tapit_stores_field_default_fields() {
           'label' => 'inline',
           'module' => 'date',
           'settings' => array(
-            'interval' => 2,
+            'interval' => '2',
             'interval_display' => 'time ago',
           ),
           'type' => 'format_interval',
-          'weight' => '4',
+          'weight' => '7',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -2477,7 +2502,7 @@ function tapit_stores_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '18',
+        'weight' => '19',
       ),
     ),
   );
@@ -2569,7 +2594,7 @@ function tapit_stores_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '20',
+        'weight' => '21',
       ),
     ),
   );
@@ -2778,7 +2803,7 @@ function tapit_stores_field_default_fields() {
                 'x' => '34',
                 'y' => '34',
               ),
-              'iconUrl' => 'http://localhost/tapit/profiles/tapit/themes/tapstrap/images/markers/icon_shop3.png',
+              'iconUrl' => 'http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/images/markers/icon_shop3.png',
               'popupAnchor' => array(
                 'x' => '',
                 'y' => '',
@@ -2793,7 +2818,7 @@ function tapit_stores_field_default_fields() {
             'popup' => 0,
           ),
           'type' => 'geofield_leaflet',
-          'weight' => '18',
+          'weight' => '19',
         ),
         'teaser' => array(
           'label' => 'hidden',
@@ -2857,9 +2882,10 @@ function tapit_stores_field_default_fields() {
       'display' => array(
         'default' => array(
           'label' => 'inline',
+          'module' => 'text',
           'settings' => array(),
-          'type' => 'hidden',
-          'weight' => '18',
+          'type' => 'text_default',
+          'weight' => '13',
         ),
         'teaser' => array(
           'label' => 'inline',
@@ -2951,11 +2977,11 @@ function tapit_stores_field_default_fields() {
           'label' => 'inline',
           'module' => 'date',
           'settings' => array(
-            'interval' => 2,
+            'interval' => '2',
             'interval_display' => 'time ago',
           ),
           'type' => 'format_interval',
-          'weight' => '5',
+          'weight' => '8',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3221,7 +3247,7 @@ function tapit_stores_field_default_fields() {
             'image_style' => '',
           ),
           'type' => 'image',
-          'weight' => '13',
+          'weight' => '15',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3317,7 +3343,7 @@ function tapit_stores_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '28',
+          'weight' => '30',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3408,7 +3434,7 @@ function tapit_stores_field_default_fields() {
           'module' => 'text',
           'settings' => array(),
           'type' => 'text_default',
-          'weight' => '31',
+          'weight' => '33',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3547,7 +3573,7 @@ function tapit_stores_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '17',
+        'weight' => '18',
       ),
     ),
   );
@@ -3621,7 +3647,7 @@ function tapit_stores_field_default_fields() {
           'apply_chosen' => 0,
         ),
         'type' => 'options_select',
-        'weight' => '21',
+        'weight' => '22',
       ),
     ),
   );
@@ -3713,7 +3739,7 @@ function tapit_stores_field_default_fields() {
           'size' => '60',
         ),
         'type' => 'text_textfield',
-        'weight' => '19',
+        'weight' => '20',
       ),
     ),
   );
@@ -3763,7 +3789,7 @@ function tapit_stores_field_default_fields() {
           'module' => 'taxonomy',
           'settings' => array(),
           'type' => 'taxonomy_term_reference_link',
-          'weight' => '26',
+          'weight' => '28',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -3832,7 +3858,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '16',
+          'weight' => '20',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -4019,7 +4045,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '19',
+          'weight' => '23',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -4115,7 +4141,7 @@ function tapit_stores_field_default_fields() {
             'link' => 1,
           ),
           'type' => 'entityreference_label',
-          'weight' => '15',
+          'weight' => '17',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -4188,7 +4214,7 @@ function tapit_stores_field_default_fields() {
           'label' => 'above',
           'settings' => array(),
           'type' => 'hidden',
-          'weight' => '20',
+          'weight' => '24',
         ),
         'teaser' => array(
           'label' => 'above',
@@ -4317,10 +4343,10 @@ function tapit_stores_field_default_fields() {
   t('Cellphone');
   t('Comments');
   t('Current Login Time');
-  t('Debug');
   t('Device');
   t('Device IMEI');
   t('Device Token');
+  t('Device Type');
   t('Email');
   t('English Proficiency');
   t('Forced Wholesalers');
@@ -4346,7 +4372,6 @@ function tapit_stores_field_default_fields() {
   t('State');
   t('State Comments');
   t('Store Images');
-  t('Store Type');
   t('T&C Explained');
   t('Telephone');
   t('Till Points');
