@@ -34,7 +34,6 @@ features[ds_layout_settings][] = node|promotion|default
 features[ds_layout_settings][] = node|promotion|teaser
 features[features_api][] = api:1
 features[field][] = node-promotion-body
-features[field][] = node-promotion-field_debug_me
 features[field][] = node-promotion-field_promo_brand
 features[field][] = node-promotion-field_promo_category
 features[field][] = node-promotion-field_promo_deleted_at
