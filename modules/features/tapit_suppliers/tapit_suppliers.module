@@ -1,0 +1,7 @@
+<?php
+/**
+ * @file
+ * Code for the tapit_suppliers feature.
+ */
+
+include_once 'tapit_suppliers.features.inc';
