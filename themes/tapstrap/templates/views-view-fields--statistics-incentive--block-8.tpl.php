@@ -25,7 +25,5 @@
  */
 ?>
 <?php foreach ($fields as $id => $field): ?>
-
-    <?php print $field->content; ?>
-
+    <?php print $field->raw; ?>
 <?php endforeach; ?>
