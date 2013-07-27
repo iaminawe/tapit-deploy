@@ -133,6 +133,9 @@ projects[views_dataviz][version] = 1.x-dev
 projects[views_calc][subdir] = contrib
 projects[views_calc][version] = 1.0
 
+projects[viewsfield][subdir] = contrib
+projects[viewsfield][version] = 2.0
+
 projects[computed_field][subdir] = contrib
 projects[computed_field][version] = 1.0-beta1
 
