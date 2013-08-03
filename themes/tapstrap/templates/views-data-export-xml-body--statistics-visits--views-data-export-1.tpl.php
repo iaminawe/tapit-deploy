@@ -11,10 +11,4 @@
  * @ingroup views_templates
  */
 ?>
-<?php foreach ($themed_rows as $count => $row): ?>
-
-<?php foreach ($row as $field => $content): ?>
-   <?php print $content; ?>
-<?php endforeach; ?>
-
-<?php endforeach; ?>
+<?php foreach ($themed_rows as $count => $row): ?><?php foreach ($row as $field => $content): ?><?php print $content; ?><?php endforeach; ?><?php endforeach; ?>
