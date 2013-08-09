@@ -23,6 +23,9 @@ projects[leaflet_mapbox][subdir] = contrib
 projects[leaflet_mapbox][version] = 1.2
 projects[leaflet_mapbox][patch][b83576f4af7d2a1aa81c980f55ce9a10]=https://raw.github.com/iaminawe/tapit-deploy/7.x-1.x/modules/patches/leaflet_mapbox_addfullscreen.patch?login=iaminawe&token=b83576f4af7d2a1aa81c980f55ce9a10
 
+projects[leaflet_popup_outside][subdir] = contrib
+projects[leaflet_popup_outside][version] = 1.0
+
 projects[geofield][subdir] = contrib
 projects[geofield][version] = 2.x-dev
 
@@ -108,15 +111,15 @@ projects[flag][version] = 3.0-alpha4
 projects[feedback][subdir] = contrib
 projects[feedback][version] = 2.x-dev
 
+projects[feedmine][subdir] = contrib
+projects[feedmine][version] = 2.0
+
 ;;;;;;;;;;;;;;;;
 ; Vizualisation
 ;;;;;;;;;;;;;;;
 
-projects[d3][type] = module
 projects[d3][subdir] = contrib
-projects[d3][download][type] = "git"
-projects[d3][download][url] = "http://git.drupal.org/sandbox/asherry/1477334.git"
-projects[d3][download][branch] = "7.x-1.x"
+projects[d3][version] = 1.x-dev
 
 projects[views_datasource][subdir] = contrib
 projects[views_datasource][version] = 1.x-dev
@@ -126,6 +129,9 @@ projects[views_data_export][version] = 3.0-beta6
 
 projects[views_date_format_sql][subdir] = contrib
 projects[views_date_format_sql][version] = 3.1
+
+projects[views_charts][subdir] = contrib
+projects[views_charts][version] = 1.x-dev
 
 projects[views_dataviz][subdir] = contrib
 projects[views_dataviz][version] = 1.x-dev
@@ -138,6 +144,13 @@ projects[viewsfield][version] = 2.0
 
 projects[computed_field][subdir] = contrib
 projects[computed_field][version] = 1.0-beta1
+
+projects[views_between_dates_filter][subdir] = contrib
+projects[views_between_dates_filter][version] = 1.0
+
+projects[date_range_formatter][subdir] = contrib
+projects[date_range_formatter][version] = 1.0
+
 
 ;;;;;;;;;
 ; User profile
