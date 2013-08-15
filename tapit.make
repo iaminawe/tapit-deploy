@@ -62,6 +62,12 @@ projects[homebox][version] = 2.x-dev
 projects[quicktabs][subdir] = contrib
 projects[quicktabs][version] = 3.4
 
+projects[flippy][subdir] = contrib
+projects[flippy][version] = 1.2
+
+projects[collapsiblock][subdir] = contrib
+projects[collapsiblock][version] = 1.0
+
 projects[colorbox_node][subdir] = contrib
 projects[colorbox_node][version] = 2.6
 
