@@ -12,6 +12,9 @@
 	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn70fp
 	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn7i4c
 	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn9677
+	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mrjn86
+	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mrjrfy
+	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mrjsps
 	 */
 
 .left{
@@ -700,12 +703,12 @@ ul.horizontal-tabs-list{
 .numblock{
   background-color: #86BC51;
   color: white;
-  font-size: 20px;
+  font-size: 22px;
   text-transform: uppercase;
   font-weight: 700;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
 }
 
 .numblock table{
@@ -714,9 +717,9 @@ ul.horizontal-tabs-list{
   font-size: 14px;
   text-transform: uppercase;
   font-weight: 700;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  border-radius: 10px;
   font-weight: normal;
 }
 
@@ -726,8 +729,9 @@ ul.horizontal-tabs-list{
 }
 
 .numblock h2.block-title{
-  font-size: 16px;
-  line-height: 18px;
+  font-size: 18px;
+  line-height: 20px;
+  margin-bottom: 10px;
 }
 
 .leaflet-pseudo-fullscreen {
@@ -840,3 +844,28 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
 .block-views-statistics-products-block span2.numblock{
   background-color: red !importantl
 }
+
+.global-filter .form-wrapper{
+  float: left;
+}
+
+.block-global-filter{
+  background: #ececec !important;
+  padding: 10px;
+}
+
+.global-filter .date-padding{
+  padding: 0 !important;
+}
+
+.global-filter .date-padding .description{
+  color: #ccc;
+  font-size: 12px;
+  margin-left: 10px;
+}
+
+.global-filter-set-range{
+  margin-top: 10px;
+}
+
+#block-views-statistics
