@@ -1,22 +1,3 @@
-/* @override 
-	http://dev.tapit.2.iaminawe.com/profiles/tapit/themes/tapstrap/css/tapstrap.css?mirzn7
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn57hv
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn59kj
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5c8a
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5dcc
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5go9
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5ton
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5ul7
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5v0s
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn5yxm
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn70fp
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn7i4c
-	http://localhost/tapit/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mn9677
-	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mrjn86
-	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mrjrfy
-	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?mrjsps
-	 */
-
 .left{
   float: left;
   margin-right: 10px;
@@ -28,7 +9,7 @@
 }
 
 h1#page-title{
- 
+
 }
 
 ul.breadcrumb{
@@ -43,23 +24,23 @@ background: #86BC51;
   padding-bottom: 10px;
   background-repeat: repeat-x;
   border: 1px solid #d4d4d4;
-  
-  
+
+
  }
- 
+
  .accordion-heading a{
    background-color: white;
    border: none;
 
  }
- 
+
  li.dropdown-menu-title{
    color: white;
    background-color: #527530 !important;
    padding: 10px !important;
    padding-top: 0px !;
  }
- 
+
  ul.dropdown-menu{
    background-color: #527530;
  }
@@ -68,7 +49,7 @@ background: #86BC51;
     color: #FFF;
     background-color: #84BD4A;
     text-decoration: none;
-  
+
 }
 
 .sidebar .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
@@ -87,20 +68,20 @@ padding: 0;
     text-transform: uppercase !important;
     font-weight: 700 !important;
     text-align: left !important;
-    font-size: 18px !important; 
+    font-size: 18px !important;
    font-family: Lato;
    margin-bottom: 10px;
-  
+
 }
 
 .leaflet-popup-content h4{
   margin-bottom: 5px;
-  
-  
+
+
 }
 
 .leaflet-popup-content {
-  
+
 }
 
 .flag-wrapper a{
@@ -118,8 +99,8 @@ body {
   body h1, body h2, body h3, body h4, body h5, body h6 {
     text-transform: uppercase;
     font-weight: 300; }
-    
-    
+
+
 
 .views-responsive-grid h3{
   font-size: 20px !important;
@@ -127,7 +108,7 @@ body {
 }
 
 #page{max-width: none
-  
+
 }
 
 .group-traderinfo-group h4{
@@ -141,7 +122,7 @@ body {
  font-weight: 900 !important;
  text-shadow: 1px 1px 1px black;
  font-size:14px;
- 
+
 }
 
 .view-id-stores.view-display-id-page .view-header,
@@ -163,7 +144,7 @@ body {
 
 h3{
   line-height:28px;
-  
+
 }
 
 a{
@@ -171,7 +152,7 @@ a{
 }
 
 .dropdown-toggle a.btn{
-  
+
 }
 
 #logo{
@@ -194,7 +175,7 @@ a#logo img{
 background-color: #efefef;
 padding:10px;
 margin-bottom: 10px;
-  
+
 }
 
 .accordion-heading{
@@ -255,7 +236,7 @@ margin-bottom: 10px;
 footer {
   padding-top: 20px;
   padding-bottom: 20px;
-  color: #999; 
+  color: #999;
   clear: both;
   }
   footer a {
@@ -646,7 +627,7 @@ ul.stat-list {
 /* ============== settings ============== */
 .settings-group {
   margin-top: 40px; }
-  
+
 
 .leaflet-container:-webkit-full-screen {
     width: 100% !important;
@@ -662,7 +643,7 @@ ul.stat-list {
 
 }
 
-.node-type-store ul.nav.nav-tabs{
+ul.nav.nav-tabs{
   float: right;
  margin-top: -70px;
 }
@@ -681,9 +662,11 @@ div.horizontal-tabs {
   margin-top: -3px;
   margin-right: 20px;
 
- 
+
   box-sizing: border-box;
 }
+
+
 
 .ui-tabs-panel{
   padding: 0 !important;
@@ -709,6 +692,7 @@ ul.horizontal-tabs-list{
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
+  margin-bottom: 10px;
 }
 
 .numblock table{
@@ -805,7 +789,7 @@ ul.quicktabs-tabs.quicktabs-style-zen li{
    -moz-border-radius-topright: 5px;
    border-top-left-radius: 5px;
    border-top-right-radius: 5px;
-  
+
 }
 ul.quicktabs-tabs.quicktabs-style-zen li a{
   font:bold 12px/170% Verdana;
@@ -818,7 +802,7 @@ ul.quicktabs-tabs.quicktabs-style-zen li a{
   text-decoration:none;
   background: transparent;
   color: #135C32;
-  
+
 }
 ul.quicktabs-tabs.quicktabs-style-zen li:hover a{
   border-width: 0;
@@ -841,16 +825,14 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
    color: white;
 }
 
-.block-views-statistics-products-block span2.numblock{
-  background-color: red !importantl
-}
+
 
 .global-filter .form-wrapper{
   float: left;
 }
 
 .block-global-filter{
-  background: #ececec !important;
+  background: none !important;
   padding: 10px;
 }
 
@@ -868,4 +850,44 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
   margin-top: 10px;
 }
 
-#block-views-statistics
+.block-feedmine h2.block-title{
+ font-size: 14px;
+}
+
+.group-usage-group .numblock{
+  padding:10px;
+  box-sizing: border-box;
+  margin-left: 10px !important;
+  color: #A1D26E;
+  min-height:100px;
+  background-color: #fff !important;
+}
+
+.group-usage-group .numblock span{
+  font-size: 18px;
+}
+
+.group-usage-group .numblock h2{
+  font-size: 40px;
+}
+
+.group-usage-group .numblock .label-inline{
+  font-size: 16px;
+}
+
+.group-usage-group .date-display-interval{
+  font-size: 12px !important;
+  line-height:16px !important;
+}
+
+
+.group-usage-group .date-display-interval em{
+   font-size: 14px !important;
+   line-height:16px !important;
+
+}
+.flag{
+  padding: 5px;
+ margin-bottom: 10px;
+ margin-top: 10px;
+}
