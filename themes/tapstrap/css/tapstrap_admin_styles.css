@@ -652,7 +652,7 @@ div.horizontal-tabs {
   margin: 0 0 1em 0; /* LTR */
   padding: 0;
   border: none;
-  position: relative; /* IE6/7 */
+  position: relative; /*IE6/7 */
 }
 
 .horizontal-tabs fieldset.horizontal-tabs-pane {
@@ -661,9 +661,10 @@ div.horizontal-tabs {
   background-color: white;
   margin-top: -3px;
   margin-right: 20px;
-
-
-  box-sizing: border-box;
+  border-radius: 5px;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 
@@ -682,6 +683,11 @@ ul.horizontal-tabs-list{
   background-color: #F6F6F6 !important;
   border: 0 !important;
 }
+.horizontal-tabs-list li{
+
+  border: 0 !important;
+  padding-left: 10px !important;
+}
 
 .numblock{
   background-color: #86BC51;
@@ -693,6 +699,7 @@ ul.horizontal-tabs-list{
   -webkit-border-radius: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
+  min-height: 100px
 }
 
 .numblock table{
@@ -825,7 +832,12 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
    color: white;
 }
 
-
+.well.block-global-filter{
+  padding: 0;
+  border:none !important;
+  margin:0;
+  box-shadow: none;
+}
 
 .global-filter .form-wrapper{
   float: left;
@@ -850,13 +862,19 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
   margin-top: 10px;
 }
 
+.well.block-feedmine{
+  padding: 0;
+}
+
 .block-feedmine h2.block-title{
  font-size: 14px;
 }
 
 .group-usage-group .numblock{
   padding:10px;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   margin-left: 10px !important;
   color: #A1D26E;
   min-height:100px;
@@ -891,3 +909,33 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
  margin-bottom: 10px;
  margin-top: 10px;
 }
+
+
+#block-views-exp-stores-page.odd,
+#block-views-exp-visit-traders-map-page.odd,
+#block-views-exp-service-providers-map-page.odd,
+#block-views-exp-activity-map-page.odd,
+#block-views-exp-incentives-map-2-page.odd{
+  color:#185B33;
+  background-color:#A1D26E !important;
+}
+
+#edit-field-geofield-distance-distance{
+
+}
+.current-login,
+.last-login{
+background-color: white;
+padding: 5px;
+margin: 5px;
+border-radius: 5px;
+}
+
+.page-node-1356 .view-display-id-block_4 .attachment{
+  display: none;
+
+}
+#block-quicktabs-products{
+background-color: #A1D26E !important;
+}
+
