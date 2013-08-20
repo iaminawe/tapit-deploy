@@ -697,9 +697,9 @@ ul.horizontal-tabs-list{
   font-weight: 700;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-radius: 10px;
+  border-cccradius: 10px;
   margin-bottom: 10px;
-  min-height: 100px
+  min-height: 70px
 }
 
 .numblock table{
@@ -720,9 +720,9 @@ ul.horizontal-tabs-list{
 }
 
 .numblock h2.block-title{
-  font-size: 18px;
+  font-size: 16px;
   line-height: 20px;
-  margin-bottom: 10px;
+  margin-bottom: 5px;
 }
 
 .leaflet-pseudo-fullscreen {
