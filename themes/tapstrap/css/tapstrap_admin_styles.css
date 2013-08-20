@@ -697,7 +697,7 @@ ul.horizontal-tabs-list{
   font-weight: 700;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
-  border-cccradius: 10px;
+  border-radius: 10px;
   margin-bottom: 10px;
   min-height: 70px
 }
