@@ -693,13 +693,14 @@ ul.horizontal-tabs-list{
   background-color: #86BC51;
   color: white;
   font-size: 22px;
+  line-height: 12px;
   text-transform: uppercase;
   font-weight: 700;
   -moz-border-radius: 10px;
   -webkit-border-radius: 10px;
   border-radius: 10px;
   margin-bottom: 10px;
-  min-height: 70px
+  min-height: 60px
 }
 
 .numblock table{
@@ -910,7 +911,6 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
  margin-top: 10px;
 }
 
-
 #block-views-exp-stores-page.odd,
 #block-views-exp-visit-traders-map-page.odd,
 #block-views-exp-service-providers-map-page.odd,
@@ -920,22 +920,48 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
   background-color:#A1D26E !important;
 }
 
-#edit-field-geofield-distance-distance{
-
-}
 .current-login,
 .last-login{
-background-color: white;
-padding: 5px;
-margin: 5px;
-border-radius: 5px;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 5px;
 }
 
-.page-node-1356 .view-display-id-block_4 .attachment{
+.page-node-1356 .view-display-id-block_4 .attachment,
+.page-node-568324 .view-id-statistics_visits.view-display-id-block_3 .attachment{
   display: none;
 
 }
-#block-quicktabs-products{
+#block-quicktabs-products,
+#block-quicktabs-promotions{
 background-color: #A1D26E !important;
 }
 
+#block-views-statistics-rollout-block-4 h2{
+font-size: 16px;
+}
+
+#block-views-statistics-visits-block-7 h2{
+font-size: 13px;
+
+}
+.stat-sidebar{
+  clear:both;
+  background-color: white;
+  position:relative;
+  padding-left: 10px;
+  padding-bottom: 5px;
+  margin-left: 5px;
+  border-radius: 10px;
+  border-bottom-right-radius: 0;
+  border-top-right-radius: 0
+  
+}
+
+.stat-sidebar .total-orders{
+  margin-left: 0;
+  padding-left: 0;
+}
+   .stat-sidebar h2{
+}
