@@ -865,6 +865,7 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
 
 .well.block-feedmine{
   padding: 0;
+  padding-left: 10px;
 }
 
 .block-feedmine h2.block-title{
@@ -884,6 +885,12 @@ ul.quicktabs-tabs.quicktabs-style-zen li.active{
 
 .group-usage-group .numblock span{
   font-size: 18px;
+}
+
+.view-statistics-incentive.view-display-id-block_1 .view-header{
+margin-bottom: 20px;
+font-size:18px;
+
 }
 
 .group-usage-group .numblock h2{
@@ -946,6 +953,29 @@ font-size: 16px;
 font-size: 13px;
 
 }
+
+#block-views-aaf700db5960104f1ced05b1678bac1d,
+#block-views-996f0535e4a5fe42313ab358b479aa3f,
+#block-views-1546ab2d8761be9a108320b066e4908c,
+#block-views-a3403ab9621102431a48a68694b44d63,
+#block-views-8a8a645f2b07f7f7cf2bcf6dbed4cf7c{
+position: relative;
+float:right;
+min-height:15px;
+margin-right:11%;
+margin-top: -80px;
+}
+
+
+
+#block-views-statistics-visits-block-4,
+#block-views-statistics-visits-block-3,
+#block-views-statistics-visits-block-2,
+#block-views-statistics-visits-block-7,
+#block-views-statistics-visits-block-6{
+line-height: 25px
+}
+
 .stat-sidebar{
   clear:both;
   background-color: white;
@@ -958,7 +988,10 @@ font-size: 13px;
   border-top-right-radius: 0
   
 }
-
+.field-name-field-storeowner-nationality{
+  clear:both;
+  margin-top:20px;
+}
 .stat-sidebar .total-orders{
   margin-left: 0;
   padding-left: 0;
