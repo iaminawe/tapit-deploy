@@ -1,3 +1,7 @@
+/* @override 
+	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
+	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf */
+
 .left{
   float: left;
   margin-right: 10px;
@@ -5,7 +9,7 @@
 
 .addressfield-container-inline{
   float: left;
-  min-height:00px;
+  min-height:0;
 }
 
 h1#page-title{
@@ -77,7 +81,7 @@ background: #86BC51;
   float: left;
   margin-right: -15%;
   margin-left: 0%;
-  width: 10% !important;
+  width: 15% !important;
 }
 
 .sidebar-first #content{
@@ -198,7 +202,7 @@ a#logo img{
 .view-mode-teaser{
 margin-bottom: 10px;
 padding:10px;
-background-color: #efefef;
+background-color: #fff;
 
 }
 
@@ -1036,11 +1040,44 @@ line-height: 25px;
 
 }
 
-#homebox-block-system_main-menu {
+#homebox-block-system_main-menu ul li ul li{
+padding: 4px;
+margin:2px;
+border-top:1px dotted #ccc;
 
 }
 
-#homebox-block-system_main-menu ul.nav li.expandeded{
+#homebox-block-system_main-menu li.expanded{
+  font-size: 15px;
+}
+
+.page-dashboard h1{
+  display: none;
+}
+
+#homebox-block-system_main-menu .portlet-header{
+display: none;
+}
+
+
+#homebox .homebox-portlet .portlet-header{
+  margin: 0;
+  padding: 3px 5px;
+  border-bottom: none;
+  background: #86BC51; /* matches garland */
+  color: #FFF;
+  min-height: 18px;
+  font-size: 1.2em;
+  border-radius: 5px;
+  
+}
+#homebox .homebox-portlet .homebox-portlet-inner {
+  border: none;
+  overflow: hidden;
+  border-radius:5px;
+  
+}
+#homebox-block-system_main-menu ul.nav li.expanded{
 float:left;
 width:24%;
 }
