@@ -1051,7 +1051,7 @@ border-top:1px dotted #ccc;
   font-size: 15px;
 }
 
-.page-dashboard h1{
+.page-dashboard .page-header{
   display: none;
 }
 
