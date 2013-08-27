@@ -1025,18 +1025,22 @@ line-height: 25px;
 
 }
 
-
-
 .field-name-field-storeowner-nationality{
   clear:both;
   margin-top:20px;
 }
+
 .stat-sidebar .total-orders{
   margin-left: 0;
   padding-left: 0;
+
 }
 
-#homebox-block-system_main-menu ul.nav li.expanded{
-display:inline-block;
+#homebox-block-system_main-menu {
+
+}
+
+#homebox-block-system_main-menu ul.nav li.expandeded{
+float:left;
 width:24%;
 }
