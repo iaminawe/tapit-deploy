@@ -152,3 +152,15 @@ function tapstrap_get_node_count($content_type) {
      $result = db_query($query, array(':type' => $content_type))->fetch();
      return $result->amount;
 }
+
+/**
+ * Implements theme_preprocess_page()
+ */
+function tapstrap_preprocess_page(&$variables) {
+  $arg = arg();
+  if ($arg[0] == 'maps') {
+    // Load packery JS & dependencies
+    drupal_add_js(path_to_theme() . 'js/leaflet-hash.js');
+    drupal_add_js(path_to_theme() . 'js/Leaflet.fullscreen.js');
+  }
+}
