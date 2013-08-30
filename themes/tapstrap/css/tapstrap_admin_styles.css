@@ -1,7 +1,8 @@
 /* @override 
 	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
 	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
-	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msbrmz */
+	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msbrmz
+	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msc1hm */
 
 .left{
   float: left;
@@ -165,9 +166,14 @@ body {
   margin-top: 10px;
 }
 
+.view-stores.view-display-id-block_1 img.leaflet-marker-icon,
+.view-stores.view-display-id-page img.leaflet-marker-icon{
+  width: 21px !important;
+  height: 23px !important;
+}
+
 h3{
   line-height:28px;
-
 }
 
 a{
@@ -1050,9 +1056,6 @@ border-top:1px dotted #ccc;
   display: none;
 }
 
-#homebox-block-system_main-menu .portlet-header{
-
-}
 
 #homebox .homebox-portlet .portlet-header{
   margin: 0;
@@ -1074,12 +1077,14 @@ border-top:1px dotted #ccc;
   padding: 0;
   border:none !important;
   background: transparent !important;
+  position: relative;
 }
 
 #homebox .homebox-portlet .homebox-portlet-inner {
   border: none;
   overflow: hidden;
   border-radius:5px;
+  
 }
 
 #homebox-block-system_main-menu ul.nav li.expanded{
@@ -1087,10 +1092,18 @@ float:left;
 width:24%;
 }
 
+
 .resultcount{
+  float: right;
   position: absolute;
+  z-index:99;
+  top: 50px;
+  width: 160px;
+  height: 40px;
+  background-color: white;
+  border-radius: 5px;
+  padding: 5px;
   right: 20px;
-  
 }
 
 #homebox-buttons{
