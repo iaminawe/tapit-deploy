@@ -1,6 +1,7 @@
 /* @override 
 	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
-	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf */
+	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
+	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msbrmz */
 
 .left{
   float: left;
@@ -10,10 +11,6 @@
 .addressfield-container-inline{
   float: left;
   min-height:0;
-}
-
-h1#page-title{
-
 }
 
 ul.breadcrumb{
@@ -26,10 +23,8 @@ clear: both;
   padding-bottom: 10px;
   padding-left: 40px !important;
   border: 1px solid #d4d4d4;
-background: #86BC51;
+  background: #86BC51;
   background-repeat: repeat-x;
-
-
  }
 
  .accordion-heading a{
@@ -1056,28 +1051,49 @@ border-top:1px dotted #ccc;
 }
 
 #homebox-block-system_main-menu .portlet-header{
-display: none;
-}
 
+}
 
 #homebox .homebox-portlet .portlet-header{
   margin: 0;
-  padding: 3px 5px;
+  padding: 3px 6px;
+  padding-left: 10px;
   border-bottom: none;
   background: #86BC51; /* matches garland */
   color: #FFF;
   min-height: 18px;
   font-size: 1.2em;
   border-radius: 5px;
+  border-bottom-left-radius: 0;
+  border-bottom-right-radius: 0;
   
 }
+
+#homebox .homebox-portlet {
+  margin: 2px 0 5px;
+  padding: 0;
+  border:none !important;
+  background: transparent !important;
+}
+
 #homebox .homebox-portlet .homebox-portlet-inner {
   border: none;
   overflow: hidden;
   border-radius:5px;
-  
 }
+
 #homebox-block-system_main-menu ul.nav li.expanded{
 float:left;
 width:24%;
+}
+
+.resultcount{
+  position: absolute;
+  right: 20px;
+  
+}
+
+#homebox-buttons{
+  text-align: right;
+  padding-right: 10px;
 }
