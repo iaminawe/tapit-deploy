@@ -158,7 +158,7 @@ function tapstrap_get_node_count($content_type) {
  */
 function tapstrap_preprocess_page(&$variables) {
   $arg = arg();
-  if ($arg[0] == 'maps') {
+  if ($arg[0] == 'maps' || $arg[0] == 'dashboard') {
     // Load packery JS & dependencies
     drupal_add_js(path_to_theme() . 'js/leaflet-hash.js');
     drupal_add_js(path_to_theme() . 'js/Leaflet.fullscreen.js');
