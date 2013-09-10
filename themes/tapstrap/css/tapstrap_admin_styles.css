@@ -1,8 +1,7 @@
 /* @override 
-	http://dev.stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
-	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?ms4hbf
-	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msbrmz
-	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msc1hm */
+	http://stats.tap-it.co.za/profiles/tapit/themes/tapstrap/css/tapstrap_admin_styles.css?msvrm5
+*/
+
 
 .left{
   float: left;
@@ -16,7 +15,7 @@
 
 ul.breadcrumb{
 clear: both;
-  background-color: white;
+  background-color: #FAF8F7;
 }
 .navbar-inner {
   padding-top: 10px;
@@ -31,7 +30,7 @@ clear: both;
  .accordion-heading a{
    border: none;
    background-color: white;
-
+  border-radius: 10px;
  }
 
  li.dropdown-menu-title{
@@ -52,25 +51,9 @@ clear: both;
 
 }
 
-.sidebar .chzn-container-multi .chzn-choices .search-choice .search-choice-close {
-  position: absolute;
-  top: 4px;
-  right: 3px;
-  display: block;
-  padding: 0;
-  width: 12px;
-  height: 12px;
-  background: url('chosen-sprite.png') -42px 1px no-repeat;
-  font-size: 1px;
-}
-
 .sidebar{
   margin-top:0 !important;'
 
-}
-
-#sidebar_first{
-  background-color: white !important;
 }
 
 .sidebar-first .region-sidebar-first {
@@ -100,13 +83,8 @@ clear: both;
 
 .leaflet-popup-content h4{
   margin-bottom: 5px;
-
-
 }
 
-.leaflet-popup-content {
-
-}
 
 .flag-wrapper a{
   color:white;
@@ -124,7 +102,9 @@ body {
     text-transform: uppercase;
     font-weight: 300; }
 
-
+#page-title{
+  margin-bottom: 10px;
+}
 
 .views-responsive-grid h3{
   font-size: 20px !important;
@@ -154,7 +134,7 @@ body {
 .view-visit-traders-map.view-display-id-page .view-header,
 .view-service-providers-map.view-display-id-page .view-header,
 .view-activity-map.view-display-id-page .view-header{
-   margin-top: -70px;
+   margin-top: -30px;
    text-align: right;
  }
 
@@ -213,7 +193,7 @@ background-color: #fff;
 }
 
 .accordion-group{
-background-color: white !important;
+background-color: #fbf9f8;
 }
 
 
@@ -959,13 +939,19 @@ font-size:18px;
 #block-views-exp-service-providers-map-page.odd,
 #block-views-exp-activity-map-page.odd,
 #block-views-exp-incentives-map-2-page.odd
-.view-id-statistics_incentive.view-display-id-attachment_1.odd{
-  background-color:#A1D26E !important;
+.view-id-statistics_incentive.view-display-id-attachment_1.odd,
+#block-views-exp-service-providers,
+#block-views-exp-incentives-map-2-page.odd{
+
+  background-color:#FBF9F8 !important;
   color:#185B33;
+  border-radius: 10px;
 }
 
+
 .current-login,
-.last-login{
+.last-login,
+.regdate{
   margin: 10px;
   padding: 10px;
   border-radius: 5px;
@@ -1002,11 +988,11 @@ font-size: 13px;
 #block-views-1546ab2d8761be9a108320b066e4908c,
 #block-views-a3403ab9621102431a48a68694b44d63,
 #block-views-8a8a645f2b07f7f7cf2bcf6dbed4cf7c{
-position: relative;
-float:right;
-margin-top: -80px;
-margin-right:11%;
-min-height:15px;
+  position: relative;
+  float:right;
+  margin-top: -80px;
+  margin-right:11%;
+  min-height:15px;
 }
 
 #block-views-statistics-visits-block-4,
@@ -1015,6 +1001,16 @@ min-height:15px;
 #block-views-statistics-visits-block-7,
 #block-views-statistics-visits-block-6{
 line-height: 25px;
+}
+
+#block-block-6,
+#block-block-7,
+#block-block-5{
+  background-color:#FAF8F7;
+  padding-top:5px !important;
+  padding-bottom:5px !important;
+  box-shadow:none;
+  border: none;
 }
 
 .stat-sidebar{
@@ -1069,7 +1065,7 @@ border-top:1px dotted #ccc;
   border-radius: 5px;
   border-bottom-left-radius: 0;
   border-bottom-right-radius: 0;
-  
+
 }
 
 #homebox .homebox-portlet {
@@ -1092,7 +1088,9 @@ float:left;
 width:24%;
 }
 
-
+.view-stores .view-header{
+  margin-bottom: 10px;
+}
 .resultcount{
   float: right;
   position: absolute;
@@ -1106,7 +1104,32 @@ width:24%;
   right: 20px;
 }
 
+.resultcount h3{
+    margin-top: 5px !important;
+}
+
+
 #homebox-buttons{
   text-align: right;
   padding-right: 10px;
 }
+
+.view-header h3{
+  margin-top: -70px;
+}
+
+
+#block-block-6.odd{
+  background-color:transparent !important;
+  padding:none !important;
+  
+  }
+  
+  .marker-cluster-large{
+     background-color: rgba(158, 196, 118, 0.60);
+  }
+
+  .marker-cluster-large div {
+
+     background-color: rgba(19, 92, 50, 0.50);
+  }
