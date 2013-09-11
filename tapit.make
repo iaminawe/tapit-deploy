@@ -74,12 +74,6 @@ projects[colorbox_node][version] = 2.6
 projects[views_accordion][subdir] = contrib
 projects[views_accordion][version] = 1.0-rc2
 
-projects[tabsnomore][type] = module
-projects[tabsnomore][subdir] = contrib
-projects[tabsnomore][download][type] = "git"
-projects[tabsnomore][download][url] = "http://git.drupal.org/sandbox/onkeltem/1730244.git"
-projects[tabsnomore][download][branch] = "master"
-
 projects[custom_search][subdir] = contrib
 projects[custom_search][version] = 1.12
 
@@ -145,8 +139,8 @@ projects[views_dataviz][version] = 1.x-dev
 projects[views_calc][subdir] = contrib
 projects[views_calc][version] = 1.0
 
-projects[viewsfield][subdir] = contrib
-projects[viewsfield][version] = 2.0
+projects[viewfield][subdir] = contrib
+projects[viewfield][version] = 2.0
 
 projects[computed_field][subdir] = contrib
 projects[computed_field][version] = 1.0-beta1
@@ -156,19 +150,5 @@ projects[views_between_dates_filter][version] = 1.0
 
 projects[date_range_formatter][subdir] = contrib
 projects[date_range_formatter][version] = 1.0
-
-
-;;;;;;;;;
-; User profile
-;;;;;;;;;
-
-projects[profile2][subdir] = contrib
-projects[profile2][version] = 1.3
-
-;projects[profile2_one_page][subdir] = contrib
-;projects[profile2_one_page][download][type] = "git"
-;projects[profile2_one_page][download][url] = "http://git.drupal.org/sandbox/capynet/1917766.git"
-;projects[profile2_one_page][download][branch] = "master"
-
 
 
