@@ -1,0 +1,4 @@
+name = Latitude Extractor
+description = Extract Latitude from a (Latitude, Longitude) GPS co-ordinates.
+package = Location
+core = 7.x
