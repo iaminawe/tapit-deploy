@@ -1,6 +1,0 @@
-name = Feeds Tamper: Tapit Timestamp to date
-description = feeds_tamper_tapit_timedate converts unix timestamp to date.
-package = Feeds
-core = 7.x
-dependencies[] = feeds
-dependencies[] = feeds_tamper
