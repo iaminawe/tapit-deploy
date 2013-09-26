@@ -84,18 +84,25 @@ CREATEDDATERANGE='{"created_at":{$gte: new Date('$FROMDATESTAMP')}}'
 
 CSVFILE=stats_csv_$(date +%Y%m%d).tar.gz
 
-#tar -zcvf imports/$CSVFILE $LOCALPATH
+tar -zcvf $CSVFILE $LOCALPATH
 
-tar zcf - imports/$CSVFILE | ssh $REMOTEUSER@$REMOTESERVER  "cd $REMOTEPATH; tar zxf -"
+
 echo "Created csv archive and sent to $REMOTESERVER at $REMOTEPATH"
 #tar -zcvf imports/$CSVFILE $LOCALPATH | ssh $REMOTEUSER@$REMOTESERVER tar -xzf $REMOTEPATH
+#tar zcf - imports/$CSVFILE | ssh $REMOTEUSER@$REMOTESERVER  "cd $REMOTEPATH; tar zxf -"
 
 
 #chown -R $REMOTEUSER $LOCALPATH$CSVFILE
 #echo "Changed permissions to be for $REMOTEUSER"
 
-#scp imports/$CSVFILE $REMOTEUSER@$REMOTESERVER:$REMOTEPATH
-#echo "Sucessfully copied $LOCALPATH$CSVFILE to $REMOTESERVER:$REMOTEPATH"
+#Add each csv file across individually to avoid untar on stats side.
+scp -rC $LOCALPATH/. $REMOTEUSER@$REMOTESERVER:$REMOTEPATH
+
+#Add the tar file as a backup
+scp imports/$CSVFILE $REMOTEUSER@$REMOTESERVER:$REMOTEPATH/backups
+
+
+echo "Sucessfully copied $LOCALPATH$CSVFILE to $REMOTESERVER:$REMOTEPATH"
 
 echo "From date and time $FROMDATE - $FROMDATESTAMP"
 
@@ -107,17 +114,16 @@ echo "The from date has been updated to $CURRENTDATE"
 echo "Completed database CSV dump and copy of $LOCALPATH$CSVFILE to $REMOTEPATH at $CURRENTDATE, Goodbye."
 
 
-
-# script to send simple email 
+# script to send simple email
 # email subject
-SUBJECT="The database sync script has run on production"
+#SUBJECT="The database sync script has run on production"
 # Email To ?
-EMAIL="gregg@iaminawe.com"
+#EMAIL="gregg@iaminawe.com"
 # Email text/message
-EMAILMESSAGE="/tmp/emailmessage.txt"
-echo "Completed database CSV dump and copy of $LOCALPATH$CSVFILE to $REMOTEPATH at $CURRENTDATE"> $EMAILMESSAGE
+#EMAILMESSAGE="/tmp/emailmessage.txt"
+#echo "Completed database CSV dump and copy of $LOCALPATH$CSVFILE to $REMOTEPATH at $CURRENTDATE"> $EMAILMESSAGE
 # send an email using /bin/mail
-/bin/mail -s "$SUBJECT" "$EMAIL" < $EMAILMESSAGE
+#/bin/mail -s "$SUBJECT" "$EMAIL" < $EMAILMESSAGE
 
 #now=$(date +"%m_%d_%Y")
 #echo "Filename : /nas/backup_$now.sql"
