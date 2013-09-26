@@ -1,3 +1,5 @@
+<?php 
+
 $plugin = array(
   'form' => 'lat_tamper_plugin_lat_extract_form',
   'callback' => 'lat_tamper_plugin_lat_extract_callback',
@@ -15,3 +17,5 @@ function lat_tamper_plugin_lat_extract_callback($result, $item_key, $element_key
   $field = $lat;
   
 }
+
+?>
